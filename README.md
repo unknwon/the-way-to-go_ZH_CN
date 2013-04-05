@@ -22,7 +22,6 @@ Go语言学习园地：[studygolang.com](http://studygolang.com/)
 - 不要问Go现在的发展前景如何
 - 不要问学习Go语言能不能找到工作
 - 不要问现在Go语言有哪些实际应用
-- 不要问Go发展成熟了没
 
 #致谢
 - 本书原作者：Ivo Balbaert
