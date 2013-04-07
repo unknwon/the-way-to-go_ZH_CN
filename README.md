@@ -7,13 +7,13 @@
 
 该翻译版本已获得原作者(Ivo Balbaert)本人授权，并表示支持开源事业的发展！
 
-#翻译进度
+##翻译进度
 [前言](./eBook/preface.md)
 
-#支持本书
+##支持本书
 如果你喜欢本书《Go入门指南》，你可以参与到本书的翻译或纠正工作中来，一同完善本书并帮助壮大Go语言在国内的学习群体，给大家提供更好的学习资源。
 
-#交流
+##交流
 欢迎大家加入QQ群：259316004（不要被群名字迷惑了，这里牛人可多了）
 
 Go语言学习论坛交流：[mygolang.com](http://mygolang.com)
@@ -26,11 +26,11 @@ Go语言学习园地：[studygolang.com](http://studygolang.com/)
 - 不要问学习Go语言能不能找到工作
 - 不要问现在Go语言有哪些实际应用
 
-#致谢
+##致谢
 - 本书原作者：Ivo Balbaert
 
-#授权许可
+##授权许可
 除特别声明外，本书中的内容使用[CC BY-SA 3.0 License](http://creativecommons.org/licenses/by-sa/3.0/)（创作共用 署名-相同方式共享3.0许可协议）授权，代码遵循[BSD 3-Clause License](https://github.com/astaxie/build-web-application-with-golang/blob/master/LICENSE.md)（3项条款的BSD许可协议）。
 
-#开始阅读
+##开始阅读
 [前言](./eBook/preface.md)
