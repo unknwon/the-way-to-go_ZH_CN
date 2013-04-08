@@ -16,9 +16,12 @@
 ##交流
 欢迎大家加入QQ群：259316004（不要被群名字迷惑了，这里牛人可多了）
 
-Go语言学习论坛交流：[mygolang.com](http://mygolang.com)
+Golang中文社区：[mygolang.com](http://mygolang.com)
 
 Go语言学习园地：[studygolang.com](http://studygolang.com/)
+
+Golang中国：[golang.tc](http://www.golang.tc/)
+
 ###新人守则
 - 2012年3月28日以前的博文中的内容基本过时，不要再看
 - 符合等式 ***百度+思考+失败+翻墙+谷歌+尝试=解决*** 的问题最好不要发问
