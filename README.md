@@ -11,7 +11,7 @@
 [语言的主要特性与发展的环境和影响因素](eBook/01.2.md)
 
 ##支持本书
-如果你喜欢本书《Go 入门指南》，你可以参与到本书的翻译或纠正工作中来，一同完善本书并帮助壮大 Go 语言在国内的学习群体，给大家提供更好的学习资源。
+如果你喜欢本书《Go入门指南》，你可以参与到本书的翻译或纠正工作中来，一同完善本书并帮助壮大 Go 语言在国内的学习群体，给大家提供更好的学习资源。
 
 ##交流
 欢迎大家加入QQ群：259316004（不要被群名字迷惑了，这里牛人可多了）
@@ -33,7 +33,7 @@ Golang中国：[golang.tc](http://www.golang.tc/)
 - 本书原作者：Ivo Balbaert
 
 ##授权许可
-除特别声明外，本书中的内容使用[CC BY-SA 3.0 License](http://creativecommons.org/licenses/by-sa/3.0/)（创作共用 署名-相同方式共享0 许可协议）授权，代码遵循[BSD 3-Clause License](https://github.com/astaxie/build-web-application-with-golang/blob/master/LICENSE.md)（3 项条款的 BSD 许可协议）。
+除特别声明外，本书中的内容使用 [CC BY-SA 3.0 License](http://creativecommons.org/licenses/by-sa/3.0/)（创作共用 署名-相同方式共享0 许可协议）授权，代码遵循 [BSD 3-Clause License](https://github.com/astaxie/build-web-application-with-golang/blob/master/LICENSE.md)（3 项条款的 BSD 许可协议）。
 
 ##开始阅读
 [前言](./eBook/preface.md)
