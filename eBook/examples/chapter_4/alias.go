@@ -1,6 +1,6 @@
 package main
-import fm “fmt” // alias3
+import fm "fmt" // alias3
 
 func main() {
-    fm.Println(“hello, world”)
+    fm.Println("hello, world")
 }
