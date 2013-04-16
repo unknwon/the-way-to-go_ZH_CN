@@ -1,0 +1,511 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>04.2</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: d5e7ce436666e7d4a2eeb12e7f8261dacceb3565 */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+.markdown-body img {
+  max-width: 100%
+}
+</style>
+
+</head>
+<body>
+<h1>4.2 Go 程序的基本结构和要素</h1>
+<p>（ <strong><em>译者注：由于 Go 语言版本更替，本节中的相关内容经原作者同意将被直接替换而不作另外说明</em></strong> ）</p>
+<p>Example 4.1 <a href="examples/chapter_4/hello_world.go">hello_world.go</a></p>
+<pre><code>package main
+
+import &quot;fmt&quot;
+
+func main() {
+    fmt.Println(&quot;hello, world&quot;)
+}
+</code></pre>
+
+<h2>4.2.1 包的概念、导入与可见性</h2>
+<p>包是结构化代码的一种方式：每个程序都由包（通常简称为 pkg）的概念组成，可以使用自身的包或者从其它包中导入内容。</p>
+<p>如同其它一些编程语言中的类库或命名空间的概念，每个 Go 文件都属于且仅属于一个包。一个包可以由许多以 <code>.go</code> 为扩展名的源文件组成，因此文件名和包名一般来说都是不相同的。</p>
+<p>你必须在源文件中非注释的第一行指明这个文件属于哪个包，如：<code>package main</code>。<code>package main</code>表示一个可独立执行的程序，每个 Go 应用程序都包含一个名为 <code>main</code> 的包。</p>
+<p>一个应用程序可以包含不同的包，而且即使你只使用 main 包也不必把所有的代码都写在一个巨大的文件里：你可以用一些较小的文件，并且在每个文件非注释的第一行都使用 <code>package main</code> 来指明这些文件都属于 main 包。如果你打算编译包名不是为 main 的源文件，如 <code>pack1</code>，编译后产生的对象文件将会是 <code>pack1.a</code> 而不是可执行程序。另外要注意的是，所有的包名都应该使用小写字母。</p>
+<p><strong>标准库</strong></p>
+<p>在 Go 的安装文件里包含了一些可以直接使用的包，即标准库。在 Windows 下，标准库的位置在 Go 根目录下的子目录 <code>pkg\windows_386</code> 中；在 Linux 下，标准库在 Go 根目录下的子目录 <code>pkg\linux_amd64</code> 中（如果是安装的是 32 位，则在 <code>linux_386</code> 目录中）。一般情况下，标准包会存放在 <code>$GOROOT/pkg/$GOOS_$GOARCH/</code> 目录下。</p>
+<p>Go 的标准库包含了大量的包（如：fmt，os），但是你也可以创建自己的包（第 8 章）。</p>
+<p>如果想要构建一个程序，则包和包内的文件都必须以正确的顺序进行编译。包的依赖关系决定了其构建顺序。</p>
+<p>属于同一个包的源文件必须全部被一起编译，一个包既是编译时的一个单元，因此根据惯例，每个目录都只包含一个包。</p>
+<p><em>如果对一个包进行更改或重新编译，所有引用了这个包的客户端程序都必须全部重新编译。</em></p>
+<p>Go 中的包模型采用了显式依赖关系的机制来达到快速编译的目的，编译器会从后缀名为 <code>.o</code> 的对象文件（需要且只需要这个文件）中提取传递依赖类型的信息。</p>
+<p>如果 <code>A.go</code> 依赖 <code>B.go</code>，而 <code>B.go</code> 又依赖 <code>C.go</code>：</p>
+<ul>
+<li>编译 <code>C.go</code>, <code>B.go</code>, 然后是 <code>A.go</code>.</li>
+<li>为了编译 <code>A.go</code>, 编译器读取的是 <code>B.o</code> 而不是 <code>C.o</code>.</li>
+</ul>
+<p>这种机制对于编译大型的项目时可以显著地提升编译速度。</p>
+<p><em>每一段代码只会被编译一次</em></p>
+<p>一个 Go 程序是通过 <code>import</code> 关键字将一组包链接在一起。</p>
+<p><code>import “fmt”</code> 告诉 Go 编译器这个程序需要使用 <code>fmt</code> 包（的函数，或其他元素），<code>fmt</code> 包实现了格式化 IO（输入/输出）的函数。包名被封闭在半角双引号 <code>&quot;&quot;</code> 中。如果你打算从已编译的包中导入并加载公开声明的方法，不需要插入已编译包的源代码。</p>
+<p>如果需要多个包，它们可以被分别导入：</p>
+<pre><code>import “fmt”
+import “os”
+</code></pre>
+
+<p>或：</p>
+<pre><code>import “fmt”; import “os”
+</code></pre>
+
+<p>但是还有更短且更优雅的方法（被称为因式分解关键字，该方法同样适用于 const、var 和 type 的声明或定义）：</p>
+<pre><code>import (
+    &quot;fmt&quot;
+    &quot;os&quot;
+)
+</code></pre>
+
+<p>（它甚至还可以更短：<code>import (&quot;fmt&quot;, &quot;os&quot;)</code> 但使用 gofmt 后将会被强制换行）</p>
+<p>当你导入多个包时，导入的顺序会按照字母排序。</p>
+<p>如果包名不是以 <code>.</code> 或 <code>/</code> 开头，如 &quot;fmt&quot; 或者 &quot;container/list&quot; ，则 Go 会在全局文件进行查找；如果包名以 <code>./</code> 开头，则 Go 会在相对目录中查找；如果包名以 <code>/</code> 开头（在 Windows 下也可以这样使用）,则会在系统的绝对路径中查找。</p>
+<p>导入包即等同于包含了这个包的所有的代码对象。</p>
+<p>除了符号 <code>_</code>，包中所有代码对象的标识符必须是唯一的，以避免名称冲突。但是相同的标识符可以在不同的包中使用，因为可以使用包名来区分它们。</p>
+<p>包通过下面这个被编译器强制执行的规则来决定是否将自身的代码对象暴露给外部文件：</p>
+<p><strong>可见性规则</strong></p>
+<p>当标识符（包括常量、变量、类型、函数名、结构字段等等）以一个大写字母开头，如：Group1，那么使用这种形式的标识符的对象就可以被外部包的代码所使用（客户端程序需要先导入这个包），这被称为导出（像面向对象语言中的 public）；标识符如果以小写字母开头，则对包外是不可见的，但是他们在整个包的内部是可见并且可用的（像面向对象语言中的 private ）。</p>
+<p>（大写字母可以使用任何 Unicode 编码的字符，比如希腊文，不仅仅是 ASCII 码中的大写字母）。</p>
+<p>因此，在导入一个外部包后，能够且只能够访问该包中导出的对象。</p>
+<p>假设在包 pack1 中我们有一个变量或函数叫做 Thing（以 T 开头，所以它能够被导出），那么在当前包中导入 pack1 包，Thing 就可以像面向对象语言那样使用点标记来调用：<code>pack1.Thing</code>（pack1 在这里是不可以省略的）</p>
+<p>因此包也可以作为命名空间使用，帮助避免命名冲突（名称冲突）：两个包中的同名变量的区别在于他们的包名，例如 <code>pack1.Thing</code> 和 <code>pack2.Thing</code>。</p>
+<p>你可以通过使用包的别名来解决包名之间的名称冲突，或者说根据你的个人喜好对包名进行重新设置，如：<code>import fm &quot;fmt&quot;</code>。下面的代码展示了如何使用包的别名：</p>
+<p>Example 4.2 <a href="examples/chapter_4/alias.go">alias.go</a></p>
+<pre><code>package main
+import fm &quot;fmt&quot; // alias3
+
+func main() {
+    fm.Println(&quot;hello, world&quot;)
+}
+</code></pre>
+
+<p><strong>注意事项</strong> 如果你导入了一个包却没有使用它，则会在构建程序时引发错误，如 <code>imported and not used: os</code>，这正是遵循了 Go 的格言：“没有不必要的代码！“</p>
+<p><strong>包的分级声明和初始化</strong></p>
+<p>你可以在使用 <code>import</code> 导入包之后定义或声明 0 个或多个常量（const）、变量（var）和类型（type），这些对象的作用域都是全局的（在本包范围内），所以可以被本包中所有的函数调用（如 <a href="examples/chapter_4/gotemplate.go">gotemplate.go</a> 源文件中的 c 和 v），然后声明一个或多个函数（func）。</p>
+<h2>4.2.2 函数</h2>
+<p>这是定义一个函数最简单的格式：<code>func functionName()</code></p>
+<p>你可以在括号<code>()</code>中写入 0 个或多个函数的参数（使用<code>,</code>分离），每个参数的名称后面必须紧跟着该参数的类型。</p>
+<p>main 函数是每一个可执行程序所必须包含的，一般来说都是在启动后第一个执行的函数（ <strong><em>译者注：如果有 init() 函数则会先执行该函数</em></strong> ）。如果你的 main 包的源代码没有包含 main 函数，则会引发构建错误 <code>undefined: main.main</code>。main 函数即没有参数，也没有返回类型（与 C 家族中的其它语言恰好相反）。如果你不小心为 main 函数添加了参数或者返回类型，将会引发构建错误： </p>
+<pre><code>func main must have no arguments and no return values results.
+</code></pre>
+
+<p>在程序开始执行并完成初始化后，第一个调用（程序的入口点）的函数是 <code>main.main()</code>（如：C 语言），该函数一旦返回就表示程序已成功执行并立即退出。</p>
+<p>函数里的代码（函数体）使用大括号 <code>{ }</code> 括起来。</p>
+<p>左大括号 <code>{</code> 必须与方法的声明放在同一行，这是编译器的强制规定，否则你在使用 gofmt 时就会出现 <code>build-error: syntax error: unexpected semicolon or newline before {</code> 这样的错误提示。</p>
+<p>（这是因为编译器会产生 <code>func main() ;</code> 这样的结果，很明显这错误的）
+（ <strong><em>Go 语言虽然看起来不使用分号作为语句的结束，但实际上这一过程是由编译器自动完成，因此才会引发向上面这样的错误</em></strong> ）</p>
+<p>右大括号 <code>}</code> 需要被放在紧接着函数体的下一行。如果你的函数非常简短，你可以写成这样的形式：<code>func Sum(a, b int) int { return a + b }</code></p>
+<p>无论何时，使用<code>{ }</code>的规则都是相同的（如： if 语句等）</p>
+<p>因此示意的通用函数应该像这样：</p>
+<pre><code>func functionName(parameter_list) (return_value_list) {
+    …
+}
+
+parameter_list 的形式为 (param1 type1, param2 type2, …)
+return_value_list 的形式为 (ret1 type1, ret2 type2, …)
+</code></pre>
+
+<p>当函数需要被包外使用，函数的名称必须以大写字母开头；他们遵循Pascal命名规则 PascalCasing，否则遵循砣峰命名规则 camelCasing：首单词字母小写，每一个新词的名称以大写字母开头。</p>
+<p>行：<code>fmt.Println（&quot;hello, workd&quot;）</code>调用 fmt 包的 Println 函数，将输出字符串到控制台，接着换行字符<code>\n</code>。</p>
+<p><code>fmt.Print(&quot;hello, world\n&quot;)</code> 可以得到相同的结果。</p>
+<p>Print 和 Println 方法也支持变量，如：fmt.Println(arr)；他们使用默认的输出格式输出 arr 变量。</p>
+<p>打印一个字符串或变量甚至可以使用预定义的方法 print 和 println：print(&quot;ABC&quot;) 或 println(&quot;ABC&quot;)或者（带一个变量 i）：println(i)</p>
+<p>这些仅仅是用于在调试阶段；部署程序时会将它们替换 fmt 的相关函数。</p>
+<p>当遇到结束符<code>}</code>或返回语句，程序根据方法的调用继续执行。</p>
+<p>程序正常退出代码为 0 （程序以代码 0 退出）；程序以异常中止退出的使用另外一个整数代码如 1 ；这可以用来测试成功执行一个程序。</p>
+<h2>4.2.3 注释</h2>
+<p>Example 4.2 <a href="examples/chapter_4/hello_world2.go">hello_world2.go</a></p>
+<pre><code>package main
+import &quot;fmt&quot; // Package implementing formatted I/O.
+func main() {
+    fmt.Printf(&quot;Καλημέρα κόσμε; or こんにちは 世界\n&quot;)
+}
+</code></pre>
+
+<p>这说明了国际化字符 Καλημέρακόσμε; or こんにちは世界，可以打印，也可以用作注释使用。</p>
+<p>注释肯定不会被编译，但是他们被 godoc使用（参见 § 3.6）</p>
+<p>行注释以<code>//</code>开始，可以在一行的开头或其他地方；这是最经常被使用的。多行注释也叫叫块注释以<code>/*</code>开始，以<code>*/</code>结束，不允许嵌套；这是用来包文档和注释代码。</p>
+<p>每个包应该有包注释，注释块紧接 package 语句，介绍这个包并且提供相关信息，作整体功能介绍。一个包可以分散在多个文件中，但是注释只需要写在其中一个。当一个开发人员需要包的信息，使用 godoc，这些注释将被显示。其后的句子和段落可以给出更多的细节。注释句子应适当的空行。</p>
+<p>例子：</p>
+<pre><code>// Package superman implements methods for saving the world.
+//
+// Experience has shown that a small number of procedures can prove
+// helpful when attempting to save the world.
+package superman
+</code></pre>
+
+<p>几乎每一个顶层的类型，常数，变量，函数和每一个导出名都应该有注释。此注释（称为文档注释）出现在函数前面，如函数 Abcd 以：“Abcd...”开始。</p>
+<p>例子：</p>
+<pre><code>// enterOrbit causes Superman to fly into low Earth orbit, a position
+// that presents several possibilities for planet salvation.
+func enterOrbit() error {
+    ...
+}
+</code></pre>
+
+<p>godoc-tool (参见 §3.6) 收集这些注释并产生一个技术文档。</p>
+<h2>4.2.4 类型</h2>
+<p>变量（如常量）保持数据，数据可以是不同数据类型或者短整型。使用 var 声明的变量自动初始化为它的零值。类型定义了一系列值及操作，可以填充这些值。</p>
+<p>类型可以是基本的（或原生的），如 int，float，bool，string，或结构的（或复合的），如 struct，array，slice，map，channel和insterface，他们只描述了类型的行为。</p>
+<p>结构化的类型没有真正的值时，它的值是 nil，这是这些类型的默认值（在 Objective-C 中是 nil，在 Java 中是 null，在 C 和 C++ 中是NULL或 0 ）。Go 中没有类型继承。</p>
+<p>函数也可以是一个确定的类型，就是使用函数返回一个类型。返回类型写在函数名称和操作参数列表后面，如：</p>
+<pre><code>func FunctionName (a typea, b typeb) typeFunc
+</code></pre>
+
+<p>返回 typeFunc 类型的变量 var 可以在函数的某处声明：</p>
+<pre><code>return var
+</code></pre>
+
+<p>函数可以返回多个变量，并且返回类型使用逗号分隔和小括号<code>( )</code>包围，如：func FunctionName (a typea, b typeb) (t1 type1, t2 type2)</p>
+<p>列子： 函数 Atoi (参见 § 4.7)： func Atoi(s string) (i int, err error)</p>
+<p>返回的形式为： return var1, var2</p>
+<p>这是经常当成功（真/假）执行一个函数或错误信息与返回值一起返回时使用（见下面的多分配）。</p>
+<p>使用 type 关键字定义你自己的类型。然后你可能像定义一个结构体(参见 第10章)，但是也可能定义一个存在的类型的别名，如：</p>
+<pre><code>type IZ int
+</code></pre>
+
+<p>然后我们可以定义变量如：var a IZ = 5</p>
+<p>我们说 a 是 int 的基本类型，这使转型成为可能(参见 § 4.2.6)。</p>
+<p>如果你有多个类型需要定义，可以使用多关键字形式，如：</p>
+<pre><code>type (
+    IZ int
+    FZ float
+    STR string
+)
+</code></pre>
+
+<p>每个值经过编译后必须有类型（编译器必须能够推断出所有值的类型）：</p>
+<p>Go 语言是一种静态类型语言.</p>
+<h2>4.2.5 Go 编程的一般结构</h2>
+<p>下面的程序可以编译，但并没有什么用处，但展示 Go 程序的首选结构。这种结构不是必须的，编译器不关心main()或变量声明在最后，但一个标准的结构使代码从上到下有更好的可读性。</p>
+<p>所有结构将在这接下来的章节进一步解释说，但总体思路是：
+- import 之后: 定义常量，变量和类型
+- 如果需要，然后是 init() 函数： 这是一个特殊的功能，每一个包可以包含并首先执行。
+- 然后是 main() 函数(只在 package main 中)
+- 然后是剩下的函数，首先是类型的方法，或是 main() 函数中先后顺序调用的函数;或方法和功能，按字母顺序的方法和函数排序很高的。</p>
+<p>Example 4.4 <a href="examples/chapter_4/gotemplate.go">gotemplate.go</a></p>
+<pre><code>package main
+import (
+    “fmt”
+)
+const c = “C”
+var v int = 5
+type T struct{}
+func init() { // initialization of package
+}
+func main() {
+    var a int
+    Func1()
+    // ...
+    fmt.Println(a)
+}
+func (t T) Method1() {
+    //...
+}
+func Func1() { // exported function Func1
+    //...
+}
+</code></pre>
+
+<p>Go 程序的执行（程序启动）顺序如下：</p>
+<p>（1）在 package main 中的包全部导入，按标明的顺序：<br />
+（2）如果导入包，（1）被这个包调用（递归），但是一个确定的包只会被导入一次<br />
+（3）然后每一个包（以相反的顺序）中所有的常量和变量都被评估，如果它包含这个函数，将执行 init() 方法。<br />
+（4）最后在 package main 中也一样，然后 main() 函数开始执行。  
+</p>
+<h2>4.2.6 转型</h2>
+<p>如果必要和可能的值可以转型（转换, 包裹）成另一种类型的值。Go 语言没有隐式转换（自动），它必须明确说明，使用一个类似函数调用的语法（这里的类型可以看作是一种函数）：</p>
+<pre><code>valueOfTypeB = typeB(valueOfTypeA)
+类型B的值 = 类型B(类型A的值)
+</code></pre>
+
+<p>例子： </p>
+<pre><code>a := 5.0
+b := int(a)
+</code></pre>
+
+<p>但这只能在定义正确的情况下成功，例如从一个窄型转换到一个宽型（例如：int16 到 int32）。当从一个宽型转换到窄型（例如：int32 到 int16 或 float32 到 int）值丢失（截断）会发生。当无法转型并且编译器检测到了这一点，会给出一个编译错误，否则发生运行时错误。</p>
+<p>变量是相同的基本类型可以相互转型：</p>
+<pre><code>var a IZ = 5
+c := int(a)
+d := IZ(c)
+</code></pre>
+
+<h2>4.2.7 关于 Go 语言命名</h2>
+<p>干净，可读的代码和简洁性是 Go 开发的主要目标。gofmt 命令强化了代码风格。在 Go 语言中命名应该是简短的，简洁的，令人回味的。长名称命名使用大小写混合和下划线，像在 Java 或 Python 代码中那样，往往阻碍了可读性。名称不应包含包名：包名已经足够说明了。一个方法或函数返回的对象，其中函数被作为一个名词的名字命名，不应使用 Get...。若要更改一个对象，请使用“SetName”。如果有必要，Go 语言使用大小写混合 MixedCaps 或 mixedCaps，而不是下划线连接多个名称。</p>
+<h2>链接</h2>
+<ul>
+<li><a href="directory.md">目录</a></li>
+<li>上一部分：<a href="04.1.md">文件名、关键字与标识符</a></li>
+<li>下一节：<a href="04.3.md">常量</a></li>
+</ul>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
