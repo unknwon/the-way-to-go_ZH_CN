@@ -1,10 +1,10 @@
 package main
 
 import (
-   “fmt”
+   "fmt"
 )
 
-const c = “C”
+const c = "C"
 
 var v int = 5
 
