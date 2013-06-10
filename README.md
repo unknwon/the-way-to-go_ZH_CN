@@ -42,4 +42,4 @@ Golang中国：[golang.tc](http://www.golang.tc/)
 ##开始阅读
 [前言](./eBook/preface.md)
 
-想读书的人，不会找不到目录 :)
+想读书的人，不会找不到[目录](eBook/directory.md) :)
