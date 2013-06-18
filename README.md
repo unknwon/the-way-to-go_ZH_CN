@@ -8,7 +8,7 @@
 该翻译版本已获得原作者（Ivo Balbaert）本人授权，并表示支持开源事业的发展！
 
 ##翻译进度
-4.7 [strings 和 strconv 包](eBook/04.7.md)
+4.8 [时间和日期](eBook/04.8.md)
 
 ##支持本书
 如果你喜欢本书《Go入门指南》，你可以参与到本书的翻译或纠正工作中来，具体请联系【无闻 E-mail：joe2010xtmf#163.com】，一同完善本书并帮助壮大 Go 语言在国内的学习群体，给大家提供更好的学习资源。
@@ -38,6 +38,9 @@ Golang中国：[golang.tc](http://www.golang.tc/)
 
 ##授权许可
 除特别声明外，本书中的内容使用 [CC BY-SA 3.0 License](http://creativecommons.org/licenses/by-sa/3.0/)（创作共用 署名-相同方式共享3.0 许可协议）授权，代码遵循 [BSD 3-Clause License](https://github.com/astaxie/build-web-application-with-golang/blob/master/LICENSE.md)（3 项条款的 BSD 许可协议）。
+
+##捐助译者
+如果您觉得本书翻译确实不错，并认为译者的努力值得肯定，可以通过 [此链接](https://me.alipay.com/obahua) 为译者提供小额捐助，以资鼓励。
 
 ##开始阅读
 [前言](./eBook/preface.md)
