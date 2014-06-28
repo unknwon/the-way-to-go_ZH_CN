@@ -45,7 +45,7 @@
 	- 5.4 [for 结构](05.4.md)
 	- 5.5 [Break 与 continue](05.5.md)
 	- 5.6 [标签与 goto](05.6.md)
-- 第6章：函数（function）
+- 第6章：[函数（function）](06.0.md)
 - 第7章：数组（array）与切片（slice）
 - 第8章：Maps
 - 第9章：包（package）

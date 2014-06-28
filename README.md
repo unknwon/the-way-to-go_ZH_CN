@@ -9,7 +9,7 @@
 
 ## 翻译进度
 
-5.5 [Break 与 continue](eBook/05.5.md)
+5.6 [标签与 goto](eBook/05.6.md)
 
 ## 支持本书
 
