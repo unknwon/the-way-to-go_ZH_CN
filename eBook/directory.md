@@ -46,6 +46,8 @@
 	- 5.5 [Break 与 continue](05.5.md)
 	- 5.6 [标签与 goto](05.6.md)
 - 第6章：[函数（function）](06.0.md)
+	- 6.1 [介绍](06.1.md)
+	- 6.2 [参数与返回值](06.2.md)
 - 第7章：数组（array）与切片（slice）
 - 第8章：Maps
 - 第9章：包（package）
