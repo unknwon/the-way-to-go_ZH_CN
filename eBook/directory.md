@@ -68,6 +68,7 @@
 - 第8章：Maps
 	- 8.1 [声明、初始化和 make](08.1.md)
 	- 8.2 [测试键值对是否存在及删除元素](08.2.md)
+	- 8.3 [for-range 的配套用法](08.3.md)
 - 第9章：包（package）
 - 第10章：结构（struct）与方法（method）
 - 第11章：接口（interface）与反射（reflection）
