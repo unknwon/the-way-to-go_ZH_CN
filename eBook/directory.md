@@ -71,6 +71,7 @@
 	- 8.3 [for-range 的配套用法](08.3.md)
 	- 8.4 [map 类型的切片](08.4.md)
 	- 8.5 [map 的排序](08.5.md)
+	- 8.6 [将 map 的键值对调](08.6.md)
 - 第9章：包（package）
 - 第10章：结构（struct）与方法（method）
 - 第11章：接口（interface）与反射（reflection）
