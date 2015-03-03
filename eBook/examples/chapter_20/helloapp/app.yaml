@@ -1,0 +1,8 @@
+application: helloworld
+version: 1
+runtime: go
+api_version: 3
+
+handlers:
+- url: /.*
+  script: _go_app
