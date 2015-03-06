@@ -81,6 +81,7 @@
 	- 9.6 [为自定义包使用 godoc](09.6.md)
 	- 9.7 [使用 go install 安装自定义包](09.7.md)
 	- 9.8 [自定义包的目录结构、go install 和 go test](09.8.md)
+	- 9.9 [通过 git 打包和安装](09.9.md)
 - 第10章：结构（struct）与方法（method）
 - 第11章：接口（interface）与反射（reflection）
 
