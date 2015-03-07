@@ -9,7 +9,7 @@
 
 ## 翻译进度
 
-9.8 [自定义包的目录结构、go install 和 go test](eBook/09.8.md)
+9.9 [通过 git 打包和安装](eBook/09.9.md)
 
 ## 支持本书
 
