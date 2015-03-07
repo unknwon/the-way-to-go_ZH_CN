@@ -21,3 +21,5 @@ _testmain.go
 
 *.exe
 .DS_Store
+the-way-to-go.sublime-project
+the-way-to-go.sublime-workspace
