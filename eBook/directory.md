@@ -83,6 +83,7 @@
 	- 9.8 [自定义包的目录结构、go install 和 go test](09.8.md)
 	- 9.9 [通过 git 打包和安装](09.9.md)
 	- 9.10 [Go 的外部包和项目](09.10.md)
+	- 9.11 [在 Go 程序中使用外部库](09.11.md)
 - 第10章：结构（struct）与方法（method）
 - 第11章：接口（interface）与反射（reflection）
 
