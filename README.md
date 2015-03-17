@@ -28,11 +28,12 @@
 
 - 本书原作者：Ivo Balbaert
 - 参与翻译人员：
-	- [zhanming](https://github.com/zhanming)
+	- [@zhanming](https://github.com/zhanming)
 	- themorecolor
-	- [everyx](https://github.com/everyx)
-	- [chidouhu](https://github.com/chidouhu)
-	- [spawnris](https://github.com/spawnris)
+	- [@everyx](https://github.com/everyx)
+	- [@chidouhu](https://github.com/chidouhu)
+	- [@spawnris](https://github.com/spawnris)
+	- [@domainname](https://github.com/domainname)
 
 ## 授权许可
 
