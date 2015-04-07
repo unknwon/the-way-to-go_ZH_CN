@@ -1,0 +1,1595 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>通过 git 打包和安装 | 《Go入门指南》</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.0.1">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <link rel="next" href="../book/09.10.html" />
+    
+    
+    <link rel="prev" href="../book/09.8.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+    
+
+        
+    <div class="book" data-level="9.9" data-basepath=".." data-revision="Tue Apr 07 2015 15:00:59 GMT+0800 (CST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" >
+            
+            <span><b>1.</b> 第1章：Go 语言的起源，发展与普及</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="book/01.1.html">
+            
+                
+                    <a href="../book/01.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        起源与发展
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="book/01.2.html">
+            
+                
+                    <a href="../book/01.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        语言的主要特性与发展的环境和影响因素
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" >
+            
+            <span><b>2.</b> 第2章：安装与运行环境</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="book/02.1.html">
+            
+                
+                    <a href="../book/02.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        平台与架构
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="book/02.2.html">
+            
+                
+                    <a href="../book/02.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Go 环境变量
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="book/02.3.html">
+            
+                
+                    <a href="../book/02.3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        在 Linux 上安装 Go
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="book/02.4.html">
+            
+                
+                    <a href="../book/02.4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        在 Mac OS X 上安装 Go
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="book/02.5.html">
+            
+                
+                    <a href="../book/02.5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        在 Windows 上安装 Go
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="book/02.6.html">
+            
+                
+                    <a href="../book/02.6.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        安装目录清单
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="book/02.7.html">
+            
+                
+                    <a href="../book/02.7.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        Go 运行时（runtime）
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="book/02.8.html">
+            
+                
+                    <a href="../book/02.8.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        Go 解释器
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="book/03.0.html">
+            
+                
+                    <a href="../book/03.0.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        编辑器、集成开发环境与其它工具
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="book/03.1.html">
+            
+                
+                    <a href="../book/03.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Go 开发环境的基本要求
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="book/03.2.html">
+            
+                
+                    <a href="../book/03.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        编辑器和集成开发环境
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="book/03.3.html">
+            
+                
+                    <a href="../book/03.3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        调试器
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="book/03.4.html">
+            
+                
+                    <a href="../book/03.4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        构建并运行 Go 程序
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="book/03.5.html">
+            
+                
+                    <a href="../book/03.5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        格式化代码
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="book/03.6.html">
+            
+                
+                    <a href="../book/03.6.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        生成代码文档
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="book/03.7.html">
+            
+                
+                    <a href="../book/03.7.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        其它工具
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="book/03.8.html">
+            
+                
+                    <a href="../book/03.8.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.</b>
+                        
+                        Go 性能说明
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="book/03.9.html">
+            
+                
+                    <a href="../book/03.9.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.9.</b>
+                        
+                        与其它语言进行交互
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" >
+            
+            <span><b>4.</b> 第4章：基本结构和基本数据类型</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="book/04.1.html">
+            
+                
+                    <a href="../book/04.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        文件名、关键字与标识符
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="book/04.2.html">
+            
+                
+                    <a href="../book/04.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        Go 程序的基本结构和要素
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="book/04.3.html">
+            
+                
+                    <a href="../book/04.3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        常量
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="book/04.4.html">
+            
+                
+                    <a href="../book/04.4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        变量
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="book/04.5.html">
+            
+                
+                    <a href="../book/04.5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        基本类型和运算符
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="book/04.6.html">
+            
+                
+                    <a href="../book/04.6.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        字符串
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="book/04.7.html">
+            
+                
+                    <a href="../book/04.7.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        strings 和 strconv 包
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="book/04.8.html">
+            
+                
+                    <a href="../book/04.8.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.</b>
+                        
+                        时间和日期
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="book/04.9.html">
+            
+                
+                    <a href="../book/04.9.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.9.</b>
+                        
+                        指针
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="book/05.0.html">
+            
+                
+                    <a href="../book/05.0.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        第5章：控制结构
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="book/05.1.html">
+            
+                
+                    <a href="../book/05.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        if-else 结构
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="book/05.2.html">
+            
+                
+                    <a href="../book/05.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        测试多返回值函数的错误
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="book/05.3.html">
+            
+                
+                    <a href="../book/05.3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        switch 结构
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="book/05.4.html">
+            
+                
+                    <a href="../book/05.4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        for 结构
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="book/05.5.html">
+            
+                
+                    <a href="../book/05.5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        Break 与 continue
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="book/05.6.html">
+            
+                
+                    <a href="../book/05.6.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        标签与 goto
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="book/06.0.html">
+            
+                
+                    <a href="../book/06.0.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        第6章：函数（function）
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="book/06.1.html">
+            
+                
+                    <a href="../book/06.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        介绍
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="book/06.2.html">
+            
+                
+                    <a href="../book/06.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        参数与返回值
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="book/06.3.html">
+            
+                
+                    <a href="../book/06.3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        传递变长参数
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="book/06.4.html">
+            
+                
+                    <a href="../book/06.4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        defer 和追踪
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="book/06.5.html">
+            
+                
+                    <a href="../book/06.5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.5.</b>
+                        
+                        内置函数
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="book/06.6.html">
+            
+                
+                    <a href="../book/06.6.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.6.</b>
+                        
+                        递归函数
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="book/06.7.html">
+            
+                
+                    <a href="../book/06.7.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.7.</b>
+                        
+                        将函数作为参数
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" data-path="book/06.8.html">
+            
+                
+                    <a href="../book/06.8.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.8.</b>
+                        
+                        闭包
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.9" data-path="book/06.9.html">
+            
+                
+                    <a href="../book/06.9.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.9.</b>
+                        
+                        应用闭包：将函数作为返回值
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.10" data-path="book/06.10.html">
+            
+                
+                    <a href="../book/06.10.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.10.</b>
+                        
+                        使用闭包调试
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.11" data-path="book/06.11.html">
+            
+                
+                    <a href="../book/06.11.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.11.</b>
+                        
+                        计算函数执行时间
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.12" data-path="book/06.12.html">
+            
+                
+                    <a href="../book/06.12.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.12.</b>
+                        
+                        通过内存缓存来提升性能
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="book/07.0.html">
+            
+                
+                    <a href="../book/07.0.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        第7章：数组与切片
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="book/07.1.html">
+            
+                
+                    <a href="../book/07.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        声明和初始化
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="book/07.2.html">
+            
+                
+                    <a href="../book/07.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        切片
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="book/07.3.html">
+            
+                
+                    <a href="../book/07.3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        For-range 结构
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="book/07.4.html">
+            
+                
+                    <a href="../book/07.4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.</b>
+                        
+                        切片重组
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="book/07.5.html">
+            
+                
+                    <a href="../book/07.5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.5.</b>
+                        
+                        切片的复制与追加
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="book/07.6.html">
+            
+                
+                    <a href="../book/07.6.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.6.</b>
+                        
+                        字符串、数组和切片的应用
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="book/08.0.html">
+            
+                
+                    <a href="../book/08.0.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        第8章：Maps
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="book/08.1.html">
+            
+                
+                    <a href="../book/08.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                        声明、初始化和 make
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="book/08.2.html">
+            
+                
+                    <a href="../book/08.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                        测试键值对是否存在及删除元素
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="book/08.3.html">
+            
+                
+                    <a href="../book/08.3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.3.</b>
+                        
+                        for-range 的配套用法
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.4" data-path="book/08.4.html">
+            
+                
+                    <a href="../book/08.4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.4.</b>
+                        
+                        map 类型的切片
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.5" data-path="book/08.5.html">
+            
+                
+                    <a href="../book/08.5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.5.</b>
+                        
+                        map 的排序
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.6" data-path="book/08.6.html">
+            
+                
+                    <a href="../book/08.6.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.6.</b>
+                        
+                        将 map 的键值对调
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="book/09.0.html">
+            
+                
+                    <a href="../book/09.0.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        第9章：包（package）
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.1" data-path="book/09.1.html">
+            
+                
+                    <a href="../book/09.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.1.</b>
+                        
+                        标准库概述
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.2" data-path="book/09.2.html">
+            
+                
+                    <a href="../book/09.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.2.</b>
+                        
+                        regexp 包
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.3" data-path="book/09.3.html">
+            
+                
+                    <a href="../book/09.3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.3.</b>
+                        
+                        锁和 sync 包
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4" data-path="book/09.4.html">
+            
+                
+                    <a href="../book/09.4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.4.</b>
+                        
+                        精密计算和 big 包
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.5" data-path="book/09.5.html">
+            
+                
+                    <a href="../book/09.5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.5.</b>
+                        
+                        自定义包和可见性
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.6" data-path="book/09.6.html">
+            
+                
+                    <a href="../book/09.6.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.6.</b>
+                        
+                        为自定义包使用 godoc
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.7" data-path="book/09.7.html">
+            
+                
+                    <a href="../book/09.7.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.7.</b>
+                        
+                        使用 go install 安装自定义包
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8" data-path="book/09.8.html">
+            
+                
+                    <a href="../book/09.8.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.8.</b>
+                        
+                        自定义包的目录结构、go install 和 go test
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="9.9" data-path="book/09.9.html">
+            
+                
+                    <a href="../book/09.9.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.9.</b>
+                        
+                        通过 git 打包和安装
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.10" data-path="book/09.10.html">
+            
+                
+                    <a href="../book/09.10.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.10.</b>
+                        
+                        Go 的外部包和项目
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="book/10.0.html">
+            
+                
+                    <a href="../book/10.0.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                        第10章：结构（struct）与方法（method）
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11" >
+            
+            <span><b>11.</b> 第11章：接口（interface）与反射（reflection）</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12" data-path="book/12.0.html">
+            
+                
+                    <a href="../book/12.0.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                        第12章：读写数据
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13" >
+            
+            <span><b>13.</b> 第13章：错误处理与测试</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="14" >
+            
+            <span><b>14.</b> 第14章：goroutine 与 channel</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="15" >
+            
+            <span><b>15.</b> 第15章：网络、模版与网页应用</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="16" >
+            
+            <span><b>16.</b> 第16章：常见的陷阱与错误</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="17" >
+            
+            <span><b>17.</b> 第17章：模式</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="18" >
+            
+            <span><b>18.</b> 第18章：出于性能考虑的实用代码片段</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="19" >
+            
+            <span><b>19.</b> 第19章：构建一个完整的应用程序</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="20" >
+            
+            <span><b>20.</b> 第20章：Go 语言在 Google App Engine 的使用</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="21" >
+            
+            <span><b>21.</b> 第21章：实际部署案例</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="22" >
+            
+            <span><b>22.</b> 附录</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="22.1" >
+            
+            <span><b>22.1.</b> A 代码引用</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="22.2" >
+            
+            <span><b>22.2.</b> B 有趣的 Go 引用</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="22.3" >
+            
+            <span><b>22.3.</b> C 代码示例列表</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="22.4" >
+            
+            <span><b>22.4.</b> D 书中的包引用</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="22.5" >
+            
+            <span><b>22.5.</b> E 书中的工具引用</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="22.6" >
+            
+            <span><b>22.6.</b> F 常见问题解答</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="22.7" >
+            
+            <span><b>22.7.</b> G 习题答案</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="22.8" >
+            
+            <span><b>22.8.</b> H 参考文献</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >《Go入门指南》</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="9-9-%E9%80%9A%E8%BF%87-git-%E6%89%93%E5%8C%85%E5%92%8C%E5%AE%89%E8%A3%85">9.9 &#x901A;&#x8FC7; git &#x6253;&#x5305;&#x548C;&#x5B89;&#x88C5;</h1>
+<h2 id="9-9-1-%E5%AE%89%E8%A3%85%E5%88%B0-github">9.9.1 &#x5B89;&#x88C5;&#x5230; GitHub</h2>
+<p>&#x4EE5;&#x4E0A;&#x7684;&#x65B9;&#x5F0F;&#x5BF9;&#x4E8E;&#x672C;&#x5730;&#x5305;&#x6765;&#x8BF4;&#x662F;&#x53EF;&#x4EE5;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x5982;&#x4F55;&#x6253;&#x5305;&#x4EE3;&#x7801;&#x5230;&#x5F00;&#x53D1;&#x8005;&#x5708;&#x5B50;&#x5462;&#xFF1F;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x4E91;&#x7AEF;&#x7684;&#x6E90;&#x7801;&#x7684;&#x7248;&#x672C;&#x63A7;&#x5236;&#x7CFB;&#x7EDF;&#xFF0C;&#x6BD4;&#x5982;&#x8457;&#x540D;&#x7684; git&#x3002;</p>
+<p>&#x5728; Linux &#x548C; OS X &#x7684;&#x673A;&#x5668;&#x4E0A; git &#x662F;&#x9ED8;&#x8BA4;&#x5B89;&#x88C5;&#x7684;&#xFF0C;&#x5728; windows &#x4E0A;&#x4F60;&#x5FC5;&#x987B;&#x5148;&#x81EA;&#x884C;&#x5B89;&#x88C5;,&#x53C2;&#x89C1; <a href="http://help.github.com/win-set-up-git/&#x3002;" target="_blank">http://help.github.com/win-set-up-git/&#x3002;</a></p>
+<p>&#x8FD9;&#x91CC;&#x5C06;&#x901A;&#x8FC7;&#x4E3A;&#x7B2C; 9.8 &#x8282;&#x4E2D;&#x7684; uc &#x5305;&#x521B;&#x5EFA;&#x4E00;&#x4E2A; git &#x4ED3;&#x5E93;&#x4F5C;&#x4E3A;&#x6F14;&#x793A;</p>
+<p>&#x8FDB;&#x5165;&#x5230; uc &#x5305;&#x76EE;&#x5F55;&#x4E0B;&#x5E76;&#x521B;&#x5EFA;&#x4E00;&#x4E2A; git &#x4ED3;&#x5E93;&#x5728;&#x91CC;&#x9762;: <code>git init</code>&#x3002;</p>
+<p>&#x4FE1;&#x606F;&#x63D0;&#x793A;: Initialized empty git repository in .../uc</p>
+<p>&#x6BCF;&#x4E00;&#x4E2A; git &#x9879;&#x76EE;&#x90FD;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x5BF9;&#x5305;&#x8FDB;&#x884C;&#x63CF;&#x8FF0;&#x7684; README &#x6587;&#x4EF6;,&#x6240;&#x4EE5;&#x6253;&#x5F00;&#x4F60;&#x7684;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;(gedit,notepad,LiteIde)&#x6DFB;&#x52A0;&#x4E00;&#x4E9B;&#x8BF4;&#x660E;&#x8FDB;&#x53BB;&#x3002;</p>
+<p>&#x7136;&#x540E;&#x6DFB;&#x52A0;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x5230;&#x4ED3;&#x5E93;&#xFF1A;<code>git add README uc.go uc_test.go Makefile</code>
+&#x6807;&#x8BB0;&#x4E3A;&#x7B2C;&#x4E00;&#x4E2A;&#x7248;&#x672C;&#xFF1A;<code>git commit -m &quot;initial rivision&quot;</code></p>
+<p>&#x73B0;&#x5728;&#x5FC5;&#x987B;&#x53BB;&#x767B;&#x5F55; GitHub &#x7F51;&#x7AD9;: <a href="https://github.com" target="_blank">https://github.com</a></p>
+<p>&#x4E5F;&#x8BB8;&#x4F60;&#x8FD8;&#x4E0D;&#x80FD;&#x767B;&#x5F55;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x53BB; <a href="https://github.com/plans" target="_blank">https://github.com/plans</a> &#x6CE8;&#x518C;&#x4E00;&#x4E2A;&#x5F00;&#x6E90;&#x9879;&#x76EE;&#x7684;&#x514D;&#x8D39;&#x5E10;&#x53F7;&#x3002;&#x8F93;&#x5165;&#x6B63;&#x786E;&#x7684;&#x5E10;&#x53F7;&#x5BC6;&#x7801;&#x548C;&#x6709;&#x6548;&#x7684;&#x90AE;&#x7BB1;&#x5730;&#x5740;&#x5E76;&#x8FDB;&#x4E00;&#x6B65;&#x521B;&#x5EFA;&#x7528;&#x6237;&#x3002;&#x7136;&#x540E;&#x4F60;&#x5C06;&#x83B7;&#x5F97;&#x4E00;&#x4E2A; git &#x547D;&#x4EE4;&#x7684;&#x5217;&#x8868;&#x3002;&#x672C;&#x5730;&#x4ED3;&#x5E93;&#x7684;&#x64CD;&#x4F5C;&#x7684;&#x547D;&#x4EE4;&#x5DF2;&#x7ECF;&#x5B8C;&#x6210;&#x3002;&#x4E00;&#x4E2A;&#x4F18;&#x79C0;&#x7684;&#x7CFB;&#x7EDF; <a href="http://help.github.com/" target="_blank">http://help.github.com/</a> &#x5728;&#x4F60;&#x9047;&#x5230;&#x4EFB;&#x4F55;&#x95EE;&#x9898;&#x7684;&#x65F6;&#x5019;&#x5C06;&#x5F15;&#x5BFC;&#x4F60;&#x3002;</p>
+<p>&#x5728;&#x4E91;&#x7AEF;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684; uc &#x4ED3;&#x5E93;;&#x53D1;&#x5E03;&#x7684;&#x6307;&#x4EE4;&#x4E3A;(NNNN &#x66FF;&#x4EE3;&#x7528;&#x6237;&#x540D;):</p>
+<pre><code>git remote add orign git@github.com:NNNN/uc.git  
+git push -u origin master
+</code></pre><p>&#x64CD;&#x4F5C;&#x5B8C;&#x6210;&#x540E;&#x68C0;&#x67E5; GitHub &#x4E0A;&#x7684;&#x5305;&#x9875;&#x9762;: <a href="http://github.com/NNNN/uc" target="_blank">http://github.com/NNNN/uc</a></p>
+<h2 id="9-9-2-%E4%BB%8E-github-%E5%AE%89%E8%A3%85">9.9.2 &#x4ECE; GitHub &#x5B89;&#x88C5;</h2>
+<p>&#x5982;&#x679C;&#x6709;&#x4EBA;&#x60F3;&#x4F60;&#x7684;&#x8FDC;&#x7AEF;&#x9879;&#x76EE;&#x5230;&#x672C;&#x5730;&#x673A;&#x5668;&#xFF0C;&#x6253;&#x5F00;&#x7EC8;&#x7AEF;&#x5E76;&#x6267;&#x884C;&#xFF1A;<code>go install github.com/NNNN/uc</code></p>
+<p>NNNN &#x662F;&#x4F60;&#x5728; GitHub &#x4E0A;&#x7684;&#x7528;&#x6237;&#x540D;&#x3002;</p>
+<p>&#x590D;&#x5236;&#xFF1A;
+-&gt;uc.a&#x5305;&#x5230;&#x76EE;&#x5F55;$GOROOT/PKG/LINUX_AMD64/github.com<br>-&gt;&#x6E90;&#x7801;&#x5230;$GOROOT/src/pkg/github.com/NNNN/uc</p>
+<p>&#x8FD9;&#x6837;&#x73B0;&#x5728;&#x8FD9;&#x53F0;&#x673A;&#x5668;&#x4E0A;&#x7684;&#x5176;&#x4ED6; Go &#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5BFC;&#x5165;&#x8DEF;&#x5F84;&#xFF1A;<code>&quot;github.com/NNNN/uc&quot;</code>&#x4EE3;&#x66FF; <code>&quot;./uc/uc&quot;</code> &#x6765;&#x4F7F;&#x7528;&#x3002;</p>
+<p>&#x4E5F;&#x53EF;&#x4EE5;&#x5C06;&#x5176;&#x7F29;&#x5199;&#x4E3A;&#xFF1A;<code>import uc &quot;github.com/NNNN/uc&quot;</code>&#x3002;</p>
+<p>&#x7136;&#x4FEE;&#x6539; Makefile: &#x5C06; TARG=uc &#x66FF;&#x6362;&#x4E3A; TARG-github.com/NNNN/uc</p>
+<p>Gomake(&#x548C; go install)&#x5C06;&#x901A;&#x8FC7;$GOROOT&#x4E0B;&#x7684;&#x672C;&#x5730;&#x7248;&#x672C;&#x8FDB;&#x884C;&#x5DE5;&#x4F5C;&#x3002;</p>
+<p>&#x7F51;&#x7AD9;&#x548C;&#x7248;&#x672C;&#x63A7;&#x5236;&#x7CFB;&#x7EDF;&#xFF1A;&#x5176;&#x4ED6;&#x7684;&#x9009;&#x62E9;</p>
+<p>&#x4E3B;&#x8981;&#x7F51;&#x7AD9;&#x6709;(&#x62EC;&#x53F7;&#x4E2D;&#x4E3A;&#x7F51;&#x7AD9;&#x6240;&#x4F7F;&#x7528;&#x7684;&#x7248;&#x672C;&#x63A7;&#x5236;&#x7CFB;&#x7EDF;)&#xFF1A;</p>
+<ul>
+<li>bitbucket(hg)</li>
+<li>github(git)</li>
+<li>googlecode(hg/git/svn)</li>
+<li>launchpad(bzr)</li>
+</ul>
+<p>&#x7248;&#x672C;&#x63A7;&#x5236;&#x7CFB;&#x7EDF;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x4F60;&#x719F;&#x6089;&#x7684;&#x6216;&#x8005;&#x672C;&#x5730;&#x4F7F;&#x7528;&#x7684;&#x4EE3;&#x7801;&#x7248;&#x672C;&#x63A7;&#x5236;&#x3002;Go &#x6838;&#x5FC3;&#x4EE3;&#x7801;&#x7684;&#x4ED3;&#x5E93;&#x662F;&#x4F7F;&#x7528; Mercurial(hg) &#x6765;&#x63A7;&#x5236;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x6700;&#x53EF;&#x80FD;&#x4FDD;&#x8BC1;&#x4F60;&#x53EF;&#x4EE5;&#x5F97;&#x5230;&#x5F00;&#x53D1;&#x8005;&#x9879;&#x76EE;&#x4E2D;&#x6700;&#x597D;&#x7684;&#x8F6F;&#x4EF6;&#x3002;Git &#x4E5F;&#x5F88;&#x51FA;&#x540D;&#xFF0C;&#x540C;&#x6837;&#x4E5F;&#x9002;&#x7528;&#x3002;&#x5982;&#x679C;&#x4F60;&#x4ECE;&#x672A;&#x4F7F;&#x7528;&#x8FC7;&#x7684;&#x7248;&#x672C;&#x63A7;&#x5236;&#xFF0C;&#x8FD9;&#x4E9B;&#x7F51;&#x7AD9;&#x6709;&#x4E00;&#x4E9B;&#x5F88;&#x597D;&#x7684;&#x5E2E;&#x52A9;&#x5E76;&#x4E14;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5728;&#x8C37;&#x6B4C;&#x641C;&#x7D22;&quot;{name} tutorial&quot;name&#x4E3A;&#x4F60;&#x60F3;&#x8981;&#x4F7F;&#x7528;&#x7684;&#x7248;&#x672C;&#x63A7;&#x5236;&#x7CFB;&#x7EDF;&#x5F97;&#x5230;&#x8BB8;&#x591A;&#x5F88;&#x597D;&#x7684;&#x6559;&#x7A0B;&#x3002;</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../book/09.8.html" class="navigation navigation-prev " aria-label="Previous page: 自定义包的目录结构、go install 和 go test"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../book/09.10.html" class="navigation navigation-next " aria-label="Next page: Go 的外部包和项目"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

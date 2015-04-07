@@ -1,0 +1,1895 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>基本类型和运算符 | 《Go入门指南》</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.0.1">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <link rel="next" href="../book/04.6.html" />
+    
+    
+    <link rel="prev" href="../book/04.4.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+    
+
+        
+    <div class="book" data-level="4.5" data-basepath=".." data-revision="Tue Apr 07 2015 15:00:59 GMT+0800 (CST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" >
+            
+            <span><b>1.</b> 第1章：Go 语言的起源，发展与普及</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="book/01.1.html">
+            
+                
+                    <a href="../book/01.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        起源与发展
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="book/01.2.html">
+            
+                
+                    <a href="../book/01.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        语言的主要特性与发展的环境和影响因素
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" >
+            
+            <span><b>2.</b> 第2章：安装与运行环境</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="book/02.1.html">
+            
+                
+                    <a href="../book/02.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        平台与架构
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="book/02.2.html">
+            
+                
+                    <a href="../book/02.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Go 环境变量
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="book/02.3.html">
+            
+                
+                    <a href="../book/02.3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        在 Linux 上安装 Go
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="book/02.4.html">
+            
+                
+                    <a href="../book/02.4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        在 Mac OS X 上安装 Go
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="book/02.5.html">
+            
+                
+                    <a href="../book/02.5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        在 Windows 上安装 Go
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="book/02.6.html">
+            
+                
+                    <a href="../book/02.6.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        安装目录清单
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="book/02.7.html">
+            
+                
+                    <a href="../book/02.7.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        Go 运行时（runtime）
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="book/02.8.html">
+            
+                
+                    <a href="../book/02.8.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        Go 解释器
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="book/03.0.html">
+            
+                
+                    <a href="../book/03.0.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        编辑器、集成开发环境与其它工具
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="book/03.1.html">
+            
+                
+                    <a href="../book/03.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Go 开发环境的基本要求
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="book/03.2.html">
+            
+                
+                    <a href="../book/03.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        编辑器和集成开发环境
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="book/03.3.html">
+            
+                
+                    <a href="../book/03.3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        调试器
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="book/03.4.html">
+            
+                
+                    <a href="../book/03.4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        构建并运行 Go 程序
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="book/03.5.html">
+            
+                
+                    <a href="../book/03.5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        格式化代码
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="book/03.6.html">
+            
+                
+                    <a href="../book/03.6.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        生成代码文档
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="book/03.7.html">
+            
+                
+                    <a href="../book/03.7.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        其它工具
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="book/03.8.html">
+            
+                
+                    <a href="../book/03.8.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.</b>
+                        
+                        Go 性能说明
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="book/03.9.html">
+            
+                
+                    <a href="../book/03.9.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.9.</b>
+                        
+                        与其它语言进行交互
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" >
+            
+            <span><b>4.</b> 第4章：基本结构和基本数据类型</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="book/04.1.html">
+            
+                
+                    <a href="../book/04.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        文件名、关键字与标识符
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="book/04.2.html">
+            
+                
+                    <a href="../book/04.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        Go 程序的基本结构和要素
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="book/04.3.html">
+            
+                
+                    <a href="../book/04.3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        常量
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="book/04.4.html">
+            
+                
+                    <a href="../book/04.4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        变量
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.5" data-path="book/04.5.html">
+            
+                
+                    <a href="../book/04.5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        基本类型和运算符
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="book/04.6.html">
+            
+                
+                    <a href="../book/04.6.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        字符串
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="book/04.7.html">
+            
+                
+                    <a href="../book/04.7.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        strings 和 strconv 包
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="book/04.8.html">
+            
+                
+                    <a href="../book/04.8.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.</b>
+                        
+                        时间和日期
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="book/04.9.html">
+            
+                
+                    <a href="../book/04.9.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.9.</b>
+                        
+                        指针
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="book/05.0.html">
+            
+                
+                    <a href="../book/05.0.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        第5章：控制结构
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="book/05.1.html">
+            
+                
+                    <a href="../book/05.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        if-else 结构
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="book/05.2.html">
+            
+                
+                    <a href="../book/05.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        测试多返回值函数的错误
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="book/05.3.html">
+            
+                
+                    <a href="../book/05.3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        switch 结构
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="book/05.4.html">
+            
+                
+                    <a href="../book/05.4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        for 结构
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="book/05.5.html">
+            
+                
+                    <a href="../book/05.5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        Break 与 continue
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="book/05.6.html">
+            
+                
+                    <a href="../book/05.6.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        标签与 goto
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="book/06.0.html">
+            
+                
+                    <a href="../book/06.0.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        第6章：函数（function）
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="book/06.1.html">
+            
+                
+                    <a href="../book/06.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        介绍
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="book/06.2.html">
+            
+                
+                    <a href="../book/06.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        参数与返回值
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="book/06.3.html">
+            
+                
+                    <a href="../book/06.3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        传递变长参数
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="book/06.4.html">
+            
+                
+                    <a href="../book/06.4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        defer 和追踪
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="book/06.5.html">
+            
+                
+                    <a href="../book/06.5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.5.</b>
+                        
+                        内置函数
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="book/06.6.html">
+            
+                
+                    <a href="../book/06.6.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.6.</b>
+                        
+                        递归函数
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="book/06.7.html">
+            
+                
+                    <a href="../book/06.7.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.7.</b>
+                        
+                        将函数作为参数
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" data-path="book/06.8.html">
+            
+                
+                    <a href="../book/06.8.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.8.</b>
+                        
+                        闭包
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.9" data-path="book/06.9.html">
+            
+                
+                    <a href="../book/06.9.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.9.</b>
+                        
+                        应用闭包：将函数作为返回值
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.10" data-path="book/06.10.html">
+            
+                
+                    <a href="../book/06.10.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.10.</b>
+                        
+                        使用闭包调试
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.11" data-path="book/06.11.html">
+            
+                
+                    <a href="../book/06.11.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.11.</b>
+                        
+                        计算函数执行时间
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.12" data-path="book/06.12.html">
+            
+                
+                    <a href="../book/06.12.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.12.</b>
+                        
+                        通过内存缓存来提升性能
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="book/07.0.html">
+            
+                
+                    <a href="../book/07.0.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        第7章：数组与切片
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="book/07.1.html">
+            
+                
+                    <a href="../book/07.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        声明和初始化
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="book/07.2.html">
+            
+                
+                    <a href="../book/07.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        切片
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="book/07.3.html">
+            
+                
+                    <a href="../book/07.3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        For-range 结构
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="book/07.4.html">
+            
+                
+                    <a href="../book/07.4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.</b>
+                        
+                        切片重组
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="book/07.5.html">
+            
+                
+                    <a href="../book/07.5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.5.</b>
+                        
+                        切片的复制与追加
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="book/07.6.html">
+            
+                
+                    <a href="../book/07.6.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.6.</b>
+                        
+                        字符串、数组和切片的应用
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="book/08.0.html">
+            
+                
+                    <a href="../book/08.0.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        第8章：Maps
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="book/08.1.html">
+            
+                
+                    <a href="../book/08.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                        声明、初始化和 make
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="book/08.2.html">
+            
+                
+                    <a href="../book/08.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                        测试键值对是否存在及删除元素
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="book/08.3.html">
+            
+                
+                    <a href="../book/08.3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.3.</b>
+                        
+                        for-range 的配套用法
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.4" data-path="book/08.4.html">
+            
+                
+                    <a href="../book/08.4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.4.</b>
+                        
+                        map 类型的切片
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.5" data-path="book/08.5.html">
+            
+                
+                    <a href="../book/08.5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.5.</b>
+                        
+                        map 的排序
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.6" data-path="book/08.6.html">
+            
+                
+                    <a href="../book/08.6.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.6.</b>
+                        
+                        将 map 的键值对调
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="book/09.0.html">
+            
+                
+                    <a href="../book/09.0.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        第9章：包（package）
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.1" data-path="book/09.1.html">
+            
+                
+                    <a href="../book/09.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.1.</b>
+                        
+                        标准库概述
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.2" data-path="book/09.2.html">
+            
+                
+                    <a href="../book/09.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.2.</b>
+                        
+                        regexp 包
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.3" data-path="book/09.3.html">
+            
+                
+                    <a href="../book/09.3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.3.</b>
+                        
+                        锁和 sync 包
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4" data-path="book/09.4.html">
+            
+                
+                    <a href="../book/09.4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.4.</b>
+                        
+                        精密计算和 big 包
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.5" data-path="book/09.5.html">
+            
+                
+                    <a href="../book/09.5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.5.</b>
+                        
+                        自定义包和可见性
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.6" data-path="book/09.6.html">
+            
+                
+                    <a href="../book/09.6.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.6.</b>
+                        
+                        为自定义包使用 godoc
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.7" data-path="book/09.7.html">
+            
+                
+                    <a href="../book/09.7.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.7.</b>
+                        
+                        使用 go install 安装自定义包
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8" data-path="book/09.8.html">
+            
+                
+                    <a href="../book/09.8.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.8.</b>
+                        
+                        自定义包的目录结构、go install 和 go test
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.9" data-path="book/09.9.html">
+            
+                
+                    <a href="../book/09.9.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.9.</b>
+                        
+                        通过 git 打包和安装
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.10" data-path="book/09.10.html">
+            
+                
+                    <a href="../book/09.10.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.10.</b>
+                        
+                        Go 的外部包和项目
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="book/10.0.html">
+            
+                
+                    <a href="../book/10.0.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                        第10章：结构（struct）与方法（method）
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11" >
+            
+            <span><b>11.</b> 第11章：接口（interface）与反射（reflection）</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12" data-path="book/12.0.html">
+            
+                
+                    <a href="../book/12.0.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                        第12章：读写数据
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13" >
+            
+            <span><b>13.</b> 第13章：错误处理与测试</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="14" >
+            
+            <span><b>14.</b> 第14章：goroutine 与 channel</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="15" >
+            
+            <span><b>15.</b> 第15章：网络、模版与网页应用</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="16" >
+            
+            <span><b>16.</b> 第16章：常见的陷阱与错误</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="17" >
+            
+            <span><b>17.</b> 第17章：模式</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="18" >
+            
+            <span><b>18.</b> 第18章：出于性能考虑的实用代码片段</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="19" >
+            
+            <span><b>19.</b> 第19章：构建一个完整的应用程序</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="20" >
+            
+            <span><b>20.</b> 第20章：Go 语言在 Google App Engine 的使用</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="21" >
+            
+            <span><b>21.</b> 第21章：实际部署案例</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="22" >
+            
+            <span><b>22.</b> 附录</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="22.1" >
+            
+            <span><b>22.1.</b> A 代码引用</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="22.2" >
+            
+            <span><b>22.2.</b> B 有趣的 Go 引用</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="22.3" >
+            
+            <span><b>22.3.</b> C 代码示例列表</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="22.4" >
+            
+            <span><b>22.4.</b> D 书中的包引用</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="22.5" >
+            
+            <span><b>22.5.</b> E 书中的工具引用</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="22.6" >
+            
+            <span><b>22.6.</b> F 常见问题解答</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="22.7" >
+            
+            <span><b>22.7.</b> G 习题答案</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="22.8" >
+            
+            <span><b>22.8.</b> H 参考文献</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >《Go入门指南》</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="4-5-%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B%E5%92%8C%E8%BF%90%E7%AE%97%E7%AC%A6">4.5 &#x57FA;&#x672C;&#x7C7B;&#x578B;&#x548C;&#x8FD0;&#x7B97;&#x7B26;</h1>
+<p>&#x6211;&#x4EEC;&#x5C06;&#x5728;&#x8FD9;&#x4E2A;&#x90E8;&#x5206;&#x8BB2;&#x89E3;&#x6709;&#x5173;&#x5E03;&#x5C14;&#x578B;&#x3001;&#x6570;&#x5B57;&#x578B;&#x548C;&#x5B57;&#x7B26;&#x578B;&#x7684;&#x76F8;&#x5173;&#x77E5;&#x8BC6;&#x3002;</p>
+<p>&#x8868;&#x8FBE;&#x5F0F;&#x662F;&#x4E00;&#x79CD;&#x7279;&#x5B9A;&#x7684;&#x7C7B;&#x578B;&#x7684;&#x503C;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x7531;&#x5176;&#x5B83;&#x7684;&#x503C;&#x4EE5;&#x53CA;&#x8FD0;&#x7B97;&#x7B26;&#x7EC4;&#x5408;&#x800C;&#x6210;&#x3002;&#x6BCF;&#x4E2A;&#x7C7B;&#x578B;&#x90FD;&#x5B9A;&#x4E49;&#x4E86;&#x53EF;&#x4EE5;&#x548C;&#x81EA;&#x5DF1;&#x7ED3;&#x5408;&#x7684;&#x8FD0;&#x7B97;&#x7B26;&#x96C6;&#x5408;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x4F7F;&#x7528;&#x4E86;&#x4E0D;&#x5728;&#x8FD9;&#x4E2A;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x5219;&#x4F1A;&#x5728;&#x7F16;&#x8BD1;&#x65F6;&#x83B7;&#x5F97;&#x7F16;&#x8BD1;&#x9519;&#x8BEF;&#x3002;</p>
+<p>&#x4E00;&#x5143;&#x8FD0;&#x7B97;&#x7B26;&#x53EA;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x4E00;&#x4E2A;&#x503C;&#x7684;&#x64CD;&#x4F5C;&#xFF08;&#x4F5C;&#x4E3A;&#x540E;&#x7F00;&#xFF09;&#xFF0C;&#x800C;&#x4E8C;&#x5143;&#x8FD0;&#x7B97;&#x7B26;&#x5219;&#x53EF;&#x4EE5;&#x548C;&#x4E24;&#x4E2A;&#x503C;&#x6216;&#x8005;&#x64CD;&#x4F5C;&#x6570;&#x7ED3;&#x5408;&#xFF08;&#x4F5C;&#x4E3A;&#x4E2D;&#x7F00;&#xFF09;&#x3002;</p>
+<p>&#x53EA;&#x6709;&#x4E24;&#x4E2A;&#x7C7B;&#x578B;&#x76F8;&#x540C;&#x7684;&#x503C;&#x624D;&#x53EF;&#x4EE5;&#x548C;&#x4E8C;&#x5143;&#x8FD0;&#x7B97;&#x7B26;&#x7ED3;&#x5408;&#xFF0C;&#x53E6;&#x5916;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;Go &#x662F;&#x5F3A;&#x7C7B;&#x578B;&#x8BED;&#x8A00;&#xFF0C;&#x56E0;&#x6B64;&#x4E0D;&#x4F1A;&#x8FDB;&#x884C;&#x9690;&#x5F0F;&#x8F6C;&#x6362;&#xFF0C;&#x4EFB;&#x4F55;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x4E4B;&#x95F4;&#x7684;&#x8F6C;&#x6362;&#x90FD;&#x5FC5;&#x987B;&#x663E;&#x5F0F;&#x8BF4;&#x660E;&#xFF08;&#x7B2C; 4.2 &#x8282;&#xFF09;&#x3002;Go &#x4E0D;&#x5B58;&#x5728;&#x50CF; C &#x548C; Java &#x90A3;&#x6837;&#x7684;&#x8FD0;&#x7B97;&#x7B26;&#x91CD;&#x8F7D;&#xFF0C;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x89E3;&#x6790;&#x987A;&#x5E8F;&#x662F;&#x4ECE;&#x5DE6;&#x81F3;&#x53F3;&#x3002;</p>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x7B2C; 4.5.3 &#x8282;&#x627E;&#x5230;&#x6709;&#x5173;&#x8FD0;&#x7B97;&#x7B26;&#x4F18;&#x5148;&#x7EA7;&#x7684;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#xFF0C;&#x4F18;&#x5148;&#x7EA7;&#x8D8A;&#x9AD8;&#x7684;&#x8FD0;&#x7B97;&#x7B26;&#x5728;&#x6761;&#x4EF6;&#x76F8;&#x540C;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x5C06;&#x88AB;&#x4F18;&#x5148;&#x6267;&#x884C;&#x3002;&#x4F46;&#x662F;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4F7F;&#x7528;&#x62EC;&#x53F7;&#x5C06;&#x5176;&#x4E2D;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x62EC;&#x8D77;&#x6765;&#xFF0C;&#x4EE5;&#x4EBA;&#x4E3A;&#x5730;&#x63D0;&#x5347;&#x67D0;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x8FD0;&#x7B97;&#x4F18;&#x5148;&#x7EA7;&#x3002;</p>
+<h2 id="4-5-1-%E5%B8%83%E5%B0%94%E7%B1%BB%E5%9E%8B-bool">4.5.1 &#x5E03;&#x5C14;&#x7C7B;&#x578B; bool</h2>
+<p>&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;<code>var b bool = true</code>&#x3002;</p>
+<p>&#x5E03;&#x5C14;&#x578B;&#x7684;&#x503C;&#x53EA;&#x53EF;&#x4EE5;&#x662F;&#x5E38;&#x91CF; true &#x6216;&#x8005; false&#x3002;</p>
+<p>&#x4E24;&#x4E2A;&#x7C7B;&#x578B;&#x76F8;&#x540C;&#x7684;&#x503C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x76F8;&#x7B49; <code>==</code> &#x6216;&#x8005;&#x4E0D;&#x7B49; <code>!=</code> &#x8FD0;&#x7B97;&#x7B26;&#x6765;&#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#x5E76;&#x83B7;&#x5F97;&#x4E00;&#x4E2A;&#x5E03;&#x5C14;&#x578B;&#x7684;&#x503C;&#x3002;</p>
+<p>&#x5F53;&#x76F8;&#x7B49;&#x8FD0;&#x7B97;&#x7B26;&#x4E24;&#x8FB9;&#x7684;&#x503C;&#x662F;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#x7684;&#x503C;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x8FD4;&#x56DE; true&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE; false&#xFF0C;&#x5E76;&#x4E14;&#x53EA;&#x6709;&#x5728;&#x4E24;&#x4E2A;&#x7684;&#x503C;&#x7684;&#x7C7B;&#x578B;&#x76F8;&#x540C;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x624D;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x3002;</p>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code>var aVar = 10
+aVar == 5 -&gt; false
+aVar == 10 -&gt; true
+</code></pre><p>&#x5F53;&#x4E0D;&#x7B49;&#x8FD0;&#x7B97;&#x7B26;&#x4E24;&#x8FB9;&#x7684;&#x503C;&#x662F;&#x4E0D;&#x540C;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x8FD4;&#x56DE; true&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE; false&#x3002;</p>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code>var aVar = 10
+aVar != 5 -&gt; true
+aVar != 10 -&gt; false
+</code></pre><p>Go &#x5BF9;&#x4E8E;&#x503C;&#x4E4B;&#x95F4;&#x7684;&#x6BD4;&#x8F83;&#x6709;&#x975E;&#x5E38;&#x4E25;&#x683C;&#x7684;&#x9650;&#x5236;&#xFF0C;&#x53EA;&#x6709;&#x4E24;&#x4E2A;&#x7C7B;&#x578B;&#x76F8;&#x540C;&#x7684;&#x503C;&#x624D;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#xFF0C;&#x5982;&#x679C;&#x503C;&#x7684;&#x7C7B;&#x578B;&#x662F;&#x63A5;&#x53E3;&#xFF08;interface&#xFF0C;&#x7B2C; 11 &#x7AE0;&#xFF09;&#xFF0C;&#x5B83;&#x4EEC;&#x4E5F;&#x5FC5;&#x987B;&#x90FD;&#x5B9E;&#x73B0;&#x4E86;&#x76F8;&#x540C;&#x7684;&#x63A5;&#x53E3;&#x3002;&#x5982;&#x679C;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x503C;&#x662F;&#x5E38;&#x91CF;&#xFF0C;&#x90A3;&#x4E48;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x503C;&#x7684;&#x7C7B;&#x578B;&#x5FC5;&#x987B;&#x548C;&#x8BE5;&#x5E38;&#x91CF;&#x7C7B;&#x578B;&#x76F8;&#x517C;&#x5BB9;&#x7684;&#x3002;&#x5982;&#x679C;&#x4EE5;&#x4E0A;&#x6761;&#x4EF6;&#x90FD;&#x4E0D;&#x6EE1;&#x8DB3;&#xFF0C;&#x5219;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x503C;&#x7684;&#x7C7B;&#x578B;&#x5FC5;&#x987B;&#x5728;&#x88AB;&#x8F6C;&#x6362;&#x4E3A;&#x548C;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x503C;&#x7684;&#x7C7B;&#x578B;&#x76F8;&#x540C;&#x4E4B;&#x540E;&#x624D;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#x3002;</p>
+<p>&#x5E03;&#x5C14;&#x578B;&#x7684;&#x5E38;&#x91CF;&#x548C;&#x53D8;&#x91CF;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x548C;&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;&#x975E; <code>!</code>&#x3001;&#x548C; <code>&amp;&amp;</code>&#x3001;&#x6216; <code>||</code>&#xFF09;&#x7ED3;&#x5408;&#x6765;&#x4EA7;&#x751F;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x8FD9;&#x6837;&#x7684;&#x903B;&#x8F91;&#x8BED;&#x53E5;&#x5C31;&#x5176;&#x672C;&#x8EAB;&#x800C;&#x8A00;&#xFF0C;&#x5E76;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684; Go &#x8BED;&#x53E5;&#x3002;</p>
+<p>&#x903B;&#x8F91;&#x503C;&#x53EF;&#x4EE5;&#x88AB;&#x7528;&#x4E8E;&#x6761;&#x4EF6;&#x7ED3;&#x6784;&#x4E2D;&#x7684;&#x6761;&#x4EF6;&#x8BED;&#x53E5;&#xFF08;&#x7B2C; 5 &#x7AE0;&#xFF09;&#xFF0C;&#x4EE5;&#x4FBF;&#x6D4B;&#x8BD5;&#x67D0;&#x4E2A;&#x6761;&#x4EF6;&#x662F;&#x5426;&#x6EE1;&#x8DB3;&#x3002;&#x53E6;&#x5916;&#xFF0C;&#x548C; <code>&amp;&amp;</code>&#x3001;&#x6216; <code>||</code> &#x4E0E;&#x76F8;&#x7B49; <code>==</code> &#x6216;&#x4E0D;&#x7B49; <code>!=</code> &#x5C5E;&#x4E8E;&#x4E8C;&#x5143;&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x800C;&#x975E; <code>!</code> &#x5C5E;&#x4E8E;&#x4E00;&#x5143;&#x8FD0;&#x7B97;&#x7B26;&#x3002;&#x5728;&#x63A5;&#x4E0B;&#x6765;&#x7684;&#x5185;&#x5BB9;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x4F7F;&#x7528; T &#x6765;&#x4EE3;&#x8868;&#x6761;&#x4EF6;&#x7B26;&#x5408;&#x7684;&#x8BED;&#x53E5;&#xFF0C;&#x7528; F &#x6765;&#x4EE3;&#x8868;&#x6761;&#x4EF6;&#x4E0D;&#x7B26;&#x5408;&#x7684;&#x8BED;&#x53E5;&#x3002;</p>
+<p>Go &#x8BED;&#x8A00;&#x4E2D;&#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;</p>
+<p>&#x975E;&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;<code>!</code></p>
+<pre><code>!T -&gt; false
+!F -&gt; true
+</code></pre><p>&#x975E;&#x8FD0;&#x7B97;&#x7B26;&#x7528;&#x4E8E;&#x53D6;&#x5F97;&#x548C;&#x5E03;&#x5C14;&#x503C;&#x76F8;&#x53CD;&#x7684;&#x7ED3;&#x679C;&#x3002;</p>
+<p>&#x548C;&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;<code>&amp;&amp;</code></p>
+<pre><code>T &amp;&amp; T -&gt; true
+T &amp;&amp; F -&gt; false
+F &amp;&amp; T -&gt; false
+F &amp;&amp; F -&gt; false
+</code></pre><p>&#x53EA;&#x6709;&#x5F53;&#x4E24;&#x8FB9;&#x7684;&#x503C;&#x90FD;&#x4E3A; true &#x7684;&#x65F6;&#x5019;&#xFF0C;&#x548C;&#x8FD0;&#x7B97;&#x7B26;&#x7684;&#x7ED3;&#x679C;&#x624D;&#x662F; true&#x3002;</p>
+<p>&#x6216;&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;<code>||</code></p>
+<pre><code>T || T -&gt; true
+T || F -&gt; true
+F || T -&gt; true
+F || F -&gt; false
+</code></pre><p>&#x53EA;&#x6709;&#x5F53;&#x4E24;&#x8FB9;&#x7684;&#x503C;&#x90FD;&#x4E3A; false &#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6216;&#x8FD0;&#x7B97;&#x7B26;&#x7684;&#x7ED3;&#x679C;&#x624D;&#x662F; false&#xFF0C;&#x5176;&#x4E2D;&#x4EFB;&#x610F;&#x4E00;&#x8FB9;&#x7684;&#x503C;&#x4E3A; true &#x5C31;&#x80FD;&#x591F;&#x4F7F;&#x5F97;&#x8BE5;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x7ED3;&#x679C;&#x4E3A; true&#x3002;</p>
+<p>&#x5728; Go &#x8BED;&#x8A00;&#x4E2D;&#xFF0C;&amp;&amp; &#x548C; || &#x662F;&#x5177;&#x6709;&#x5FEB;&#x6377;&#x6027;&#x8D28;&#x7684;&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x5F53;&#x8FD0;&#x7B97;&#x7B26;&#x5DE6;&#x8FB9;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#x5DF2;&#x7ECF;&#x80FD;&#x591F;&#x51B3;&#x5B9A;&#x6574;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#x7684;&#x65F6;&#x5019;&#xFF08;&amp;&amp; &#x5DE6;&#x8FB9;&#x7684;&#x503C;&#x4E3A; false&#xFF0C;|| &#x5DE6;&#x8FB9;&#x7684;&#x503C;&#x4E3A; true&#xFF09;&#xFF0C;&#x8FD0;&#x7B97;&#x7B26;&#x53F3;&#x8FB9;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x5C06;&#x4E0D;&#x4F1A;&#x88AB;&#x6267;&#x884C;&#x3002;&#x5229;&#x7528;&#x8FD9;&#x4E2A;&#x6027;&#x8D28;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x6709;&#x591A;&#x4E2A;&#x6761;&#x4EF6;&#x5224;&#x65AD;&#xFF0C;&#x5E94;&#x5F53;&#x5C06;&#x8BA1;&#x7B97;&#x8FC7;&#x7A0B;&#x8F83;&#x4E3A;&#x590D;&#x6742;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x653E;&#x5728;&#x8FD0;&#x7B97;&#x7B26;&#x7684;&#x53F3;&#x4FA7;&#x4EE5;&#x51CF;&#x5C11;&#x4E0D;&#x5FC5;&#x8981;&#x7684;&#x8FD0;&#x7B97;&#x3002;</p>
+<p>&#x5229;&#x7528;&#x62EC;&#x53F7;&#x540C;&#x6837;&#x53EF;&#x4EE5;&#x5347;&#x7EA7;&#x67D0;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x8FD0;&#x7B97;&#x4F18;&#x5148;&#x7EA7;&#x3002;</p>
+<p>&#x5728;&#x683C;&#x5F0F;&#x5316;&#x8F93;&#x51FA;&#x65F6;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>%t</code> &#x6765;&#x8868;&#x793A;&#x4F60;&#x8981;&#x8F93;&#x51FA;&#x7684;&#x503C;&#x4E3A;&#x5E03;&#x5C14;&#x578B;&#x3002;</p>
+<p>&#x5E03;&#x5C14;&#x503C;&#xFF08;&#x4EE5;&#x53CA;&#x4EFB;&#x4F55;&#x7ED3;&#x679C;&#x4E3A;&#x5E03;&#x5C14;&#x503C;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#xFF09;&#x6700;&#x5E38;&#x7528;&#x5728;&#x6761;&#x4EF6;&#x7ED3;&#x6784;&#x7684;&#x6761;&#x4EF6;&#x8BED;&#x53E5;&#x4E2D;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;if&#x3001;for &#x548C; switch &#x7ED3;&#x6784;&#xFF08;&#x7B2C; 5 &#x7AE0;&#xFF09;&#x3002;</p>
+<p>&#x5BF9;&#x4E8E;&#x5E03;&#x5C14;&#x503C;&#x7684;&#x597D;&#x7684;&#x547D;&#x540D;&#x80FD;&#x591F;&#x5F88;&#x597D;&#x5730;&#x63D0;&#x5347;&#x4EE3;&#x7801;&#x7684;&#x53EF;&#x8BFB;&#x6027;&#xFF0C;&#x4F8B;&#x5982;&#x4EE5; <code>is</code> &#x6216;&#x8005; <code>Is</code> &#x5F00;&#x5934;&#x7684; <code>isSorted</code>&#x3001;<code>isFinished</code>&#x3001;<code>isVisivle</code>&#xFF0C;&#x4F7F;&#x7528;&#x8FD9;&#x6837;&#x7684;&#x547D;&#x540D;&#x80FD;&#x591F;&#x5728;&#x9605;&#x8BFB;&#x4EE3;&#x7801;&#x7684;&#x83B7;&#x5F97;&#x9605;&#x8BFB;&#x6B63;&#x5E38;&#x8BED;&#x53E5;&#x4E00;&#x6837;&#x7684;&#x826F;&#x597D;&#x4F53;&#x9A8C;&#xFF0C;&#x4F8B;&#x5982;&#x6807;&#x51C6;&#x5E93;&#x4E2D;&#x7684; <code>unicode.IsDigit(ch)</code>&#xFF08;&#x7B2C; 4.5.5 &#x8282;&#xFF09;&#x3002;</p>
+<h2 id="4-5-2-%E6%95%B0%E5%AD%97%E7%B1%BB%E5%9E%8B">4.5.2 &#x6570;&#x5B57;&#x7C7B;&#x578B;</h2>
+<h3 id="4-5-2-1-%E6%95%B4%E5%9E%8B-int-%E5%92%8C%E6%B5%AE%E7%82%B9%E5%9E%8B-float">4.5.2.1 &#x6574;&#x578B; int &#x548C;&#x6D6E;&#x70B9;&#x578B; float</h3>
+<p>Go &#x8BED;&#x8A00;&#x652F;&#x6301;&#x6574;&#x578B;&#x548C;&#x6D6E;&#x70B9;&#x578B;&#x6570;&#x5B57;&#xFF0C;&#x5E76;&#x4E14;&#x539F;&#x751F;&#x652F;&#x6301;&#x590D;&#x6570;&#xFF0C;&#x5176;&#x4E2D;&#x4F4D;&#x7684;&#x8FD0;&#x7B97;&#x91C7;&#x7528;&#x8865;&#x7801;&#xFF08;&#x4E8C;&#x7684;&#x8865;&#x7801;&#xFF0C;&#x8BE6;&#x60C5;&#x53C2;&#x89C1;&#xFF1A;<a href="http://en.wikipedia.org/wiki/Two&apos;s_complement" target="_blank">http://en.wikipedia.org/wiki/Two&apos;s_complement</a>&#xFF09;&#x3002;</p>
+<p>Go &#x4E5F;&#x6709;&#x57FA;&#x4E8E;&#x67B6;&#x6784;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;int&#x3001;uint &#x548C; uintptr&#x3002;</p>
+<p>&#x8FD9;&#x4E9B;&#x7C7B;&#x578B;&#x7684;&#x957F;&#x5EA6;&#x90FD;&#x662F;&#x6839;&#x636E;&#x8FD0;&#x884C;&#x7A0B;&#x5E8F;&#x6240;&#x5728;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7C7B;&#x578B;&#x6240;&#x51B3;&#x5B9A;&#x7684;&#xFF1A;</p>
+<ul>
+<li><code>int</code> &#x548C; <code>uint</code> &#x5728; 32 &#x4F4D;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x4E0A;&#xFF0C;&#x5B83;&#x4EEC;&#x5747;&#x4F7F;&#x7528; 32 &#x4F4D;&#xFF08;4 &#x4E2A;&#x5B57;&#x8282;&#xFF09;&#xFF0C;&#x5728; 64 &#x4F4D;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x4E0A;&#xFF0C;&#x5B83;&#x4EEC;&#x5747;&#x4F7F;&#x7528; 64 &#x4F4D;&#xFF08;8 &#x4E2A;&#x5B57;&#x8282;&#xFF09;&#x3002;</li>
+<li><code>uintptr</code> &#x7684;&#x957F;&#x5EA6;&#x88AB;&#x8BBE;&#x5B9A;&#x4E3A;&#x8DB3;&#x591F;&#x5B58;&#x653E;&#x4E00;&#x4E2A;&#x6307;&#x9488;&#x5373;&#x53EF;&#x3002;</li>
+</ul>
+<p>Go &#x8BED;&#x8A00;&#x4E2D;&#x6CA1;&#x6709; float &#x7C7B;&#x578B;&#x3002;</p>
+<p>&#x4E0E;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x67B6;&#x6784;&#x65E0;&#x5173;&#x7684;&#x7C7B;&#x578B;&#x90FD;&#x6709;&#x56FA;&#x5B9A;&#x7684;&#x5927;&#x5C0F;&#xFF0C;&#x5E76;&#x5728;&#x7C7B;&#x578B;&#x7684;&#x540D;&#x79F0;&#x4E2D;&#x5C31;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#x6765;&#xFF1A;</p>
+<p>&#x6574;&#x6570;&#xFF1A;</p>
+<ul>
+<li>int8&#xFF08;-128 -&gt; 127&#xFF09;</li>
+<li>int16&#xFF08;-32768 -&gt; 32767&#xFF09;</li>
+<li>int32&#xFF08;-2,147,483,648 -&gt; 2,147,483,647&#xFF09;</li>
+<li>int64&#xFF08;-9,223,372,036,854,775,808 -&gt; 9,223,372,036,854,775,807&#xFF09;</li>
+</ul>
+<p>&#x65E0;&#x7B26;&#x53F7;&#x6574;&#x6570;&#xFF1A;</p>
+<ul>
+<li>uint8&#xFF08;0 -&gt; 255&#xFF09;</li>
+<li>uint16&#xFF08;0 -&gt; 65,535&#xFF09;</li>
+<li>uint32&#xFF08;0 -&gt; 4,294,967,295&#xFF09;</li>
+<li>uint64&#xFF08;0 -&gt; 18,446,744,073,709,551,615&#xFF09;</li>
+</ul>
+<p>&#x6D6E;&#x70B9;&#x578B;&#xFF08;IEEE-754 &#x6807;&#x51C6;&#xFF09;&#xFF1A;</p>
+<ul>
+<li>float32&#xFF08;+- 1e-45 -&gt; +- 3.4 * 1e38&#xFF09;</li>
+<li>float64&#xFF08;+- 5 <em> 1e-324 -&gt; 107 </em> 1e308&#xFF09;</li>
+</ul>
+<p>int &#x578B;&#x662F;&#x8BA1;&#x7B97;&#x6700;&#x5FEB;&#x7684;&#x4E00;&#x79CD;&#x7C7B;&#x578B;&#x3002;</p>
+<p>&#x6574;&#x578B;&#x7684;&#x96F6;&#x503C;&#x4E3A; 0&#xFF0C;&#x6D6E;&#x70B9;&#x578B;&#x7684;&#x96F6;&#x503C;&#x4E3A; 0.0&#x3002;</p>
+<p>float32 &#x7CBE;&#x786E;&#x5230;&#x5C0F;&#x6570;&#x70B9;&#x540E; 7 &#x4F4D;&#xFF0C;float64 &#x7CBE;&#x786E;&#x5230;&#x5C0F;&#x6570;&#x70B9;&#x540E; 15 &#x4F4D;&#x3002;&#x7531;&#x4E8E;&#x7CBE;&#x786E;&#x5EA6;&#x7684;&#x7F18;&#x6545;&#xFF0C;&#x4F60;&#x5728;&#x4F7F;&#x7528; <code>==</code> &#x6216;&#x8005; <code>!=</code> &#x6765;&#x6BD4;&#x8F83;&#x6D6E;&#x70B9;&#x6570;&#x65F6;&#x5E94;&#x5F53;&#x975E;&#x5E38;&#x5C0F;&#x5FC3;&#x3002;&#x4F60;&#x6700;&#x597D;&#x5728;&#x6B63;&#x5F0F;&#x4F7F;&#x7528;&#x524D;&#x6D4B;&#x8BD5;&#x5BF9;&#x4E8E;&#x7CBE;&#x786E;&#x5EA6;&#x8981;&#x6C42;&#x8F83;&#x9AD8;&#x7684;&#x8FD0;&#x7B97;&#x3002;</p>
+<p>&#x4F60;&#x5E94;&#x8BE5;&#x5C3D;&#x53EF;&#x80FD;&#x5730;&#x4F7F;&#x7528; float64&#xFF0C;&#x56E0;&#x4E3A; <code>math</code> &#x5305;&#x4E2D;&#x6240;&#x6709;&#x6709;&#x5173;&#x6570;&#x5B66;&#x8FD0;&#x7B97;&#x7684;&#x51FD;&#x6570;&#x90FD;&#x4F1A;&#x8981;&#x6C42;&#x63A5;&#x6536;&#x8FD9;&#x4E2A;&#x7C7B;&#x578B;&#x3002;</p>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x589E;&#x52A0;&#x524D;&#x7F00; 0 &#x6765;&#x8868;&#x793A; 8 &#x8FDB;&#x5236;&#x6570;&#xFF08;&#x5982;&#xFF1A;077&#xFF09;&#xFF0C;&#x589E;&#x52A0;&#x524D;&#x7F00; 0x &#x6765;&#x8868;&#x793A; 16 &#x8FDB;&#x5236;&#x6570;&#xFF08;&#x5982;&#xFF1A;0xFF&#xFF09;&#xFF0C;&#x4EE5;&#x53CA;&#x4F7F;&#x7528; e &#x6765;&#x8868;&#x793A; 10 &#x7684;&#x8FDE;&#x4E58;&#xFF08;&#x5982;&#xFF1A; 1e3 = 1000&#xFF0C;&#x6216;&#x8005; 6.022e23 = 6.022 x 1e23&#xFF09;&#x3002;</p>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>a := uint64(0)</code> &#x6765;&#x540C;&#x65F6;&#x5B8C;&#x6210;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x548C;&#x8D4B;&#x503C;&#x64CD;&#x4F5C;&#xFF0C;&#x8FD9;&#x6837; a &#x7684;&#x7C7B;&#x578B;&#x5C31;&#x662F; uint64&#x3002;</p>
+<p>Go &#x4E2D;&#x4E0D;&#x5141;&#x8BB8;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x4E4B;&#x95F4;&#x7684;&#x6DF7;&#x5408;&#x4F7F;&#x7528;&#xFF0C;&#x4F46;&#x662F;&#x5BF9;&#x4E8E;&#x5E38;&#x91CF;&#x7684;&#x7C7B;&#x578B;&#x9650;&#x5236;&#x975E;&#x5E38;&#x5C11;&#xFF0C;&#x56E0;&#x6B64;&#x5141;&#x8BB8;&#x5E38;&#x91CF;&#x4E4B;&#x95F4;&#x7684;&#x6DF7;&#x5408;&#x4F7F;&#x7528;&#xFF0C;&#x4E0B;&#x9762;&#x8FD9;&#x4E2A;&#x7A0B;&#x5E8F;&#x5F88;&#x597D;&#x5730;&#x89E3;&#x91CA;&#x4E86;&#x8FD9;&#x4E2A;&#x73B0;&#x8C61;&#xFF08;&#x8BE5;&#x7A0B;&#x5E8F;&#x65E0;&#x6CD5;&#x901A;&#x8FC7;&#x7F16;&#x8BD1;&#xFF09;&#xFF1A;</p>
+<p>Example 4.8 <a href="examples/chapter_4/type_mixing.go">type_mixing.go</a></p>
+<pre><code>package main
+
+func main() {
+    var a int
+    var b int32
+    a = 15
+    b = a + a     // &#x7F16;&#x8BD1;&#x9519;&#x8BEF;
+    b = b + 5    // &#x56E0;&#x4E3A; 5 &#x662F;&#x5E38;&#x91CF;&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x7F16;&#x8BD1; 
+}
+</code></pre><p>&#x5982;&#x679C;&#x4F60;&#x5C1D;&#x8BD5;&#x7F16;&#x8BD1;&#x8BE5;&#x7A0B;&#x5E8F;&#xFF0C;&#x5219;&#x5C06;&#x5F97;&#x5230;&#x7F16;&#x8BD1;&#x9519;&#x8BEF; <code>cannot use a + a (type int) as type int32 in assignment</code>&#x3002;</p>
+<p>&#x540C;&#x6837;&#x5730;&#xFF0C;int16 &#x4E5F;&#x4E0D;&#x80FD;&#x591F;&#x88AB;&#x9690;&#x5F0F;&#x8F6C;&#x6362;&#x4E3A; int32&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x8FD9;&#x4E2A;&#x7A0B;&#x5E8F;&#x5C55;&#x793A;&#x4E86;&#x901A;&#x8FC7;&#x663E;&#x793A;&#x8F6C;&#x6362;&#x6765;&#x907F;&#x514D;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF08;&#x7B2C; 4.2 &#x8282;&#xFF09;&#x3002;</p>
+<p>Example 4.9 <a href="examples/chapter_4/casting.go">casting.go</a></p>
+<pre><code>package main
+
+import &#x201C;fmt&#x201D;
+
+func main() {
+    var n int16 = 34
+    var m int32
+    // compiler error: cannot use n (type int16) as type int32 in assignment
+    //m = n
+    m = int32(n)
+
+    fmt.Printf(&#x201C;32 bit int is: %d\n&#x201D;, m)
+    fmt.Printf(&#x201C;16 bit int is: %d\n&#x201D;, n)
+}
+
+// the output is:
+32 bit int is: 34
+16 bit int is: 34
+</code></pre><p><strong>&#x683C;&#x5F0F;&#x5316;&#x8BF4;&#x660E;&#x7B26;</strong></p>
+<p>&#x5728;&#x683C;&#x5F0F;&#x5316;&#x5B57;&#x7B26;&#x4E32;&#x91CC;&#xFF0C;<code>%d</code> &#x7528;&#x4E8E;&#x683C;&#x5F0F;&#x5316;&#x6574;&#x6570;&#xFF08;<code>%x</code> &#x548C; <code>%X</code> &#x7528;&#x4E8E;&#x683C;&#x5F0F;&#x5316; 16 &#x8FDB;&#x5236;&#x8868;&#x793A;&#x7684;&#x6570;&#x5B57;&#xFF09;&#xFF0C;<code>%g</code> &#x7528;&#x4E8E;&#x683C;&#x5F0F;&#x5316;&#x6D6E;&#x70B9;&#x578B;&#xFF08;<code>%f</code> &#x8F93;&#x51FA;&#x6D6E;&#x70B9;&#x6570;&#xFF0C;<code>%e</code> &#x8F93;&#x51FA;&#x79D1;&#x5B66;&#x8BA1;&#x6570;&#x8868;&#x793A;&#x6CD5;&#xFF09;&#xFF0C;<code>%0d</code> &#x7528;&#x4E8E;&#x89C4;&#x5B9A;&#x8F93;&#x51FA;&#x5B9A;&#x957F;&#x7684;&#x6574;&#x6570;&#xFF0C;&#x5176;&#x4E2D;&#x5F00;&#x5934;&#x7684;&#x6570;&#x5B57; 0 &#x662F;&#x5FC5;&#x987B;&#x7684;&#x3002;</p>
+<p><code>%n.mg</code> &#x7528;&#x4E8E;&#x8868;&#x793A;&#x6570;&#x5B57; n &#x5E76;&#x7CBE;&#x786E;&#x5230;&#x5C0F;&#x6570;&#x70B9;&#x540E; m &#x4F4D;&#xFF0C;&#x9664;&#x4E86;&#x4F7F;&#x7528; g &#x4E4B;&#x5916;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; e &#x6216;&#x8005; f&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;&#x4F7F;&#x7528;&#x683C;&#x5F0F;&#x5316;&#x5B57;&#x7B26;&#x4E32; <code>%5.2e</code> &#x6765;&#x8F93;&#x51FA; 3.4 &#x7684;&#x7ED3;&#x679C;&#x4E3A; <code>3.40e+00</code>&#x3002;</p>
+<p><strong>&#x6570;&#x5B57;&#x503C;&#x8F6C;&#x6362;</strong></p>
+<p>&#x5F53;&#x8FDB;&#x884C;&#x7C7B;&#x4F3C; <code>a32bitInt = int32(a32Float)</code> &#x7684;&#x8F6C;&#x6362;&#x65F6;&#xFF0C;&#x5C0F;&#x6570;&#x70B9;&#x540E;&#x7684;&#x6570;&#x5B57;&#x5C06;&#x88AB;&#x4E22;&#x5F03;&#x3002;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E00;&#x822C;&#x53D1;&#x751F;&#x5F53;&#x4ECE;&#x53D6;&#x503C;&#x8303;&#x56F4;&#x8F83;&#x5927;&#x7684;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x4E3A;&#x53D6;&#x503C;&#x8303;&#x56F4;&#x8F83;&#x5C0F;&#x7684;&#x7C7B;&#x578B;&#x65F6;&#xFF0C;&#x6216;&#x8005;&#x4F60;&#x53EF;&#x4EE5;&#x5199;&#x4E00;&#x4E2A;&#x4E13;&#x95E8;&#x7528;&#x4E8E;&#x5904;&#x7406;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x7684;&#x51FD;&#x6570;&#x6765;&#x786E;&#x4FDD;&#x6CA1;&#x6709;&#x53D1;&#x751F;&#x7CBE;&#x5EA6;&#x7684;&#x4E22;&#x5931;&#x3002;&#x4E0B;&#x9762;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x5C55;&#x793A;&#x5982;&#x4F55;&#x5B89;&#x5168;&#x5730;&#x4ECE; int &#x578B;&#x8F6C;&#x6362;&#x4E3A; int8&#xFF1A;</p>
+<pre><code>func Uint8FromInt(n int) (uint8, error) {
+    if 0 &lt;= n &amp;&amp; n &lt;= math.MaxUint8 { // conversion is safe
+        return uint8(n), nil
+    }
+    return 0, fmt.Errorf(&#x201C;%d is out of the uint8 range&#x201D;, n)
+}
+</code></pre><p>&#x6216;&#x8005;&#x5B89;&#x5168;&#x5730;&#x4ECE; float64 &#x8F6C;&#x6362;&#x4E3A; int&#xFF1A;</p>
+<pre><code>func IntFromFloat64(x float64) int {
+    if math.MinInt32 &lt;= x &amp;&amp; x &lt;= math.MaxInt32 { // x lies in the integer range
+        whole, fraction := math.Modf(x)
+        if fraction &gt;= 0.5 {
+            whole++
+        }
+        return int(whole)
+    }
+    panic(fmt.Sprintf(&#x201C;%g is out of the int32 range&#x201D;, x))
+}
+</code></pre><p>&#x4E0D;&#x8FC7;&#x5982;&#x679C;&#x4F60;&#x5B9E;&#x9645;&#x5B58;&#x7684;&#x6570;&#x5B57;&#x8D85;&#x51FA;&#x4F60;&#x8981;&#x8F6C;&#x6362;&#x5230;&#x7684;&#x7C7B;&#x578B;&#x7684;&#x53D6;&#x503C;&#x8303;&#x56F4;&#x7684;&#x8BDD;&#xFF0C;&#x5219;&#x4F1A;&#x5F15;&#x53D1; panic&#xFF08;&#x7B2C; 13.2 &#x8282;&#xFF09;&#x3002;</p>
+<p><strong>&#x95EE;&#x9898; 4.1</strong> int &#x548C; int64 &#x662F;&#x76F8;&#x540C;&#x7684;&#x7C7B;&#x578B;&#x5417;&#xFF1F;</p>
+<h3 id="4-5-2-2-%E5%A4%8D%E6%95%B0">4.5.2.2 &#x590D;&#x6570;</h3>
+<p>Go &#x62E5;&#x6709;&#x4EE5;&#x4E0B;&#x590D;&#x6570;&#x7C7B;&#x578B;&#xFF1A;</p>
+<pre><code>complex64 (32 &#x4F4D;&#x5B9E;&#x6570;&#x548C;&#x865A;&#x6570;)
+complex128 (64 &#x4F4D;&#x5B9E;&#x6570;&#x548C;&#x865A;&#x6570;)
+</code></pre><p>&#x590D;&#x6570;&#x4F7F;&#x7528; <code>re+imI</code> &#x6765;&#x8868;&#x793A;&#xFF0C;&#x5176;&#x4E2D; <code>re</code> &#x4EE3;&#x8868;&#x5B9E;&#x6570;&#x90E8;&#x5206;&#xFF0C;<code>im</code> &#x4EE3;&#x8868;&#x865A;&#x6570;&#x90E8;&#x5206;&#xFF0C;I &#x4EE3;&#x8868;&#x6839;&#x53F7;&#x8D1F; 1&#x3002;</p>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code>var c1 complex64 = 5 + 10i
+fmt.Printf(&#x201C;The value is: %v&#x201D;, c1)
+// &#x8F93;&#x51FA;&#xFF1A; 5 + 10i
+</code></pre><p>&#x5982;&#x679C; <code>re</code> &#x548C; <code>im</code> &#x7684;&#x7C7B;&#x578B;&#x5747;&#x4E3A; float32&#xFF0C;&#x90A3;&#x4E48;&#x7C7B;&#x578B;&#x4E3A; complex64 &#x7684;&#x590D;&#x6570; c &#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;&#x65B9;&#x5F0F;&#x6765;&#x83B7;&#x5F97;&#xFF1A;</p>
+<pre><code>c = complex(re, im)
+</code></pre><p>&#x51FD;&#x6570; <code>real(c)</code> &#x548C; <code>imag(c)</code> &#x53EF;&#x4EE5;&#x5206;&#x522B;&#x83B7;&#x5F97;&#x76F8;&#x5E94;&#x7684;&#x5B9E;&#x6570;&#x548C;&#x865A;&#x6570;&#x90E8;&#x5206;&#x3002;</p>
+<p>&#x5728;&#x4F7F;&#x7528;&#x683C;&#x5F0F;&#x5316;&#x8BF4;&#x660E;&#x7B26;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>%v</code> &#x6765;&#x8868;&#x793A;&#x590D;&#x6570;&#xFF0C;&#x4F46;&#x5F53;&#x4F60;&#x5E0C;&#x671B;&#x53EA;&#x8868;&#x793A;&#x5176;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x90E8;&#x5206;&#x7684;&#x65F6;&#x5019;&#x9700;&#x8981;&#x4F7F;&#x7528; <code>%f</code>&#x3002;</p>
+<p>&#x590D;&#x6570;&#x652F;&#x6301;&#x548C;&#x5176;&#x5B83;&#x6570;&#x5B57;&#x7C7B;&#x578B;&#x4E00;&#x6837;&#x7684;&#x8FD0;&#x7B97;&#x3002;&#x5F53;&#x4F60;&#x4F7F;&#x7528;&#x7B49;&#x53F7; <code>==</code> &#x6216;&#x8005;&#x4E0D;&#x7B49;&#x53F7; <code>!=</code> &#x5BF9;&#x590D;&#x6570;&#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#x8FD0;&#x7B97;&#x65F6;&#xFF0C;&#x6CE8;&#x610F;&#x5BF9;&#x7CBE;&#x786E;&#x5EA6;&#x7684;&#x628A;&#x63E1;&#x3002;<code>cmath</code> &#x5305;&#x4E2D;&#x5305;&#x542B;&#x4E86;&#x4E00;&#x4E9B;&#x64CD;&#x4F5C;&#x590D;&#x6570;&#x7684;&#x516C;&#x5171;&#x65B9;&#x6CD5;&#x3002;&#x5982;&#x679C;&#x4F60;&#x5BF9;&#x5185;&#x5B58;&#x7684;&#x8981;&#x6C42;&#x4E0D;&#x662F;&#x7279;&#x522B;&#x9AD8;&#xFF0C;&#x6700;&#x597D;&#x4F7F;&#x7528; complex128 &#x4F5C;&#x4E3A;&#x8BA1;&#x7B97;&#x7C7B;&#x578B;&#xFF0C;&#x56E0;&#x4E3A;&#x76F8;&#x5173;&#x51FD;&#x6570;&#x90FD;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x7C7B;&#x578B;&#x7684;&#x53C2;&#x6570;&#x3002;</p>
+<h3 id="4-5-2-3-%E4%BD%8D%E8%BF%90%E7%AE%97">4.5.2.3 &#x4F4D;&#x8FD0;&#x7B97;</h3>
+<p>&#x4F4D;&#x8FD0;&#x7B97;&#x53EA;&#x80FD;&#x7528;&#x4E8E;&#x6574;&#x6570;&#x7C7B;&#x578B;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x4E14;&#x9700;&#x5F53;&#x5B83;&#x4EEC;&#x62E5;&#x6709;&#x7B49;&#x957F;&#x4F4D;&#x6A21;&#x5F0F;&#x65F6;&#x3002;</p>
+<p><code>%b</code> &#x662F;&#x7528;&#x4E8E;&#x8868;&#x793A;&#x4F4D;&#x7684;&#x683C;&#x5F0F;&#x5316;&#x6807;&#x8BC6;&#x7B26;&#x3002;</p>
+<p><strong>&#x4E8C;&#x5143;&#x8FD0;&#x7B97;&#x7B26;</strong></p>
+<ul>
+<li><p>&#x6309;&#x4F4D;&#x4E0E; <code>&amp;</code>&#xFF1A;</p>
+<p>  &#x5BF9;&#x5E94;&#x4F4D;&#x7F6E;&#x4E0A;&#x7684;&#x503C;&#x7ECF;&#x8FC7;&#x548C;&#x8FD0;&#x7B97;&#x7ED3;&#x679C;&#xFF0C;&#x5177;&#x4F53;&#x53C2;&#x89C1;&#x548C;&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x7B2C; 4.5.1 &#x8282;&#xFF0C;&#x5E76;&#x5C06; T&#xFF08;true&#xFF09;&#x66FF;&#x6362;&#x4E3A; 1&#xFF0C;&#x5C06; F&#xFF08;false&#xFF09;&#x66FF;&#x6362;&#x4E3A; 0</p>
+<pre><code>  1 &amp; 1 -&gt; 1
+  1 &amp; 0 -&gt; 0
+  0 &amp; 1 -&gt; 0
+  0 &amp; 0 -&gt; 0
+</code></pre></li>
+<li><p>&#x6309;&#x4F4D;&#x6216; <code>|</code>&#xFF1A;</p>
+<p>  &#x5BF9;&#x5E94;&#x4F4D;&#x7F6E;&#x4E0A;&#x7684;&#x503C;&#x7ECF;&#x8FC7;&#x6216;&#x8FD0;&#x7B97;&#x7ED3;&#x679C;&#xFF0C;&#x5177;&#x4F53;&#x53C2;&#x89C1;&#x6216;&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x7B2C; 4.5.1 &#x8282;&#xFF0C;&#x5E76;&#x5C06; T&#xFF08;true&#xFF09;&#x66FF;&#x6362;&#x4E3A; 1&#xFF0C;&#x5C06; F&#xFF08;false&#xFF09;&#x66FF;&#x6362;&#x4E3A; 0</p>
+<pre><code>  1 | 1 -&gt; 1
+  1 | 0 -&gt; 1
+  0 | 1 -&gt; 1
+  0 | 0 -&gt; 0
+</code></pre></li>
+<li><p>&#x6309;&#x4F4D;&#x5F02;&#x6216; <code>^</code>&#xFF1A;</p>
+<p>  &#x5BF9;&#x5E94;&#x4F4D;&#x7F6E;&#x4E0A;&#x7684;&#x503C;&#x6839;&#x636E;&#x4EE5;&#x4E0B;&#x89C4;&#x5219;&#x7EC4;&#x5408;&#xFF1A;</p>
+<pre><code>  1 ^ 1 -&gt; 0
+  1 ^ 0 -&gt; 1
+  0 ^ 1 -&gt; 1
+  0 ^ 0 -&gt; 0
+</code></pre></li>
+<li><p>&#x4F4D;&#x6E05;&#x9664; <code>&amp;^</code>&#xFF1A;&#x5C06;&#x6307;&#x5B9A;&#x4F4D;&#x7F6E;&#x4E0A;&#x7684;&#x503C;&#x8BBE;&#x7F6E;&#x4E3A; 0&#x3002;</p>
+</li>
+</ul>
+<p><strong>&#x4E00;&#x5143;&#x8FD0;&#x7B97;&#x7B26;</strong></p>
+<ul>
+<li><p>&#x6309;&#x4F4D;&#x8865;&#x8DB3; <code>^</code>&#xFF1A;</p>
+<p>  &#x8BE5;&#x8FD0;&#x7B97;&#x7B26;&#x4E0E;&#x5F02;&#x6216;&#x8FD0;&#x7B97;&#x7B26;&#x4E00;&#x540C;&#x4F7F;&#x7528;&#xFF0C;&#x5373; <code>m^x</code>&#xFF0C;&#x5BF9;&#x4E8E;&#x65E0;&#x7B26;&#x53F7; x &#x4F7F;&#x7528;&#x201C;&#x5168;&#x90E8;&#x4F4D;&#x8BBE;&#x7F6E;&#x4E3A; 1&#x201D;&#xFF0C;&#x5BF9;&#x4E8E;&#x6709;&#x7B26;&#x53F7; x &#x65F6;&#x4F7F;&#x7528; <code>m=-1</code>&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code>  ^2 = ^10 = -01 ^ 10 = -11
+</code></pre></li>
+<li><p>&#x4F4D;&#x5DE6;&#x79FB; <code>&lt;&lt;</code>&#xFF1A;</p>
+<ul>
+<li>&#x7528;&#x6CD5;&#xFF1A;<code>bitP &lt;&lt; n</code>&#x3002;</li>
+<li><p><code>bitP</code> &#x7684;&#x4F4D;&#x5411;&#x5DE6;&#x79FB;&#x52A8; n &#x4F4D;&#xFF0C;&#x53F3;&#x4FA7;&#x7A7A;&#x767D;&#x90E8;&#x5206;&#x4F7F;&#x7528; 0 &#x586B;&#x5145;&#xFF1B;&#x5982;&#x679C; n &#x7B49;&#x4E8E; 2&#xFF0C;&#x5219;&#x7ED3;&#x679C;&#x662F; 2 &#x7684;&#x76F8;&#x5E94;&#x500D;&#x6570;&#xFF0C;&#x5373; 2 &#x7684; n &#x6B21;&#x65B9;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code>  1 &lt;&lt; 10 // &#x7B49;&#x4E8E; 1 KB 
+  1 &lt;&lt; 20 // &#x7B49;&#x4E8E; 1 MB 
+  1 &lt;&lt; 30 // &#x7B49;&#x4E8E; 1 GB
+</code></pre></li>
+</ul>
+</li>
+<li><p>&#x4F4D;&#x53F3;&#x79FB; <code>&gt;&gt;</code>&#xFF1A;</p>
+<ul>
+<li>&#x7528;&#x6CD5;&#xFF1A;<code>bitP &gt;&gt; n</code>&#x3002;</li>
+<li><code>bitP</code> &#x7684;&#x4F4D;&#x5411;&#x53F3;&#x79FB;&#x52A8; n &#x4F4D;&#xFF0C;&#x5DE6;&#x4FA7;&#x7A7A;&#x767D;&#x90E8;&#x5206;&#x4F7F;&#x7528; 0 &#x586B;&#x5145;&#xFF1B;&#x5982;&#x679C; n &#x7B49;&#x4E8E; 2&#xFF0C;&#x5219;&#x7ED3;&#x679C;&#x662F;&#x5F53;&#x524D;&#x503C;&#x9664;&#x4EE5; 2 &#x7684; n &#x6B21;&#x65B9;&#x3002;</li>
+</ul>
+</li>
+</ul>
+<p>&#x5F53;&#x5E0C;&#x671B;&#x628A;&#x7ED3;&#x679C;&#x8D4B;&#x503C;&#x7ED9;&#x7B2C;&#x4E00;&#x4E2A;&#x64CD;&#x4F5C;&#x6570;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x7B80;&#x5199;&#x4E3A; <code>a &lt;&lt;= 2</code> &#x6216;&#x8005; <code>b ^= a &amp; 0xffffffff</code>&#x3002;</p>
+<p><strong>&#x4F4D;&#x5DE6;&#x79FB;&#x5E38;&#x89C1;&#x5B9E;&#x73B0;&#x5B58;&#x50A8;&#x5355;&#x4F4D;&#x7684;&#x7528;&#x4F8B;</strong></p>
+<p>&#x4F7F;&#x7528;&#x4F4D;&#x5DE6;&#x79FB;&#x4E0E; iota &#x8BA1;&#x6570;&#x914D;&#x5408;&#x53EF;&#x4F18;&#x96C5;&#x5730;&#x5B9E;&#x73B0;&#x5B58;&#x50A8;&#x5355;&#x4F4D;&#x7684;&#x5E38;&#x91CF;&#x679A;&#x4E3E;&#xFF1A;</p>
+<pre><code>type ByteSize float64
+const (
+    _ = iota // &#x901A;&#x8FC7;&#x8D4B;&#x503C;&#x7ED9;&#x7A7A;&#x767D;&#x6807;&#x8BC6;&#x7B26;&#x6765;&#x5FFD;&#x7565;&#x503C;
+    KB ByteSize = 1&lt;&lt;(10*iota)
+    MB
+    GB
+    TB
+    PB
+    EB
+    ZB
+    YB
+)
+</code></pre><p><strong>&#x5728;&#x901A;&#x8BAF;&#x4E2D;&#x4F7F;&#x7528;&#x4F4D;&#x5DE6;&#x79FB;&#x8868;&#x793A;&#x6807;&#x8BC6;&#x7684;&#x7528;&#x4F8B;</strong></p>
+<pre><code>type BitFlag int
+const (
+    Active BitFlag = 1 &lt;&lt; iota // 1 &lt;&lt; 0 == 1
+    Send // 1 &lt;&lt; 1 == 2
+    Receive // 1 &lt;&lt; 2 == 4
+)
+
+flag := Active | Send // == 3
+</code></pre><h3 id="4-5-2-4-%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6">4.5.2.4 &#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7B26;</h3>
+<p>Go &#x4E2D;&#x62E5;&#x6709;&#x4EE5;&#x4E0B;&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;<code>==</code>&#x3001;<code>!=</code>&#xFF08;&#x7B2C; 4.5.1 &#x8282;&#xFF09;&#x3001;<code>&lt;</code>&#x3001;<code>&lt;=</code>&#x3001;<code>&gt;</code>&#x3001;<code>&gt;=</code>&#x3002;</p>
+<p>&#x5B83;&#x4EEC;&#x4E4B;&#x6240;&#x4EE5;&#x88AB;&#x79F0;&#x4E3A;&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7B26;&#x662F;&#x56E0;&#x4E3A;&#x5B83;&#x4EEC;&#x7684;&#x8FD0;&#x7B97;&#x7ED3;&#x679C;&#x603B;&#x662F;&#x4E3A;&#x5E03;&#x5C14;&#x503C; <code>bool</code>&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code>b3:= 10 &gt; 5 // b3 is true
+</code></pre><h3 id="4-5-2-5-%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97%E7%AC%A6">4.5.2.5 &#x7B97;&#x672F;&#x8FD0;&#x7B97;&#x7B26;</h3>
+<p>&#x5E38;&#x89C1;&#x53EF;&#x7528;&#x4E8E;&#x6574;&#x6570;&#x548C;&#x6D6E;&#x70B9;&#x6570;&#x7684;&#x4E8C;&#x5143;&#x8FD0;&#x7B97;&#x7B26;&#x6709; <code>+</code>&#x3001;<code>-</code>&#x3001;<code>*</code> &#x548C; <code>/</code>&#x3002;</p>
+<p>&#xFF08;&#x76F8;&#x5BF9;&#x4E8E;&#x4E00;&#x822C;&#x89C4;&#x5219;&#x800C;&#x8A00;&#xFF0C;Go &#x5728;&#x8FDB;&#x884C;&#x5B57;&#x7B26;&#x4E32;&#x62FC;&#x63A5;&#x65F6;&#x5141;&#x8BB8;&#x4F7F;&#x7528;&#x5BF9;&#x8FD0;&#x7B97;&#x7B26; <code>+</code> &#x7684;&#x91CD;&#x8F7D;&#xFF0C;&#x4F46; Go &#x672C;&#x8EAB;&#x4E0D;&#x5141;&#x8BB8;&#x5F00;&#x53D1;&#x8005;&#x8FDB;&#x884C;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x8FD0;&#x7B97;&#x7B26;&#x91CD;&#x8F7D;&#xFF09;</p>
+<p><code>/</code> &#x5BF9;&#x4E0E;&#x6574;&#x6570;&#x8FD0;&#x7B97;&#x800C;&#x8A00;&#xFF0C;&#x7ED3;&#x679C;&#x4F9D;&#x65E7;&#x4E3A;&#x6574;&#x6570;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;<code>9 / 4 -&gt; 2</code>&#x3002;</p>
+<p>&#x53D6;&#x4F59;&#x8FD0;&#x7B97;&#x7B26;&#x53EA;&#x80FD;&#x4F5C;&#x7528;&#x4E8E;&#x6574;&#x6570;&#xFF1A;<code>9 % 4 -&gt; 1</code>&#x3002;</p>
+<p>&#x6574;&#x6570;&#x9664;&#x4EE5; 0 &#x53EF;&#x80FD;&#x5BFC;&#x81F4;&#x7A0B;&#x5E8F;&#x5D29;&#x6E83;&#xFF0C;&#x5C06;&#x4F1A;&#x5BFC;&#x81F4;&#x8FD0;&#x884C;&#x65F6;&#x7684;&#x6050;&#x614C;&#x72B6;&#x6001;&#xFF08;&#x5982;&#x679C;&#x9664;&#x4EE5; 0 &#x7684;&#x884C;&#x4E3A;&#x5728;&#x7F16;&#x8BD1;&#x65F6;&#x5C31;&#x80FD;&#x88AB;&#x6355;&#x6349;&#x5230;&#xFF0C;&#x5219;&#x4F1A;&#x5F15;&#x53D1;&#x7F16;&#x8BD1;&#x9519;&#x8BEF;&#xFF09;&#xFF1B;&#x7B2C; 13 &#x7AE0;&#x5C06;&#x4F1A;&#x8BE6;&#x7EC6;&#x8BB2;&#x89E3;&#x5982;&#x4F55;&#x6B63;&#x786E;&#x5730;&#x5904;&#x7406;&#x6B64;&#x7C7B;&#x60C5;&#x51B5;&#x3002;</p>
+<p>&#x6D6E;&#x70B9;&#x6570;&#x9664;&#x4EE5; 0.0 &#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65E0;&#x7A77;&#x5C3D;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x4F7F;&#x7528; <code>+Inf</code> &#x8868;&#x793A;&#x3002;</p>
+<p><strong>&#x7EC3;&#x4E60; 4.4</strong> &#x5C1D;&#x8BD5;&#x7F16;&#x8BD1; <a href="exercises/chapter_4/divby0.go">divby0.go</a>&#x3002;</p>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x5C06;&#x8BED;&#x53E5; <code>b = b + a</code> &#x7B80;&#x5199;&#x4E3A; <code>b+=a</code>&#xFF0C;&#x540C;&#x6837;&#x7684;&#x5199;&#x6CD5;&#x4E5F;&#x53EF;&#x7528;&#x4E8E; <code>-=</code>&#x3001;<code>*=</code>&#x3001;<code>/=</code>&#x3001;<code>%=</code>&#x3002;</p>
+<p>&#x5BF9;&#x4E8E;&#x6574;&#x6570;&#x548C;&#x6D6E;&#x70B9;&#x6570;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E00;&#x5143;&#x8FD0;&#x7B97;&#x7B26; <code>++</code>&#xFF08;&#x9012;&#x589E;&#xFF09;&#x548C; <code>--</code>&#xFF08;&#x9012;&#x51CF;&#xFF09;&#xFF0C;&#x4F46;&#x53EA;&#x80FD;&#x7528;&#x4E8E;&#x540E;&#x7F00;&#xFF1A;</p>
+<pre><code>i++ -&gt; i += 1 -&gt; i = i + 1
+i-- -&gt; i -= 1 -&gt; i = i - 1
+</code></pre><p>&#x540C;&#x65F6;&#xFF0C;&#x5E26;&#x6709; <code>++</code> &#x548C; <code>--</code> &#x7684;&#x53EA;&#x80FD;&#x4F5C;&#x4E3A;&#x8BED;&#x53E5;&#xFF0C;&#x800C;&#x975E;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x56E0;&#x6B64; <code>n = i++</code> &#x8FD9;&#x79CD;&#x5199;&#x6CD5;&#x662F;&#x65E0;&#x6548;&#x7684;&#xFF0C;&#x5176;&#x5B83;&#x50CF; <code>f(i++)</code> &#x6216;&#x8005; <code>a[i]=b[i++]</code> &#x8FD9;&#x4E9B;&#x53EF;&#x4EE5;&#x7528;&#x4E8E; C&#x3001;C++ &#x548C; Java &#x4E2D;&#x7684;&#x5199;&#x6CD5;&#x5728; Go &#x4E2D;&#x4E5F;&#x662F;&#x4E0D;&#x5141;&#x8BB8;&#x7684;&#x3002;</p>
+<p>&#x5728;&#x8FD0;&#x7B97;&#x65F6; <strong>&#x6EA2;&#x51FA;</strong> &#x4E0D;&#x4F1A;&#x4EA7;&#x751F;&#x9519;&#x8BEF;&#xFF0C;Go &#x4F1A;&#x7B80;&#x5355;&#x5730;&#x5C06;&#x8D85;&#x51FA;&#x4F4D;&#x6570;&#x629B;&#x5F03;&#x3002;&#x5982;&#x679C;&#x4F60;&#x9700;&#x8981;&#x8303;&#x56F4;&#x65E0;&#x9650;&#x5927;&#x7684;&#x6574;&#x6570;&#x6216;&#x8005;&#x6709;&#x7406;&#x6570;&#xFF08;&#x610F;&#x5473;&#x7740;&#x53EA;&#x88AB;&#x9650;&#x5236;&#x4E8E;&#x8BA1;&#x7B97;&#x673A;&#x5185;&#x5B58;&#xFF09;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x6807;&#x51C6;&#x5E93;&#x4E2D;&#x7684; <code>big</code> &#x5305;&#xFF0C;&#x8BE5;&#x5305;&#x63D0;&#x4F9B;&#x4E86;&#x7C7B;&#x4F3C; <code>big.Int</code> &#x548C; <code>big.Rat</code> &#x8FD9;&#x6837;&#x7684;&#x7C7B;&#x578B;&#xFF08;&#x7B2C; 9.4 &#x8282;&#xFF09;&#x3002;</p>
+<h3 id="4-5-2-6-%E9%9A%8F%E6%9C%BA%E6%95%B0">4.5.2.6 &#x968F;&#x673A;&#x6570;</h3>
+<p>&#x4E00;&#x4E9B;&#x50CF;&#x6E38;&#x620F;&#x6216;&#x8005;&#x7EDF;&#x8BA1;&#x5B66;&#x7C7B;&#x7684;&#x5E94;&#x7528;&#x9700;&#x8981;&#x7528;&#x5230;&#x968F;&#x673A;&#x6570;&#x3002;<code>rand</code> &#x5305;&#x5B9E;&#x73B0;&#x4E86;&#x4F2A;&#x968F;&#x673A;&#x6570;&#x7684;&#x751F;&#x6210;&#x3002;</p>
+<p>Example 4.10 <a href="examples/chapter_4/random.go">random.go</a> &#x6F14;&#x793A;&#x4E86;&#x5982;&#x4F55;&#x751F;&#x6210; 10 &#x4E2A;&#x975E;&#x8D1F;&#x968F;&#x673A;&#x6570;&#xFF1A;</p>
+<pre><code>package main
+import (
+    &quot;fmt&quot;
+    &quot;math/rand&quot;
+    &quot;time&quot;
+)
+
+func main() {
+    for i := 0; i &lt; 10; i++ {
+        a := rand.Int()
+        fmt.Printf(&quot;%d / &quot;, a)
+    }
+    for i := 0; i &lt; 5; i++ {
+        r := rand.Intn(8)
+        fmt.Printf(&quot;%d / &quot;, r)
+    }
+    fmt.Println()
+    timens := int64(time.Now().Nanosecond())
+    rand.Seed(timens)
+    for i := 0; i &lt; 10; i++ {
+        fmt.Printf(&quot;%2.2f / &quot;, 100*rand.Float32())
+    }
+}
+</code></pre><p>&#x53EF;&#x80FD;&#x7684;&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>816681689 / 1325201247 / 623951027 / 478285186 / 1654146165 /
+1951252986 / 2029250107 / 762911244 / 1372544545 / 591415086 / / 3 / 0 / 6 / 4 / 2 /22.10
+/ 65.77 / 65.89 / 16.85 / 75.56 / 46.90 / 55.24 / 55.95 / 25.58 / 70.61 /
+</code></pre><p>&#x51FD;&#x6570; <code>rand.Float32</code> &#x548C; <code>rand.Float64</code> &#x8FD4;&#x56DE;&#x4ECB;&#x4E8E; [0.0, 1.0) &#x4E4B;&#x95F4;&#x7684;&#x4F2A;&#x968F;&#x673A;&#x6570;&#xFF0C;&#x5176;&#x4E2D;&#x5305;&#x62EC; 0.0 &#x4F46;&#x4E0D;&#x5305;&#x62EC; 1.0&#x3002;&#x51FD;&#x6570; <code>rand.Intn</code> &#x8FD4;&#x56DE;&#x4ECB;&#x4E8E; [0, n) &#x4E4B;&#x95F4;&#x7684;&#x4F2A;&#x968F;&#x673A;&#x6570;&#x3002;</p>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>Seed(value)</code> &#x51FD;&#x6570;&#x6765;&#x63D0;&#x4F9B;&#x4F2A;&#x968F;&#x673A;&#x6570;&#x7684;&#x751F;&#x6210;&#x79CD;&#x5B50;&#xFF0C;&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B;&#x90FD;&#x4F1A;&#x4F7F;&#x7528;&#x5F53;&#x524D;&#x65F6;&#x95F4;&#x7684;&#x7EB3;&#x79D2;&#x7EA7;&#x6570;&#x5B57;&#xFF08;&#x7B2C; 4.8 &#x8282;&#xFF09;&#x3002;</p>
+<h2 id="4-5-3-%E8%BF%90%E7%AE%97%E7%AC%A6%E4%B8%8E%E4%BC%98%E5%85%88%E7%BA%A7">4.5.3 &#x8FD0;&#x7B97;&#x7B26;&#x4E0E;&#x4F18;&#x5148;&#x7EA7;</h2>
+<p>&#x6709;&#x4E9B;&#x8FD0;&#x7B97;&#x7B26;&#x62E5;&#x6709;&#x8F83;&#x9AD8;&#x7684;&#x4F18;&#x5148;&#x7EA7;&#xFF0C;&#x4E8C;&#x5143;&#x8FD0;&#x7B97;&#x7B26;&#x7684;&#x8FD0;&#x7B97;&#x65B9;&#x5411;&#x5747;&#x662F;&#x4ECE;&#x5DE6;&#x81F3;&#x53F3;&#x3002;&#x4E0B;&#x8868;&#x5217;&#x51FA;&#x4E86;&#x6240;&#x6709;&#x8FD0;&#x7B97;&#x7B26;&#x4EE5;&#x53CA;&#x5B83;&#x4EEC;&#x7684;&#x4F18;&#x5148;&#x7EA7;&#xFF0C;&#x7531;&#x4E0A;&#x81F3;&#x4E0B;&#x4EE3;&#x8868;&#x4F18;&#x5148;&#x7EA7;&#x7531;&#x9AD8;&#x5230;&#x4F4E;&#xFF1A;</p>
+<pre><code>&#x4F18;&#x5148;&#x7EA7;     &#x8FD0;&#x7B97;&#x7B26;
+ 7         ^ !
+ 6         * / % &lt;&lt; &gt;&gt; &amp; &amp;^
+ 5         + - | ^
+ 4         == != &lt; &lt;= &gt;= &gt;
+ 3         &lt;-
+ 2         &amp;&amp;
+ 1         ||
+</code></pre><p>&#x5F53;&#x7136;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4F7F;&#x7528;&#x62EC;&#x53F7;&#x6765;&#x4E34;&#x65F6;&#x63D0;&#x5347;&#x67D0;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x6574;&#x4F53;&#x8FD0;&#x7B97;&#x4F18;&#x5148;&#x7EA7;&#x3002;</p>
+<h2 id="4-5-4-%E7%B1%BB%E5%9E%8B%E5%88%AB%E5%90%8D">4.5.4 &#x7C7B;&#x578B;&#x522B;&#x540D;</h2>
+<p>&#x5F53;&#x4F60;&#x5728;&#x4F7F;&#x7528;&#x67D0;&#x4E2A;&#x7C7B;&#x578B;&#x65F6;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x7ED9;&#x5B83;&#x8D77;&#x53E6;&#x4E00;&#x4E2A;&#x540D;&#x5B57;&#xFF0C;&#x7136;&#x540E;&#x4F60;&#x5C31;&#x53EF;&#x4EE5;&#x5728;&#x4F60;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#x4F7F;&#x7528;&#x65B0;&#x7684;&#x540D;&#x5B57;&#xFF08;&#x7528;&#x4E8E;&#x7B80;&#x5316;&#x540D;&#x79F0;&#x6216;&#x89E3;&#x51B3;&#x540D;&#x79F0;&#x51B2;&#x7A81;&#xFF09;&#x3002;</p>
+<p>&#x5728; <code>type TZ int</code> &#x4E2D;&#xFF0C;TZ &#x5C31;&#x662F; int &#x7C7B;&#x578B;&#x7684;&#x65B0;&#x540D;&#x79F0;&#xFF08;&#x7528;&#x4E8E;&#x8868;&#x793A;&#x7A0B;&#x5E8F;&#x4E2D;&#x7684;&#x65F6;&#x533A;&#xFF09;&#xFF0C;&#x7136;&#x540E;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; TZ &#x6765;&#x64CD;&#x4F5C; int &#x7C7B;&#x578B;&#x7684;&#x6570;&#x636E;&#x3002;</p>
+<p>Example 4.11 <a href="examples/chapter_4/type.go">type.go</a></p>
+<pre><code>package main
+import &#x201C;fmt&#x201D;
+
+type TZ int
+
+func main() {
+    var a, b TZ = 3, 4
+    c := a + b
+    fmt.Printf(&#x201C;c has the value: %d&#x201D;, c) // &#x8F93;&#x51FA;&#xFF1A;c has the value: 7
+}
+</code></pre><p>&#x5B9E;&#x9645;&#x4E0A;&#xFF0C;&#x7C7B;&#x578B;&#x522B;&#x540D;&#x5F97;&#x5230;&#x7684;&#x65B0;&#x7C7B;&#x578B;&#x5E76;&#x975E;&#x548C;&#x539F;&#x7C7B;&#x578B;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#xFF0C;&#x65B0;&#x7C7B;&#x578B;&#x4E0D;&#x4F1A;&#x62E5;&#x6709;&#x539F;&#x7C7B;&#x578B;&#x6240;&#x9644;&#x5E26;&#x7684;&#x65B9;&#x6CD5;&#xFF08;&#x7B2C; 10 &#x7AE0;&#xFF09;&#xFF1B;TZ &#x53EF;&#x4EE5;&#x81EA;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x7528;&#x6765;&#x8F93;&#x51FA;&#x66F4;&#x52A0;&#x4EBA;&#x6027;&#x5316;&#x7684;&#x65F6;&#x533A;&#x4FE1;&#x606F;&#x3002;</p>
+<p><strong>&#x7EC3;&#x4E60; 4.5</strong> &#x5B9A;&#x4E49;&#x4E00;&#x4E2A; <code>string</code> &#x7684;&#x7C7B;&#x578B;&#x522B;&#x540D; <code>Rope</code>&#xFF0C;&#x5E76;&#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x8BE5;&#x7C7B;&#x578B;&#x7684;&#x53D8;&#x91CF;&#x3002;</p>
+<h2 id="4-5-5-%E5%AD%97%E7%AC%A6%E7%B1%BB%E5%9E%8B">4.5.5 &#x5B57;&#x7B26;&#x7C7B;&#x578B;</h2>
+<p>&#x4E25;&#x683C;&#x6765;&#x8BF4;&#xFF0C;&#x8FD9;&#x5E76;&#x4E0D;&#x662F; Go &#x8BED;&#x8A00;&#x7684;&#x4E00;&#x4E2A;&#x7C7B;&#x578B;&#xFF0C;&#x5B57;&#x7B26;&#x53EA;&#x662F;&#x6574;&#x6570;&#x7684;&#x7279;&#x6B8A;&#x7528;&#x4F8B;&#x3002;<code>byte</code> &#x7C7B;&#x578B;&#x662F; <code>uint8</code> &#x7684;&#x522B;&#x540D;&#xFF0C;&#x5BF9;&#x4E8E;&#x53EA;&#x5360;&#x7528; 1 &#x4E2A;&#x5B57;&#x8282;&#x7684;&#x4F20;&#x7EDF; ASCII &#x7F16;&#x7801;&#x7684;&#x5B57;&#x7B26;&#x6765;&#x8BF4;&#xFF0C;&#x5B8C;&#x5168;&#x6CA1;&#x6709;&#x95EE;&#x9898;&#x3002;&#x4F8B;&#x5982;&#xFF1A;<code>var ch byte = &apos;A&apos;</code>&#xFF1B;&#x5B57;&#x7B26;&#x4F7F;&#x7528;&#x5355;&#x5F15;&#x53F7;&#x62EC;&#x8D77;&#x6765;&#x3002;</p>
+<p>&#x5728; ASCII &#x7801;&#x8868;&#x4E2D;&#xFF0C;A &#x7684;&#x503C;&#x662F; 65&#xFF0C;&#x800C;&#x4F7F;&#x7528; 16 &#x8FDB;&#x5236;&#x8868;&#x793A;&#x5219;&#x4E3A; 41&#xFF0C;&#x6240;&#x4EE5;&#x4E0B;&#x9762;&#x7684;&#x5199;&#x6CD5;&#x662F;&#x7B49;&#x6548;&#x7684;&#xFF1A;</p>
+<pre><code>var ch byte = 65 &#x6216; var ch byte = &#x2018;\x41&#x2019;
+</code></pre><p>&#xFF08;<code>\x</code> &#x603B;&#x662F;&#x7D27;&#x8DDF;&#x7740;&#x957F;&#x5EA6;&#x4E3A; 2 &#x7684; 16 &#x8FDB;&#x5236;&#x6570;&#xFF09;</p>
+<p>&#x53E6;&#x5916;&#x4E00;&#x79CD;&#x53EF;&#x80FD;&#x7684;&#x5199;&#x6CD5;&#x662F; <code>\</code> &#x540E;&#x9762;&#x7D27;&#x8DDF;&#x7740;&#x957F;&#x5EA6;&#x4E3A; 3 &#x7684;&#x5341;&#x8FDB;&#x5236;&#x6570;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;<code>\377</code>&#x3002;</p>
+<p>&#x4E0D;&#x8FC7; Go &#x540C;&#x6837;&#x652F;&#x6301; Unicode&#xFF08;UTF-8&#xFF09;&#xFF0C;&#x56E0;&#x6B64;&#x5B57;&#x7B26;&#x540C;&#x6837;&#x79F0;&#x4E3A; Unicode &#x4EE3;&#x7801;&#x70B9;&#x6216;&#x8005; runes&#xFF0C;&#x5E76;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x4F7F;&#x7528; int &#x6765;&#x8868;&#x793A;&#x3002;&#x5728;&#x6587;&#x6863;&#x4E2D;&#xFF0C;&#x4E00;&#x822C;&#x4F7F;&#x7528;&#x683C;&#x5F0F; U+hhhh &#x6765;&#x8868;&#x793A;&#xFF0C;&#x5176;&#x4E2D; h &#x8868;&#x793A;&#x4E00;&#x4E2A; 16 &#x8FDB;&#x5236;&#x6570;&#x3002;&#x5176;&#x5B9E; <code>rune</code> &#x4E5F;&#x662F; Go &#x5F53;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x7C7B;&#x578B;&#xFF0C;&#x5E76;&#x4E14;&#x662F; <code>int32</code> &#x7684;&#x522B;&#x540D;&#x3002;</p>
+<p>&#x5728;&#x4E66;&#x5199; Unicode &#x5B57;&#x7B26;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x5728; 16 &#x8FDB;&#x5236;&#x6570;&#x4E4B;&#x524D;&#x52A0;&#x4E0A;&#x524D;&#x7F00; <code>\u</code> &#x6216;&#x8005; <code>\U</code>&#x3002;</p>
+<p>&#x56E0;&#x4E3A; Unicode &#x81F3;&#x5C11;&#x5360;&#x7528; 2 &#x4E2A;&#x5B57;&#x8282;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x4F7F;&#x7528; <code>int16</code> &#x6216;&#x8005; <code>int</code> &#x7C7B;&#x578B;&#x6765;&#x8868;&#x793A;&#x3002;&#x5982;&#x679C;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x5230; 4 &#x5B57;&#x8282;&#xFF0C;&#x5219;&#x4F1A;&#x52A0;&#x4E0A; <code>\U</code> &#x524D;&#x7F00;&#xFF1B;&#x524D;&#x7F00; <code>\u</code> &#x5219;&#x603B;&#x662F;&#x7D27;&#x8DDF;&#x7740;&#x957F;&#x5EA6;&#x4E3A; 4 &#x7684; 16 &#x8FDB;&#x5236;&#x6570;&#xFF0C;&#x524D;&#x7F00; <code>\U</code> &#x7D27;&#x8DDF;&#x7740;&#x957F;&#x5EA6;&#x4E3A; 8 &#x7684; 16 &#x8FDB;&#x5236;&#x6570;&#x3002;</p>
+<p>Example 4.12 <a href="examples/chapter_4/char.go">char.go</a></p>
+<pre><code>var ch int = &#x2018;\u0041&#x2019;
+var ch2 int = &#x2018;\u03B2&#x2019;
+var ch3 int = &#x2018;\U00101234&#x2019;
+fmt.Printf(&#x201C;%d - %d - %d\n&#x201D;, ch, ch2, ch3) // integer
+fmt.Printf(&#x201C;%c - %c - %c\n&#x201D;, ch, ch2, ch3) // character
+fmt.Printf(&#x201C;%X - %X - %X\n&#x201D;, ch, ch2, ch3) // UTF-8 bytes
+fmt.Printf(&#x201C;%U - %U - %U&#x201D;, ch, ch2, ch3) // UTF-8 code point
+</code></pre><p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>65 - 946 - 1053236
+A - &#x3B2; - r
+41 - 3B2 - 101234
+U+0041 - U+03B2 - U+101234
+</code></pre><p>&#x683C;&#x5F0F;&#x5316;&#x8BF4;&#x660E;&#x7B26; <code>%c</code> &#x7528;&#x4E8E;&#x8868;&#x793A;&#x5B57;&#x7B26;&#xFF1B;&#x5F53;&#x548C;&#x5B57;&#x7B26;&#x914D;&#x5408;&#x4F7F;&#x7528;&#x65F6;&#xFF0C;<code>%v</code> &#x6216; <code>%d</code> &#x4F1A;&#x8F93;&#x51FA;&#x7528;&#x4E8E;&#x8868;&#x793A;&#x8BE5;&#x5B57;&#x7B26;&#x7684;&#x6574;&#x6570;&#xFF1B;<code>%U</code> &#x8F93;&#x51FA;&#x683C;&#x5F0F;&#x4E3A; U+hhhh &#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF08;&#x53E6;&#x4E00;&#x4E2A;&#x793A;&#x4F8B;&#x89C1;&#x7B2C; 5.4.4 &#x8282;&#xFF09;&#x3002;</p>
+<p>&#x5305; <code>unicode</code> &#x5305;&#x542B;&#x4E86;&#x4E00;&#x4E9B;&#x9488;&#x5BF9;&#x6D4B;&#x8BD5;&#x5B57;&#x7B26;&#x7684;&#x975E;&#x5E38;&#x6709;&#x7528;&#x7684;&#x51FD;&#x6570;&#xFF08;&#x5176;&#x4E2D; <code>ch</code> &#x4EE3;&#x8868;&#x5B57;&#x7B26;&#xFF09;&#xFF1A;</p>
+<pre><code>&#x5224;&#x65AD;&#x662F;&#x5426;&#x4E3A;&#x5B57;&#x6BCD;&#xFF1A;        unicode.IsLetter(ch)
+&#x5224;&#x65AD;&#x662F;&#x5426;&#x4E3A;&#x6570;&#x5B57;&#xFF1A;       unicode.IsDigit(ch)
+&#x5224;&#x65AD;&#x662F;&#x5426;&#x4E3A;&#x7A7A;&#x767D;&#x7B26;&#x53F7;&#xFF1A;      unicode.IsSpace(ch)
+</code></pre><p>&#x8FD9;&#x4E9B;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5E03;&#x5C14;&#x503C;&#x3002;&#x5305; <code>utf8</code> &#x62E5;&#x6709;&#x66F4;&#x591A;&#x4E0E; rune &#x76F8;&#x5173;&#x7684;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#xFF08; <strong>&#x8BD1;&#x8005;&#x6CE8;&#xFF1A;&#x5173;&#x4E8E;&#x7C7B;&#x578B;&#x7684;&#x76F8;&#x5173;&#x8BB2;&#x89E3;&#xFF0C;&#x53EF;&#x53C2;&#x8003;&#x89C6;&#x9891;&#x6559;&#x7A0B; &#x300A;Go&#x7F16;&#x7A0B;&#x57FA;&#x7840;&#x300B; &#x7B2C; 3 &#x8BFE;&#xFF1A;<a href="https://github.com/Unknwon/go-fundamental-programming/blob/master/lectures/lecture3.md" target="_blank">&#x7C7B;&#x578B;&#x4E0E;&#x53D8;&#x91CF;</a></strong> &#xFF09;</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../book/04.4.html" class="navigation navigation-prev " aria-label="Previous page: 变量"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../book/04.6.html" class="navigation navigation-next " aria-label="Next page: 字符串"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

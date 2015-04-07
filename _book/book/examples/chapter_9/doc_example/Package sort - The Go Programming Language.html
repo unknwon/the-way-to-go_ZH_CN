@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Package sort - The Go Programming Language</title>
+<link rel="stylesheet" href="Package%20sort%20-%20The%20Go%20Programming%20Language_files/all.css" type="text/css" media="all" charset="utf-8">
+<!--[if lt IE 8]>
+<link rel="stylesheet" href="/doc/ie.css" type="text/css">
+<![endif]-->
+<script type="text/javascript" src="Package%20sort%20-%20The%20Go%20Programming%20Language_files/godocs.js"></script>
+</head>
+<body>
+<div id="container">
+  <div id="topnav">
+    <h1 id="title">The Go Programming Language</h1>
+    <div id="nav-main">
+      <ul>
+      <li><a href="http://localhost:6060/">Home</a></li><li><a href="http://localhost:6060/doc/install.html">Getting Started</a></li><li><a href="http://localhost:6060/doc/docs.html">Documentation</a></li><li><a href="http://localhost:6060/doc/contrib.html">Contributing</a></li><li><a href="http://localhost:6060/doc/community.html">Community</a></li>
+      </ul>
+      <div class="quickref">
+        <form method="GET" action="/search">
+        <a href="http://localhost:6060/pkg/doc_example">doc_example</a> <span class="sep">|</span>
+        <a href="http://localhost:6060/pkg/">Packages</a> <span class="sep">|</span>
+        <a href="http://localhost:6060/cmd/">Commands</a> <span class="sep">|</span>
+        <a href="http://localhost:6060/doc/go_spec.html">Specification</a>
+        </form>
+      </div>
+    </div>
+    <a id="logo-box" href="http://localhost:6060/"></a>
+  </div>
+  <div id="content">
+  <!-- Menu is HTML-escaped elsewhere -->
+
+    <h1 id="generatedHeader">Package sort</h1>
+
+  <!-- The Table of Contents is automatically inserted in this <div>.
+       Do not delete this <div>. -->
+  <div id="nav"></div>
+
+  <!-- Content is HTML-escaped elsewhere -->
+  <!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+
+	<!-- PackageName is printed as title by the top-level template -->
+		<p><code>import "doc_example"</code></p>
+	<p>
+Sorting using a general interface:
+</p>
+
+			<p>
+			</p><h4>Package files</h4>
+			<span style="font-size:90%">
+				<a href="http://localhost:6060/doc_example/sort.go">sort.go</a>
+			</span>
+			<p></p>
+			<h2 id="Float64sAreSorted">func <a href="http://localhost:6060/doc_example/sort.go?s=1687:1727#L48">Float64sAreSorted</a></h2>
+			<p><code>func Float64sAreSorted(a []float64) bool</code></p>
+			
+			<h2 id="IntsAreSorted">func <a href="http://localhost:6060/doc_example/sort.go?s=1612:1644#L47">IntsAreSorted</a></h2>
+			<p><code>func IntsAreSorted(a []int) bool</code></p>
+			
+			<h2 id="IsSorted">func <a href="http://localhost:6060/doc_example/sort.go?s=528:562#L15">IsSorted</a></h2>
+			<p><code>func IsSorted(data Interface) bool</code></p>
+			<p>
+Test if data is sorted
+</p>
+
+			<h2 id="Sort">func <a href="http://localhost:6060/doc_example/sort.go?s=351:376#L6">Sort</a></h2>
+			<p><code>func Sort(data Interface)</code></p>
+			<p>
+General sort function
+</p>
+
+			<h2 id="SortFloat64s">func <a href="http://localhost:6060/doc_example/sort.go?s=1495:1525#L44">SortFloat64s</a></h2>
+			<p><code>func SortFloat64s(a []float64)</code></p>
+			
+			<h2 id="SortInts">func <a href="http://localhost:6060/doc_example/sort.go?s=1441:1463#L43">SortInts</a></h2>
+			<p><code>func SortInts(a []int)</code></p>
+			<p>
+Convenience wrappers for common cases
+</p>
+
+			<h2 id="SortStrings">func <a href="http://localhost:6060/doc_example/sort.go?s=1553:1581#L45">SortStrings</a></h2>
+			<p><code>func SortStrings(a []string)</code></p>
+			
+			<h2 id="StringsAreSorted">func <a href="http://localhost:6060/doc_example/sort.go?s=1766:1804#L49">StringsAreSorted</a></h2>
+			<p><code>func StringsAreSorted(a []string) bool</code></p>
+			
+			<h2 id="Float64Array">type <a href="http://localhost:6060/doc_example/sort.go?s=946:973#L32">Float64Array</a></h2>
+			
+			<p></p><pre>type Float64Array []float64</pre><p></p>
+				<h3 id="Float64Array.Len">func (Float64Array) <a href="http://localhost:6060/doc_example/sort.go?s=975:1006#L33">Len</a></h3>
+				<p><code>func (p Float64Array) Len() int</code></p>
+				
+				<h3 id="Float64Array.Less">func (Float64Array) <a href="http://localhost:6060/doc_example/sort.go?s=1036:1077#L34">Less</a></h3>
+				<p><code>func (p Float64Array) Less(i, j int) bool</code></p>
+				
+				<h3 id="Float64Array.Swap">func (Float64Array) <a href="http://localhost:6060/doc_example/sort.go?s=1102:1138#L35">Swap</a></h3>
+				<p><code>func (p Float64Array) Swap(i, j int)</code></p>
+				
+			<h2 id="IntArray">type <a href="http://localhost:6060/doc_example/sort.go?s=735:754#L26">IntArray</a></h2>
+			<p>
+Convenience types for common cases: IntArray
+</p>
+
+			<p></p><pre>type IntArray []int</pre><p></p>
+				<h3 id="IntArray.Len">func (IntArray) <a href="http://localhost:6060/doc_example/sort.go?s=758:785#L28">Len</a></h3>
+				<p><code>func (p IntArray) Len() int</code></p>
+				
+				<h3 id="IntArray.Less">func (IntArray) <a href="http://localhost:6060/doc_example/sort.go?s=815:852#L29">Less</a></h3>
+				<p><code>func (p IntArray) Less(i, j int) bool</code></p>
+				
+				<h3 id="IntArray.Swap">func (IntArray) <a href="http://localhost:6060/doc_example/sort.go?s=877:909#L30">Swap</a></h3>
+				<p><code>func (p IntArray) Swap(i, j int)</code></p>
+				
+			<h2 id="Interface">type <a href="http://localhost:6060/doc_example/sort.go?s=241:321#L1">Interface</a></h2>
+			<p>
+Sorting interface
+</p>
+
+			<p></p><pre>type Interface interface {
+    Len() int
+    Less(i, j int) bool
+    Swap(i, j int)
+}</pre><p></p>
+			<h2 id="StringArray">type <a href="http://localhost:6060/doc_example/sort.go?s=1175:1200#L37">StringArray</a></h2>
+			
+			<p></p><pre>type StringArray []string</pre><p></p>
+				<h3 id="StringArray.Len">func (StringArray) <a href="http://localhost:6060/doc_example/sort.go?s=1202:1232#L38">Len</a></h3>
+				<p><code>func (p StringArray) Len() int</code></p>
+				
+				<h3 id="StringArray.Less">func (StringArray) <a href="http://localhost:6060/doc_example/sort.go?s=1262:1302#L39">Less</a></h3>
+				<p><code>func (p StringArray) Less(i, j int) bool</code></p>
+				
+				<h3 id="StringArray.Swap">func (StringArray) <a href="http://localhost:6060/doc_example/sort.go?s=1327:1362#L40">Swap</a></h3>
+				<p><code>func (p StringArray) Swap(i, j int)</code></p>
+				
+	<h2>Other packages</h2>
+	<p>
+	<a href="http://localhost:6060/pkg/doc_example/?p=main">main</a><br>
+	</p>
+
+  </div>
+  <div id="site-info">
+    <p>Build version release.r58 8731. Except as noted, this content is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</a>.</p>
+  </div>
+</div>
+
+
+</body></html>
