@@ -52,4 +52,4 @@ Go入门指南
 
 [前言](./eBook/preface.md)
 
-想读书的人，不会找不到 [目录](eBook/directory.md) :)
+想读书的人，不会找不到 [目录](SUMMARY.md) :)
