@@ -1,4 +1,4 @@
-﻿# Summary
+# Summary
 
 * [前言](eBook/preface.md)
 * [第1章：Go 语言的起源，发展与普及]()
