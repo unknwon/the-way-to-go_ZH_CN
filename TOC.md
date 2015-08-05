@@ -67,3 +67,5 @@
 		- 8.4 [map 类型的切片](eBook/08.4.md)
 		- 8.5 [map 的排序](eBook/08.5.md)
 		- 8.6 [将 map 的键值对调](eBook/08.6.md)
+	- 第9章：[包（package）](eBook/09.0.md)
+		- 9.1 [标准库概述](eBook/09.1.md)
