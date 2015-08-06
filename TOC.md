@@ -69,3 +69,6 @@
 		- 8.6 [将 map 的键值对调](eBook/08.6.md)
 	- 第9章：[包（package）](eBook/09.0.md)
 		- 9.1 [标准库概述](eBook/09.1.md)
+		- 9.2 [regexp 包](eBook/09.2.md)
+		- 9.3 [锁和 sync 包](eBook/09.3.md)
+		- 9.4 [精密计算和 big 包](eBook/09.4.md)
