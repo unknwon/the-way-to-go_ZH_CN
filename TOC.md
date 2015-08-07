@@ -72,3 +72,4 @@
 		- 9.2 [regexp 包](eBook/09.2.md)
 		- 9.3 [锁和 sync 包](eBook/09.3.md)
 		- 9.4 [精密计算和 big 包](eBook/09.4.md)
+		- 9.5 [自定义包和可见性](eBook/09.5.md)
