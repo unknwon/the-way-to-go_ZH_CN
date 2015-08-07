@@ -73,3 +73,5 @@
 		- 9.3 [锁和 sync 包](eBook/09.3.md)
 		- 9.4 [精密计算和 big 包](eBook/09.4.md)
 		- 9.5 [自定义包和可见性](eBook/09.5.md)
+		- 9.6 [为自定义包使用 godoc](eBook/09.6.md)
+		- 9.7 [使用 go install 安装自定义包](eBook/09.7.md)
