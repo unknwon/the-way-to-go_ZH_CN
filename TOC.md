@@ -75,3 +75,5 @@
 		- 9.5 [自定义包和可见性](eBook/09.5.md)
 		- 9.6 [为自定义包使用 godoc](eBook/09.6.md)
 		- 9.7 [使用 go install 安装自定义包](eBook/09.7.md)
+		- 9.8 [自定义包的目录结构、go install 和 go test](eBook/09.8.md)
+		- 9.9 [通过 Git 打包和安装](eBook/09.9.md)
