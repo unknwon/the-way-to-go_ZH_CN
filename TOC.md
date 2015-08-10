@@ -77,3 +77,5 @@
 		- 9.7 [使用 go install 安装自定义包](eBook/09.7.md)
 		- 9.8 [自定义包的目录结构、go install 和 go test](eBook/09.8.md)
 		- 9.9 [通过 Git 打包和安装](eBook/09.9.md)
+		- 9.10 [Go 的外部包和项目](eBook/09.10.md)
+		- 9.11 [在 Go 程序中使用外部库](eBook/09.11.md)
