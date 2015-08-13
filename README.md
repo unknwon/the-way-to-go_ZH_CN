@@ -34,6 +34,7 @@
 	- [@chidouhu](https://github.com/chidouhu)
 	- [@spawnris](https://github.com/spawnris)
 	- [@domainname](https://github.com/domainname)
+	- [@leisore](https://github.com/leisore)
 
 ## 授权许可
 
