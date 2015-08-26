@@ -93,7 +93,8 @@
     - 10.6 [方法](10.6.md)
     - 10.7 [类型的 String() 方法和格式化描述符](10.7.md)
     - 10.8 [垃圾回收和 SetFinalizer](10.8.md)
-- 第11章：接口（interface）与反射（reflection）
+- 第11章：[接口（interface）与反射（reflection）](11.0.md)）
+    - 11.1 [接口是什么](11.1.md)
 
 ## 第三部分：Go 高级编程
 
