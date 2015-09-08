@@ -88,3 +88,5 @@
 	    - 10.6 [方法](eBook/10.6.md)
 	    - 10.7 [类型的 String() 方法和格式化描述符](eBook/10.7.md)
 	    - 10.8 [垃圾回收和 SetFinalizer](eBook/10.8.md)
+	- 第11章：[接口（interface）与反射（reflection）](eBook/11.0.md)
+	    - 11.1 [接口是什么](eBook/11.1.md)
