@@ -90,3 +90,5 @@
 	    - 10.8 [垃圾回收和 SetFinalizer](eBook/10.8.md)
 	- 第11章：[接口（interface）与反射（reflection）](eBook/11.0.md)
 	    - 11.1 [接口是什么](eBook/11.1.md)
+	    - 11.2 [接口嵌套接口](eBook/11.2.md)
+	    - 11.3 [类型断言：如何检测和转换接口变量的类型](eBook/11.3.md)
