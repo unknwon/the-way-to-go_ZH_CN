@@ -9,7 +9,7 @@
 
 ## 翻译进度
 
-9.11 [在 Go 程序中使用外部库](eBook/09.11.md)
+11.9 [空接口](eBook/11.9.md)
 
 ## 支持本书
 
@@ -34,6 +34,7 @@
 	- [@chidouhu](https://github.com/chidouhu)
 	- [@spawnris](https://github.com/spawnris)
 	- [@domainname](https://github.com/domainname)
+	- [@leisore](https://github.com/leisore)
 
 ## 授权许可
 
