@@ -9,13 +9,14 @@
 本书的主要译者是 [@无闻Unknwon](http://www.weibo.com/Obahua)，是一名 Go 语言爱好者和传播者，目前是 [Go Walker](https://gowalker.org)、Gopm、[Gogs](http://gogs.io) 和 [Macaron](https://github.com/Unknwon/macaron) 创始人，极客学院签约讲师。
 
 目前已由多位 Go 语言爱好者共同提交翻译内容，主要包括：
-	- [@zhanming](https://github.com/zhanming)
-	- themorecolor
-	- [@everyx](https://github.com/everyx)
-	- [@chidouhu](https://github.com/chidouhu)
-	- [@spawnris](https://github.com/spawnris)
-	- [@domainname](https://github.com/domainname)
-	- [@leisore](https://github.com/leisore)
+
+- [@zhanming](https://github.com/zhanming)
+- themorecolor
+- [@everyx](https://github.com/everyx)
+- [@chidouhu](https://github.com/chidouhu)
+- [@spawnris](https://github.com/spawnris)
+- [@domainname](https://github.com/domainname)
+- [@leisore](https://github.com/leisore)
 
 ## 适用人群
 
