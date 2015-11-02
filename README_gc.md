@@ -17,6 +17,7 @@
 - [@spawnris](https://github.com/spawnris)
 - [@domainname](https://github.com/domainname)
 - [@leisore](https://github.com/leisore)
+- [@dake](https://github.com/dake)
 
 ## 适用人群
 
