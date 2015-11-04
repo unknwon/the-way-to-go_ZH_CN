@@ -23,3 +23,5 @@ _testmain.go
 .DS_Store
 the-way-to-go.sublime-project
 the-way-to-go.sublime-workspace
+
+*.pdf
