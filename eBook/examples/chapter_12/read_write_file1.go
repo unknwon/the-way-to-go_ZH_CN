@@ -14,7 +14,7 @@ func main() {
 		panic(err.Error())
 	}
 	fmt.Printf("%s\n", string(buf))
-	err = ioutil.WriteFile(outputFile, buf, 0x644)
+	err = ioutil.WriteFile(outputFile, buf, 0644) // oct, not hex
 	if err != nil {
 		panic(err.Error())
 	}
