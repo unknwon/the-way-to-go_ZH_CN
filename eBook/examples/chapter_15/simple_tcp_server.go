@@ -23,6 +23,7 @@ func main() {
 		go connectionHandler(conn)
 	}
 }
+
 func initServer(hostAndPort string) *net.TCPListener {
 	serverAddr, err := net.ResolveTCPAddr("tcp", hostAndPort)
 	checkError(err, "Resolving address:port failed: '"+hostAndPort+"'")
@@ -31,6 +32,7 @@ func initServer(hostAndPort string) *net.TCPListener {
 	println("Listening to: ", listener.Addr().String())
 	return listener
 }
+
 func connectionHandler(conn net.Conn) {
 	connFrom := conn.RemoteAddr().String()
 	println("Connection from: ", connFrom)
@@ -53,11 +55,13 @@ DISCONNECT:
 	println("Closed connection: ", connFrom)
 	checkError(err, "Close: ")
 }
+
 func sayHello(to net.Conn) {
 	obuf := []byte{'L', 'e', 't', '\'', 's', ' ', 'G', 'O', '!', '\n'}
 	wrote, err := to.Write(obuf)
 	checkError(err, "Write: wrote "+string(wrote)+" bytes.")
 }
+
 func handleMsg(length int, err error, msg []byte) {
 	if length > 0 {
 		print("<", length, ":")
@@ -70,6 +74,7 @@ func handleMsg(length int, err error, msg []byte) {
 		print(">")
 	}
 }
+
 func checkError(error error, info string) {
 	if error != nil {
 		panic("ERROR: " + info + " " + error.Error()) // terminate program
