@@ -36,6 +36,7 @@
 	- [@domainname](https://github.com/domainname)
 	- [@leisore](https://github.com/leisore)
 	- [@dake](https://github.com/dake)
+	- [@glight2000](https://github.com/glight2000)
 
 ## 授权许可
 
