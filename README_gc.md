@@ -18,6 +18,7 @@
 - [@domainname](https://github.com/domainname)
 - [@leisore](https://github.com/leisore)
 - [@dake](https://github.com/dake)
+- [@glight2000](https://github.com/glight2000)
 
 ## 适用人群
 
@@ -31,3 +32,4 @@ Golang 编程：245386165
 |更新日期    |更新内容
 |----------|------------------
 |2015-11-25|13.10 性能调试：分析并优化 Go 程序
+|2015-12-10|15.0 15.1 15.2
