@@ -1,0 +1,9 @@
+﻿# 11 接口（Interfaces）与反射（reflection）
+
+本章介绍 Go 语言中接口和反射的相关内容。
+
+## 链接
+
+- [目录](directory.md)
+- 上一章：[垃圾回收和 SetFinalizer](10.8.md)
+- 下一节：[接口是什么](11.1.md)

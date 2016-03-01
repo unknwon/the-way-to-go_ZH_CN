@@ -1,27 +1,24 @@
+// mult_returnval.go
 package main
 
-import "fmt"
+import (
+    "fmt"
+)
 
-func MultReturn1(a, b int) (Sum, Mul, Dif int) {
-    Sum = a + b
-    Mul = a * b
-    Dif = a - b
-    return
+func SumProductDiff(i, j int) (int, int, int) {
+    return i+j, i*j, i-j
 }
 
-func MultReturn2(a, b int) (int, int, int) {
-    Sum := a + b
-    Mul := a * b
-    Dif := a - b
-    return Sum, Mul, Dif
-
+func SumProductDiffN(i, j int) (s int, p int, d int) {
+	s, p, d = i+j, i*j, i-j
+    return 
 }
 
-func main() {
-    a := 100
-    b := 78
-    Sum1, Mul1, Dif1 := MultReturn1(a, b)
-    Sum2, Mul2, Dif2 := MultReturn2(a, b)
-    fmt.Println("Named:", Sum1, Mul1, Dif1)
-    fmt.Println("Unnamed:", Sum2, Mul2, Dif2)
+func main() { 
+    sum, prod, diff := SumProductDiff(3,4)
+    fmt.Println("Sum:", sum, "| Product:",prod, "| Diff:", diff)
+ 	sum, prod, diff = SumProductDiffN(3,4)
+    fmt.Println("Sum:", sum, "| Product:",prod, "| Diff:", diff)
 }
+// Sum: 7 | Product: 12 | Diff: -1
+// Sum: 7 | Product: 12 | Diff: -1

@@ -1,0 +1,9 @@
+{
+	"name": "Go 入门指南",
+	"introduction": "Go 经典书籍《The Way To Go》的中文译本。",
+	"path": {
+		"content": "eBook",
+		"readme": "README_gc.md"
+	}
+
+}

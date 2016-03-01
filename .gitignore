@@ -20,3 +20,11 @@ _cgo_export.*
 _testmain.go
 
 *.exe
+.DS_Store
+the-way-to-go.sublime-project
+the-way-to-go.sublime-workspace
+
+*.pdf
+
+*.html
+*.htm

@@ -1,0 +1,4 @@
+"The ABC of Go";25.5;1500
+"Functional Programming with Go";56;280
+"Go for It";45.9;356
+"The Go Way";55;500
