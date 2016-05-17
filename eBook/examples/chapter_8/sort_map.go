@@ -23,6 +23,9 @@ func main() {
 		keys[i] = k
 		i++
 	}
+	//	for i, v := range barVal {
+	//		keys[i] = v
+	//	}
 	sort.Strings(keys)
 	fmt.Println()
 	fmt.Println("sorted:")
@@ -30,14 +33,14 @@ func main() {
 		fmt.Printf("Key: %v, Value: %v / ", k, barVal[k])
 	}
 }
+
 /* Output:
 unsorted:
-Key: indio, Value: 87 / Key: echo, Value: 56 / Key: juliet, Value: 65 / Key: charlie, Value: 23 / 
-Key: hotel, Value: 16 / Key: lima, Value: 98 / Key: bravo, Value: 56 / Key: alpha, Value: 34 / 
-Key: kilo, Value: 43 / Key: delta, Value: 87 / Key: golf, Value: 34 / Key: foxtrot, Value: 12 / 
+Key: indio, Value: 87 / Key: echo, Value: 56 / Key: juliet, Value: 65 / Key: charlie, Value: 23 /
+Key: hotel, Value: 16 / Key: lima, Value: 98 / Key: bravo, Value: 56 / Key: alpha, Value: 34 /
+Key: kilo, Value: 43 / Key: delta, Value: 87 / Key: golf, Value: 34 / Key: foxtrot, Value: 12 /
 sorted:
-Key: alpha, Value: 34 / Key: bravo, Value: 56 / Key: charlie, Value: 23 / Key: delta, Value: 87 / 
-Key: echo, Value: 56 / Key: foxtrot, Value: 12 / Key: golf, Value: 34 / Key: hotel, Value: 16 / 
-Key: indio, Value: 87 / Key: juliet, Value: 65 / Key: kilo, Value: 43 / Key: lima, Value: 98 / 
+Key: alpha, Value: 34 / Key: bravo, Value: 56 / Key: charlie, Value: 23 / Key: delta, Value: 87 /
+Key: echo, Value: 56 / Key: foxtrot, Value: 12 / Key: golf, Value: 34 / Key: hotel, Value: 16 /
+Key: indio, Value: 87 / Key: juliet, Value: 65 / Key: kilo, Value: 43 / Key: lima, Value: 98 /
 */
-

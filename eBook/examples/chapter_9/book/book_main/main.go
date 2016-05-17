@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"book/pack1"
+	"../pack1"
 )
 
 func main() {
