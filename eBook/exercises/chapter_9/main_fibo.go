@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"./fibo/fibo"
+	"./fibo"
 )
 
 var nextFibo int

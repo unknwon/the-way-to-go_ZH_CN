@@ -3,7 +3,7 @@ package main
 
 import (
 	"fmt"
-	"./even/even"
+	"./even"
 )
 
 func main() {

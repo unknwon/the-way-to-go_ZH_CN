@@ -1,18 +1,24 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 var fibs [50]int64
 
 func main() {
 	fibs[0] = 1
 	fibs[1] = 1
-	
-	for i:= 2; i < 50; i++ {
+
+	begin := time.Now()
+	for i := 2; i < 50; i++ {
 		fibs[i] = fibs[i-1] + fibs[i-2]
 	}
-	
-	for i:=0; i < 50; i++ {
+	dur := time.Now().Sub(begin)
+	fmt.Printf("time:%s\n", dur)
+
+	for i := 0; i < 50; i++ {
 		fmt.Printf("The %d-th Fibonacci number is: %d\n", i, fibs[i])
 	}
 }
