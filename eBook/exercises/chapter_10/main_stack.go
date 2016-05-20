@@ -3,7 +3,7 @@ package main
 
 import (
 	"fmt"
-	"./stack/stack"
+	"./stack"
 )
 
 func main() {

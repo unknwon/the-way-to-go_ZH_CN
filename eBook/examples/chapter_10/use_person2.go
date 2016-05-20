@@ -11,4 +11,5 @@ func main() {
 	// p.firstName = "Eric"
 	p.SetFirstName("Eric")
 	fmt.Println(p.FirstName()) // Output: Eric
+	fmt.Println(p.LastName())
 }

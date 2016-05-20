@@ -20,8 +20,8 @@ func main() {
 	fmt.Printf("The sum is: %d\n", two2.AddThem())
 }
 
-func (tn *TwoInts) AddThem() int {
-	return tn.a + tn.b
+func (this *TwoInts) AddThem() int {
+	return this.a + this.b
 }
 
 func (this *TwoInts) AddToParam(param int) int {

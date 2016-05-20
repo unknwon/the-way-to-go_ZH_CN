@@ -16,7 +16,7 @@ type Car struct {
 }
 
 // define a behavior for Car
-func (car Car) numberOfWheels() int {
+func (car *Car) numberOfWheels() int {
     return car.wheelCount
 }
 

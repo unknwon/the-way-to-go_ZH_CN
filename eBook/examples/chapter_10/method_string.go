@@ -16,8 +16,8 @@ func main() {
 	two1.b = 10
 	fmt.Printf("two1 is: %v\n", two1)
 	fmt.Println("two1 is:", two1)
-	fmt.Printf("two1 is: %T\n", two1)
-	fmt.Printf("two1 is: %#v\n", two1)
+	fmt.Printf("two1 is: %T\n", two1) // %T = full Type
+	fmt.Printf("two1 is: %#v\n", two1) // %#v = full instance value
 }
 
 func (tn *TwoInts) String() string {

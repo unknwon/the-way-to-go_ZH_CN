@@ -25,13 +25,14 @@ func (tz TZ) String() string { 	// Method on TZ (not ptr)
 			return zone
 		}
 	}
-	return ""
+	return "n/a"
 }
 
 func main() {
 	fmt.Println(EST) 		  // Print* knows about method String() of type TZ
 	fmt.Println(0 * HOUR)
 	fmt.Println(-6 * HOUR)   
+	fmt.Println(7 * HOUR)   
 }
 /* Output:
 Eastern Standard time

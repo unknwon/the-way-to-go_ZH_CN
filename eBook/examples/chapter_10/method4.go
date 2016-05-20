@@ -25,4 +25,6 @@ func (n *NamedPoint) Abs() float64 {
 func main() {
 	n := &NamedPoint{Point{3, 4}, "Pythagoras"}
 	fmt.Println(n.Abs()) // prints 500
+	
+//	p := (*Point)(n) // cannot convert n (type *NamedPoint) to type *Point
 }
