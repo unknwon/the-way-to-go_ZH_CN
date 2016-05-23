@@ -19,6 +19,7 @@ func main() {
 	fmt.Printf("value is %5.2e\n", v.Interface())
 	y := v.Interface().(float64)
 	fmt.Println(y)
+	fmt.Printf("canAddr: %v\n", v.CanAddr())
 }
 /* output: 
 type: float64

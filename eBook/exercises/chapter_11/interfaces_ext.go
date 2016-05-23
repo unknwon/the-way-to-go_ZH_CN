@@ -36,6 +36,8 @@ func main() {
 
 	areaIntf = tr1
 	fmt.Printf("The triangle has area: %f\n", areaIntf.Area())
+
+//	periIntf = tr1 // *Triangle does not implement PeriInterface (missing Perimeter method)
 }
 
 func (sq *Square) Area() float32 {

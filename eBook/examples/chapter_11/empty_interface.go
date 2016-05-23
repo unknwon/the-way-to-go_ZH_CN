@@ -30,6 +30,8 @@ func main() {
 			fmt.Printf("Type string %T\n", t)
 		case bool:
    			fmt.Printf("Type boolean %T\n", t)
+		case Person: // not this
+   			fmt.Printf("Type Person %T\n", t)
 		case *Person:
    			fmt.Printf("Type pointer to Person %T\n", *t)
 		default:
