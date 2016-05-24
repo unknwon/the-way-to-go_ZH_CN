@@ -28,6 +28,7 @@ func cat(r *bufio.Reader) {
 }
 
 func main() {
+flag.PrintDefaults()
 	flag.Parse()
 	if flag.NArg() == 0 {
 		cat(bufio.NewReader(os.Stdin))

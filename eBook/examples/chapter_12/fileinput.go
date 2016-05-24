@@ -17,7 +17,7 @@ func main() {
 	if inputError != nil {
 		fmt.Printf("An error occurred on opening the inputfile\n" + 
 		           "Does the file exist?\n" + 
-			       "Have you got acces to it?\n")
+			       "Have you got acces to it?\n" , inputError)
 		return // exit the function on error
 	}
 	defer inputFile.Close()
@@ -26,6 +26,7 @@ func main() {
 
 	for {
 		inputString, readerError := inputReader.ReadString('\n')
+//		inputString, readerError := inputReader.ReadLine()
 		if readerError == io.EOF {
 			return // error or EOF
 		}

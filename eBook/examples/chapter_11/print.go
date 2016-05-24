@@ -27,6 +27,7 @@ func (day Day) String() string {
 func print(args ...interface{}) {
 	for i, arg := range args {
 		if i > 0 {os.Stdout.WriteString(" ")}
+//print("type ", arg.(type));
 		switch a := arg.(type) { // type switch
 			case Stringer:	os.Stdout.WriteString(a.String())
 			case int:		os.Stdout.WriteString(strconv.Itoa(a))

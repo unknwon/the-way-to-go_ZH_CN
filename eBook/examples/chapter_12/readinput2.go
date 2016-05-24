@@ -18,5 +18,7 @@ func main() {
 
 	if err == nil {
 		fmt.Printf("The input was: %s\n", input)
+	}else{
+		print(err)
 	}
 }

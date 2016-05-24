@@ -27,6 +27,8 @@ func (b *Bird) Walk()  {
 }
 
 func main() {
-	b := new(Bird)
+	b := new(Bird) // pointer
+x := Bird{} // object
+fmt.Printf("%T  %T\n", b, x)
 	DuckDance(b)
 }

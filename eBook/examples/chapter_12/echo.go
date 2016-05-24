@@ -14,7 +14,10 @@ const (
 
 func main() {
 	flag.PrintDefaults()
+println("after PrintDefaults")
+//flag.CommandLine.
 	flag.Parse() // Scans the arg list and sets up flags
+println("after Parse")
 	var s string = ""
 	for i := 0; i < flag.NArg(); i++ {
 		if i > 0 {

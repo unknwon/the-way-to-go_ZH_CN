@@ -3,7 +3,7 @@ package main
 
 import (
 	"fmt"
-	"./stack/stack"
+	"./stack1"
 )
 
 var st1 stack.Stack

@@ -34,7 +34,7 @@ func main() {
 		}
 		// remove \r and \n so 2(in Windows, in Linux only \n, so 1):
 		line = string(line[:len(line)-2])
-		//fmt.Printf("The input was: -%s-", line)
+		fmt.Printf("The input was: -%s-", line)
 			
 		strSl := strings.Split(line, ";")
 		book := new(Book)
@@ -43,7 +43,7 @@ func main() {
 		if err!=nil {
 			fmt.Printf("Error in file: %v", err)
 		}
-		//fmt.Printf("The quan was:-%s-", strSl[2])
+		fmt.Printf("The quan was: %s ", strSl[2])
 		book.quantity, err = strconv.Atoi(strSl[2])
 		if err!=nil {
 			fmt.Printf("Error in file: %v", err)

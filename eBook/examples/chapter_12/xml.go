@@ -11,7 +11,7 @@ var t, token	xml.Token
 var	err			error
 
 func main() {
-	input := "<Person><FirstName>Laura</FirstName><LastName>Lynn</LastName></Person>"
+	input := "<Person><FirstName a1='v1' a2='v2'>Laura</FirstName><LastName>Lynn</LastName><e1><e11></e11></e1></Person>"
 	inputReader := strings.NewReader(input)
 	p := xml.NewDecoder(inputReader)
 	
@@ -20,7 +20,7 @@ func main() {
 			case xml.StartElement:
 				name := token.Name.Local
 				fmt.Printf("Token name: %s\n", name)
-				for _, attr := range token.Attr {
+				for _, attr := range token.Attr { // for attr, must enclose with ' or ""
 					attrName := attr.Name.Local
 					attrValue := attr.Value
 					fmt.Printf("An attribute is: %s %s\n", attrName, attrValue)

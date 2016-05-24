@@ -35,7 +35,7 @@ func main() {
 	if err != nil {
 		log.Println("Error in decoding gob")
 	}
-	fmt.Println(vc)
+	fmt.Println(vc, vc.Addresses[0], vc.Addresses[1])
 }
 // Output:
 // {Jan Kersschot [0x12642e60 0x12642e80] none}

@@ -22,11 +22,11 @@ func main() {
 			fmt.Println("EOF")
 			break
 		}
-		//fmt.Printf("The input was: --%s--", inputString)
+		fmt.Printf("The input was: --%s--", inputString)
 		outputString := string([]byte(inputString)[2:5]) + "\r\n"
-		//fmt.Printf("The output was: --%s--", outputString)
-		_, err := outputWriter.WriteString(outputString)
-		//fmt.Printf("Number of bytes written %d\n", n)
+		fmt.Printf("The output was: --%s--", outputString)
+		nw, err := outputWriter.WriteString(outputString)
+		fmt.Printf("Number of bytes written %d\n", nw)
 		if (err != nil) {
 			fmt.Println(err)
 			return

@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"bufio"
 	"os"
-	"./stack/stack"
+	"./stack"
 )
 
 func main() {
@@ -21,8 +21,8 @@ func main() {
 			fmt.Println("Input error !")
 			os.Exit(1)
 		}
-		token = token[0:len(token)-2]    // remove "\r\n"
-		// fmt.Printf("--%s--\n",token)  // debug statement
+		token = token[0:len(token)-1]    // remove "\r\n"
+		 fmt.Printf("--%s--\n",token)  // debug statement
 		switch  {
 			case token == "q":  // stop als invoer = "q"
 				fmt.Println("Calculator stopped")

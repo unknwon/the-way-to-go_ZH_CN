@@ -16,7 +16,7 @@ func cat(r *bufio.Reader) {
 		}
 		fmt.Fprintf(os.Stdout, "%s", buf)
 	}
-	return
+//	return
 }
 
 func main() {
