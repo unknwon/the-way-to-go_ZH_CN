@@ -3,7 +3,7 @@ package main
 
 import (
 	"fmt"
-	"./parse/parse"
+	"./parse"
 )
 
 func main() {

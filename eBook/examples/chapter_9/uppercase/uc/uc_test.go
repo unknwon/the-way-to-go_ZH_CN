@@ -21,3 +21,11 @@ func TestUC(t *testing.T) {
 		}
 	}
 }
+
+func TestUC2(t *testing.T) {
+//dummy
+}
+
+func BenchmarkReverse(b *testing.B) {
+//dummy
+}
