@@ -4,9 +4,11 @@ import "fmt"
 import "time"
 
 func main() {
+fmt.Println("make channel")
 	c := make(chan int)
+fmt.Println("start")
 	go func() {
-		time.Sleep(15 * 1e9)
+		time.Sleep(3 * 1e9)
 		x := <-c
 		fmt.Println("received", x)
 	}()

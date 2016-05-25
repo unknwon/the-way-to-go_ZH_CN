@@ -8,6 +8,7 @@ import (
 func main() {
 	suck(pump())
 	time.Sleep(1e9)
+//fmt.Println("total ", total)
 }
 
 func pump() chan int {
@@ -20,10 +21,13 @@ func pump() chan int {
 	return ch
 }
 
+var total int
 func suck(ch chan int) {
 	go func() {
 		for v := range ch {
+//++ total
 			fmt.Println(v)
+//++total
 		}
 	}()
 }

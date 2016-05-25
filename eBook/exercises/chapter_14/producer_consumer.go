@@ -4,7 +4,7 @@ package main
 import "fmt"
 
 // integer producer:
-func numGen(start, count int, out chan<- int) {
+func numGen(start, count int, out chan int) {
 	for i := 0; i < count; i++ {
 		out <- start
 		start = start + count
@@ -18,6 +18,7 @@ func numEchoRange(in <-chan int, done chan<- bool) {
 		fmt.Printf("%d\n", num)
 	}
 	done <- true
+//<- done
 }
 
 func main() {
