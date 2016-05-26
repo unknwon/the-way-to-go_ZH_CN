@@ -29,6 +29,7 @@ var pageBottom = ""
 
 func main() {
 	http.HandleFunc("/", homePage)
+println("starting")
     if err := http.ListenAndServe(":9001", nil); err != nil {
         log.Fatal("failed to start server", err)
     }

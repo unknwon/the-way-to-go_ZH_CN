@@ -8,8 +8,10 @@ import (
 )
 
 func main() {
+//	conn, err := net.Dial("tcp", "192.168.100.1:80") // tcp ipv4
 	conn, err := net.Dial("tcp", "192.0.32.10:80") // tcp ipv4
 	checkConnection(conn, err)
+//	conn, err = net.Dial("udp", "192.168.100.1:53") // udp
 	conn, err = net.Dial("udp", "192.0.32.10:80") // udp
 	checkConnection(conn, err)
 	conn, err = net.Dial("tcp", "[2620:0:2d0:200::10]:80") // tcp ipv6

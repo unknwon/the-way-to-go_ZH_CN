@@ -19,20 +19,27 @@ func NewPerson(name string, salary float64) *Person {
 }
 
 func (p *Person) backend() {
+fmt.Println("backend begin")
 	for f := range p.chF {
+fmt.Printf(" call f %#v\n ", f)
 		f()
 	}
+fmt.Println("backend end")
 }
 
 // Set salary.
 func (p *Person) SetSalary(sal float64) {
+fmt.Println("set begin")
 	p.chF <- func() { p.salary = sal }
+fmt.Println("set end")
 }
 
 // Retrieve salary.
 func (p *Person) Salary() float64 {
+fmt.Println("get begin")
 	fChan := make(chan float64)
 	p.chF <- func() { fChan <- p.salary }
+fmt.Println("get end")
 	return <-fChan
 }
 

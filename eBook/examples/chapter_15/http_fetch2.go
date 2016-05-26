@@ -14,7 +14,7 @@ func main() {
 	inputReader := bufio.NewReader(os.Stdin)
 	fmt.Println("Please enter the url...")
 	url, err := inputReader.ReadString('\n')
-	url = strings.TrimSuffix(url, "\r\n")
+	url = strings.TrimSuffix(url, "\n") // required
 	checkError(err)
 	res, err := http.Get(url)
 	checkError(err)

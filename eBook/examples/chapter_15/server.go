@@ -9,6 +9,7 @@ func main() {
 	fmt.Println("Starting the server ...")
 	// 创建 listener
 	listener, err := net.Listen("tcp", "localhost:50000")
+	fmt.Println("started")
 	if err != nil {
 		fmt.Println("Error listening", err.Error())
 		return //终止程序

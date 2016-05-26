@@ -10,12 +10,13 @@ var values = [5]int{10, 11, 12, 13, 14}
 
 func main() {
 	// version A:
+	fmt.Println("A")
 	for ix := range values {  // ix is index!
 		func() {			   
 			fmt.Print(ix, " ")
 		}()					   // call closure, prints each index 
 	}
-	fmt.Println()
+	fmt.Println("\nB")
 	// version B: same as A, but call closure as a goroutine
 	for ix := range values {
 		go func() {
@@ -23,6 +24,7 @@ func main() {
 		}()
 	}
 	time.Sleep(1e9)
+	fmt.Println("\nC")
 	// version C: the right way
 	for ix := range values {
     	go func(ix interface{}) {
@@ -30,6 +32,7 @@ func main() {
     	}(ix)
 	}
 	time.Sleep(1e9)
+	fmt.Println("\nD")
 	// version D: print out the values:
 	for ix := range values {
     	val := values[ix]
@@ -37,7 +40,7 @@ func main() {
        		fmt.Print(val, " ")
     	}()
 	}
-	time.Sleep(1e9)
+	time.Sleep(1e9) // wait for D to print
 }
 /* Output:
 0 1 2 3 4 

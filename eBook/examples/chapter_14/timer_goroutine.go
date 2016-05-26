@@ -7,8 +7,8 @@ import (
 )
 
 func main() {
-	tick := time.Tick(1e8)
-	boom := time.After(5e8)
+	tick := time.Tick(1e9)
+	boom := time.After(5e9)
 	for {
 		select {
 		case <-tick:
@@ -18,7 +18,7 @@ func main() {
 			return
 		default:
 			fmt.Println("    .")
-			time.Sleep(5e7)
+			time.Sleep(5e8)
 		}
 	}
 }

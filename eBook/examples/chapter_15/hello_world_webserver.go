@@ -13,7 +13,9 @@ func HelloServer(w http.ResponseWriter, req *http.Request) {
 
 func main() {
 	http.HandleFunc("/", HelloServer)
+fmt.Println("starting")
 	err := http.ListenAndServe("localhost:8080", nil)
+//fmt.Println("started") // not printed
 	if err != nil {
 		log.Fatal("ListenAndServe: ", err.Error())
 	}

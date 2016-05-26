@@ -20,5 +20,6 @@ func shouthelloHandler(w http.ResponseWriter, r *http.Request) {
 func main() {
     http.HandleFunc("/hello/", helloHandler)
     http.HandleFunc("/shouthello/", shouthelloHandler)
+fmt.Println("starting")
     http.ListenAndServe("localhost:9999", nil)
 }

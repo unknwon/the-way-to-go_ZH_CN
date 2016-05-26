@@ -4,7 +4,7 @@ package main
 import (
 	"flag"
 	"fmt"
-	"os"
+//	"os"
 	"net"
 )
 
@@ -44,8 +44,9 @@ func connectionHandler(conn net.Conn) {
 		switch err {
 		case nil:
 			handleMsg(length, err, ibuf)
-		case os.EAGAIN: // try again
-			continue
+//		case os.EAGAIN: // try again
+//		os.Chdir
+//			continue
 		default:
 			goto DISCONNECT
 		}

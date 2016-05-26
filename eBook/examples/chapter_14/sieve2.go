@@ -48,6 +48,6 @@ func sieve() chan int {
 func main() {
 	primes := sieve()
 	for {
-		fmt.Println(<-primes)
+		fmt.Print(<-primes, " ")
 	}
 }

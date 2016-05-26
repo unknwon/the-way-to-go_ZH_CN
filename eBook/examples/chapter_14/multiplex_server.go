@@ -32,7 +32,8 @@ func startServer(op binOp) chan *Request {
 
 func main() {
 	adder := startServer(func(a, b int) int { return a + b })
-	const N = 100
+	//const N = 1000000
+	const N = 100000
 	var reqs [N]Request
 	for i := 0; i < N; i++ {
 		req := &reqs[i]
@@ -44,9 +45,11 @@ func main() {
 	// checks:
 	for i := N - 1; i >= 0; i-- { // doesn't matter what order
 		if <-reqs[i].replyc != N+2*i {
-			fmt.Println("fail at", i)
+			//fmt.Println("fail at", i)
+			fmt.Print(" X", i)
 		} else {
-			fmt.Println("Request ", i, " is ok!")
+			//fmt.Println("Request ", i, " is ok!")
+			fmt.Print(i, " ")
 		}
 	}
 	fmt.Println("done")

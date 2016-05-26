@@ -23,6 +23,7 @@ func main()  {
      user := User{Status{""}}  
      /* unmarshal the JSON into our structures */  
 	 temp, _ := ioutil.ReadAll(res.Body)
+http.StateActive
 	 body := []byte(temp)
      json.Unmarshal(body, &user) 
      fmt.Printf("status: %s", user.Status.Text)  
