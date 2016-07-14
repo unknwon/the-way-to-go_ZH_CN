@@ -1,8 +1,8 @@
 package main
 
 import (
-	"os"
 	"flag" // command line option parser
+	"os"
 )
 
 var NewLine = flag.Bool("n", false, "print newline") // echo -n flag, of type *bool
@@ -14,15 +14,15 @@ const (
 
 func main() {
 	flag.PrintDefaults()
-println("after PrintDefaults")
-//flag.CommandLine.
+	println("after PrintDefaults")
+	//flag.CommandLine.
 	flag.Parse() // Scans the arg list and sets up flags
-println("after Parse")
+	println("after Parse")
 	var s string = ""
 	for i := 0; i < flag.NArg(); i++ {
 		if i > 0 {
 			s += " "
-			if *NewLine {  // -n is parsed, flag becomes true
+			if *NewLine { // -n is parsed, flag becomes true
 				s += Newline
 			}
 		}
