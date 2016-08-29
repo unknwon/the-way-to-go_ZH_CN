@@ -1,4 +1,4 @@
-// json.go.go
+// json.go
 package main
 
 import (
