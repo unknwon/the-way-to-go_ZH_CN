@@ -27,11 +27,11 @@ func main() {
 func doServerStuff(conn net.Conn) {
 	for {
 		buf := make([]byte, 512)
-		_, err := conn.Read(buf)
+		len, err := conn.Read(buf)
 		if err != nil {
 			fmt.Println("Error reading", err.Error())
 			return //终止程序
 		}
-		fmt.Printf("Received data: %v", string(buf))
+		fmt.Printf("Received data: %v", string(buf[:len]))
 	}
 }
