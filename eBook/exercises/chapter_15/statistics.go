@@ -53,8 +53,14 @@ func homePage(writer http.ResponseWriter, request *http.Request) {
 
 func processRequest(request *http.Request) ([]float64, string, bool) {
     var numbers []float64
+    var text string
     if slice, found := request.Form["numbers"]; found && len(slice) > 0 {
-        text := strings.Replace(slice[0], ",", " ", -1)
+        //处理如果网页中输入的是中文逗号
+	if strings.Contains(slice[0], "&#65292") {
+	    text = strings.Replace(slice[0], "&#65292;", " ", -1)
+	} else {
+	    text = strings.Replace(slice[0], ",", " ", -1)
+	}
         for _, field := range strings.Fields(text) {
             if x, err := strconv.ParseFloat(field, 64); err != nil {
                 return numbers, "'" + field + "' is invalid", false
