@@ -4,8 +4,8 @@ package main
 import (
 	"flag"
 	"fmt"
-	"os"
 	"net"
+	"os"
 )
 
 const maxRead = 25
@@ -27,7 +27,7 @@ func main() {
 func initServer(hostAndPort string) *net.TCPListener {
 	serverAddr, err := net.ResolveTCPAddr("tcp", hostAndPort)
 	checkError(err, "Resolving address:port failed: '"+hostAndPort+"'")
-	listener, err := net.ListenTCP("tcp", serverAddr)
+	listener, err := net.Listen("tcp", serverAddr)
 	checkError(err, "ListenTCP: ")
 	println("Listening to: ", listener.Addr().String())
 	return listener
