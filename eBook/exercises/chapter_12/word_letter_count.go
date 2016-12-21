@@ -31,7 +31,6 @@ func main() {
 
 func Counters(input string) {
 	nrchars += len(input) - 2 // -2 for \r\n
-	// count number of spaces, nr of words is +1
-	nrwords += strings.Count(input, " ") + 1
+	nrwords += len(strings.Fields(input))
 	nrlines++
 }
