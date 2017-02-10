@@ -31,21 +31,23 @@ func main() {
 				i, _ := strconv.Atoi(token)
 				calc1.Push(i)  
 			case token == "+":
-				q := calc1.Pop()
-				p := calc1.Pop()
-				fmt.Printf("The result of %d %s %d = %d\n", p, token, q, p + q)
+				q, _ := calc1.Pop()
+				p, _ := calc1.Pop()
+				fmt.Printf("The result of %d %s %d = %d\n", p, token, q, p.(int) + q.(int))
 			case token == "-":
-				q := calc1.Pop()
-				p := calc1.Pop()
-				fmt.Printf("The result of %d %s %d = %d\n", p, token, q, p - q)
+				q, _ := calc1.Pop()
+				p, _ := calc1.Pop()
+				fmt.Printf("The result of %d %s %d = %d\n", p, token, q, p.(int) - q.(int))
+
 			case token == "*":
-				q := calc1.Pop()
-				p := calc1.Pop()
-				fmt.Printf("The result of %d %s %d = %d\n", p, token, q, p * q)
+				q, _ := calc1.Pop()
+				p, _ := calc1.Pop()
+				fmt.Printf("The result of %d %s %d = %d\n", p, token, q, p.(int) * q.(int))
+
 			case token == "/":
-				q := calc1.Pop()
-				p := calc1.Pop()
-				fmt.Printf("The result of %d %s %d = %d\n", p, token, q, p / q)
+				q, _ := calc1.Pop()
+				p, _ := calc1.Pop()
+				fmt.Printf("The result of %d %s %d = %d\n", p, token, q, p.(int) / q.(int))
 			default:
 				fmt.Println("No valid input")
 		}
