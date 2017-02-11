@@ -1,8 +1,8 @@
 package main
 
 import (
-	"fmt"
 	"./fibo/fibo"
+	"fmt"
 )
 
 var nextFibo int
@@ -10,11 +10,11 @@ var op string
 
 func main() {
 	/*
-	result := 0
-	for i:=0; i <= 10; i++ {
-		result = fibo.Fibonacci(i) 
-		fmt.Printf("fibonacci(%d) is: %d\n", i, result)
-	}
+		result := 0
+		for i:=0; i <= 10; i++ {
+			result = fibo.Fibonacci(i)
+			fmt.Printf("fibonacci(%d) is: %d\n", i, result)
+		}
 	*/
 	op = "+"
 	calls()
@@ -37,9 +37,10 @@ func calls() {
 func next() {
 	result := 0
 	nextFibo++
-	result = fibo.Fibonacci(op, nextFibo) 
+	result = fibo.Fibonacci(op, nextFibo)
 	fmt.Printf("fibonacci(%d) is: %d\n", nextFibo, result)
 }
+
 /* *****************************************************************
 Output is:
 fibonacci(1) is: 1
@@ -58,5 +59,3 @@ fibonacci(3) is: 8
 ...
 fibonacci(4) is: 32
 ********************************************************************/
-
-
