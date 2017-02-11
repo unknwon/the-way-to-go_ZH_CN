@@ -17,7 +17,3 @@ func main() {
 	for _ = range lst.Iter() {
 	}
 }
-
-
-
-
