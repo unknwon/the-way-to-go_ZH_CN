@@ -40,17 +40,18 @@ func main() {
 	q := &Square{5}      // Area() of Square needs a pointer
 	shapes := []Shaper{r, q}
 	fmt.Println("Looping through shapes for area ...")
-	for n, _ := range shapes {
+	for n := range shapes {
 		fmt.Println("Shape details: ", shapes[n])
 		fmt.Println("Area of this shape is: ", shapes[n].Area())
 	}
 	topgen := []TopologicalGenus{r, q}
 	fmt.Println("Looping through topgen for rank ...")
-	for n, _ := range topgen {
+	for n := range topgen {
 		fmt.Println("Shape details: ", topgen[n])
 		fmt.Println("Topological Genus of this shape is: ", topgen[n].Rank())
 	}
 }
+
 /* Output:
 Looping through shapes for area ...
 Shape details:  {5 3}

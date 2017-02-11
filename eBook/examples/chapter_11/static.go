@@ -2,11 +2,11 @@
 package main
 
 import (
-	"io"
-	"os"
 	"bufio"
 	"bytes"
 	"fmt"
+	"io"
+	"os"
 )
 
 var r io.Reader

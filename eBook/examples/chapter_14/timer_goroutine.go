@@ -22,6 +22,7 @@ func main() {
 		}
 	}
 }
+
 /* Output:
     .
     .

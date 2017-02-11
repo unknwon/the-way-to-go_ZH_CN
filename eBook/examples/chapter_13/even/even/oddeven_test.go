@@ -2,7 +2,7 @@
 package even
 
 import "testing"
-	
+
 func TestEven(t *testing.T) {
 	if !Even(10) {
 		t.Log(" 10 must be even!")

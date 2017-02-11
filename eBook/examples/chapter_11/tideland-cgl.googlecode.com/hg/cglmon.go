@@ -151,7 +151,7 @@ func (sm *SystemMonitor) MeasuringPointsMap(f func(*MeasuringPoint) interface{})
 	return resp.([]interface{})
 }
 
-// MeasuringPointsDo performs the function f for 
+// MeasuringPointsDo performs the function f for
 // all measuring points.
 func (sm *SystemMonitor) MeasuringPointsDo(f func(*MeasuringPoint)) {
 	cmd := &command{cmdMeasuringPointsDo, f, nil}
@@ -450,7 +450,7 @@ type Measuring struct {
 	endTime       int64
 }
 
-// EndMEasuring ends a measuring and passes it to the 
+// EndMEasuring ends a measuring and passes it to the
 // measuring server in the background.
 func (m *Measuring) EndMeasuring() int64 {
 	m.endTime = time.Nanoseconds()

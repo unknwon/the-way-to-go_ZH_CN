@@ -6,13 +6,12 @@ import (
 )
 
 type nexter interface {
-    next() byte
+	next() byte
 }
-
 
 func nextFew1(n nexter, num int) []byte {
 	var b []byte
-	for i:=0; i < num; i++ {
+	for i := 0; i < num; i++ {
 		b[i] = n.next()
 	}
 	return b
@@ -20,7 +19,7 @@ func nextFew1(n nexter, num int) []byte {
 
 func nextFew2(n *nexter, num int) []byte {
 	var b []byte
-	for i:=0; i < num; i++ {
+	for i := 0; i < num; i++ {
 		b[i] = n.next() // compile error:  n.next undefined (type *nexter has no field or method next)
 	}
 	return b

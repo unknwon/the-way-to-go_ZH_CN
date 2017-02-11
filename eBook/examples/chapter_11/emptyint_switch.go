@@ -29,4 +29,5 @@ func TypeSwitch() {
 func main() {
 	TypeSwitch()
 }
+
 // Output:  any hello is a special String!

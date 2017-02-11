@@ -12,5 +12,5 @@ func (v IntVector) Sum() (s int) {
 }
 
 func main() {
-	fmt.Println(IntVector{1, 2, 3}.Sum())  // Output: 6
+	fmt.Println(IntVector{1, 2, 3}.Sum()) // Output: 6
 }

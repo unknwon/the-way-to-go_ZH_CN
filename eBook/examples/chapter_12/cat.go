@@ -1,11 +1,11 @@
 package main
 
 import (
-	"os"
-	"io"
-	"fmt"
 	"bufio"
 	"flag"
+	"fmt"
+	"io"
+	"os"
 )
 
 func cat(r *bufio.Reader) {
@@ -33,4 +33,3 @@ func main() {
 		cat(bufio.NewReader(f))
 	}
 }
-

@@ -43,6 +43,7 @@ func BuildLazyIntEvaluator(evalFunc EvalFunc, initState Any) func() int {
 		return ef().(int)
 	}
 }
+
 /* Output:
 0th even: 0
 1th even: 2

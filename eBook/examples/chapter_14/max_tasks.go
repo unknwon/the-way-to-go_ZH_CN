@@ -1,6 +1,7 @@
 package main
 
 const MAXREQS = 50
+
 var sem = make(chan int, MAXREQS)
 
 type Request struct {
@@ -13,16 +14,16 @@ func process(r *Request) {
 }
 
 func handle(r *Request) {
-   sem <- 1    // doesn't matter what we put in it
-   process(r)  
-   <-sem       // one empty place in the buffer: the next request can start 
+	sem <- 1 // doesn't matter what we put in it
+	process(r)
+	<-sem // one empty place in the buffer: the next request can start
 }
 
 func server(service chan *Request) {
-   for {
-       request := <-service
-       go handle(request) 
-   }
+	for {
+		request := <-service
+		go handle(request)
+	}
 }
 
 func main() {

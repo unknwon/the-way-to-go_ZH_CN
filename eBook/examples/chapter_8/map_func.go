@@ -1,5 +1,6 @@
 // map_func.go
 package main
+
 import "fmt"
 
 func main() {
@@ -10,4 +11,5 @@ func main() {
 	}
 	fmt.Println(mf)
 }
+
 // Output:  map[1:0x10903be0 5:0x10903ba0 2:0x10903bc0]
