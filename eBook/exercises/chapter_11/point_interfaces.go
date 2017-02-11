@@ -7,18 +7,18 @@ import (
 )
 
 type Magnitude interface {
-	Abs() float64 
+	Abs() float64
 }
 
 var m Magnitude
 
 type Point struct {
-	X, Y float64 
+	X, Y float64
 }
 
 func (p *Point) Scale(s float64) {
 	p.X *= s
-	p.Y *= s 
+	p.Y *= s
 }
 
 func (p *Point) Abs() float64 {
@@ -46,22 +46,23 @@ func main() {
 	m = p1 // p1 is type *Point, has method Abs()
 	fmt.Printf("The length of the vector p1 is: %f\n", m.Abs())
 
-	p2:= &Point{4, 5}
+	p2 := &Point{4, 5}
 	m = p2
-	fmt.Printf("The length of the vector p2 is: %f\n", m.Abs() )
-	
+	fmt.Printf("The length of the vector p2 is: %f\n", m.Abs())
+
 	p1.Scale(5)
 	m = p1
-	fmt.Printf("The length of the vector p1 after scaling is: %f\n", m.Abs() )
+	fmt.Printf("The length of the vector p1 after scaling is: %f\n", m.Abs())
 	fmt.Printf("Point p1 after scaling has the following coordinates: X %f - Y %f\n", p1.X, p1.Y)
-	
+
 	mag := m.Abs()
 	m = &Point3{3, 4, 5}
 	mag += m.Abs()
 	m = Polar{2.0, math.Pi / 2}
 	mag += m.Abs()
-	fmt.Printf("The float64 mag is now: %f", mag )
+	fmt.Printf("The float64 mag is now: %f", mag)
 }
+
 /* Output:
 The length of the vector p1 is: 5.000000
 The length of the vector p2 is: 6.403124

@@ -38,24 +38,25 @@ func (p *RSimple) Set(u int) {
 func fI(it Simpler) int {
 	switch it.(type) {
 	case *Simple:
-			it.Set(5)
-			return it.Get()
+		it.Set(5)
+		return it.Get()
 	case *RSimple:
-			it.Set(50)
-			return it.Get()
+		it.Set(50)
+		return it.Get()
 	default:
-			return 99
+		return 99
 	}
 	return 0
 }
 
 func main() {
 	var s Simple
-	fmt.Println(fI(&s))  // &s is required because Get() is defined with a receiver type pointer
+	fmt.Println(fI(&s)) // &s is required because Get() is defined with a receiver type pointer
 	var r RSimple
-	fmt.Println(fI(&r))  
+	fmt.Println(fI(&r))
 }
-/* Output: 
+
+/* Output:
 5
 50
 */
