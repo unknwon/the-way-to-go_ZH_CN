@@ -8,4 +8,5 @@ func main() {
 		fmt.Printf("%d:%c ", i, c)
 	}
 }
-// prints: 0:ÿ 2:界  
+
+// prints: 0:ÿ 2:界

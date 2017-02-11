@@ -8,13 +8,13 @@ import (
 func main() {
 	result := 0
 	start := time.Now()
-	for i:=0; i <= 25; i++ {
-		result = fibonacci(i) 
+	for i := 0; i <= 25; i++ {
+		result = fibonacci(i)
 		fmt.Printf("fibonacci(%d) is: %d\n", i, result)
 	}
 	end := time.Now()
 	delta := end.Sub(start)
-	fmt.Printf("longCalculation took this amount of time: %s\n", delta) 
+	fmt.Printf("longCalculation took this amount of time: %s\n", delta)
 }
 
 func fibonacci(n int) (res int) {
@@ -25,6 +25,7 @@ func fibonacci(n int) (res int) {
 	}
 	return
 }
+
 /* Output:
 fibonacci(0) is: 1
 fibonacci(1) is: 1

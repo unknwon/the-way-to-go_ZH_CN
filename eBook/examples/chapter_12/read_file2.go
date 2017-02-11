@@ -4,8 +4,8 @@ package main
 import (
 	"fmt"
 	"os"
-//	"io/ioutil"
-//	"strings"
+	//	"io/ioutil"
+	//	"strings"
 )
 
 func main() {
@@ -31,6 +31,7 @@ func main() {
 	fmt.Println(col2)
 	fmt.Println(col3)
 }
+
 /* Output:
 [ABC FUNC GO]
 [40 56 45]

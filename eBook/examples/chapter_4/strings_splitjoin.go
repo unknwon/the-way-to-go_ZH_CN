@@ -21,9 +21,10 @@ func main() {
 		fmt.Printf("%s - ", val)
 	}
 	fmt.Println()
-	str3 := strings.Join(sl2,";")
+	str3 := strings.Join(sl2, ";")
 	fmt.Printf("sl2 joined by ;: %s\n", str3)
 }
+
 /* Output:
 Splitted in slice: [The quick brown fox jumps over the lazy dog]
 The - quick - brown - fox - jumps - over - the - lazy - dog -

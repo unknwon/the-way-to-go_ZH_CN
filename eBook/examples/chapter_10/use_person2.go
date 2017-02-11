@@ -1,8 +1,8 @@
 package main
 
 import (
-	"fmt"
 	"./person"
+	"fmt"
 )
 
 func main() {

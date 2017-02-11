@@ -17,6 +17,6 @@ func b() {
 	fmt.Println("in b")
 	a()
 }
-func main() { 
-	b() 
+func main() {
+	b()
 }

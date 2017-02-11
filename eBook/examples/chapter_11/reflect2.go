@@ -22,6 +22,7 @@ func main() {
 	fmt.Println(v.Interface())
 	fmt.Println(v)
 }
+
 /* Output:
 settability of v: false
 type of v: *float64
