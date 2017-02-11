@@ -16,7 +16,7 @@ func main() {
 	fmt.Println(CalculatePi(5000))
 	end := time.Now()
 	delta := end.Sub(start)
-	fmt.Printf("longCalculation took this amount of time: %s\n", delta) 
+	fmt.Printf("longCalculation took this amount of time: %s\n", delta)
 }
 
 func CalculatePi(end int) float64 {
@@ -39,6 +39,7 @@ func term(ch chan float64, start, end int) {
 	}
 	ch <- result
 }
+
 /* Output:
 3.1413926535917938
 The calculation took this amount of time: 0.002000

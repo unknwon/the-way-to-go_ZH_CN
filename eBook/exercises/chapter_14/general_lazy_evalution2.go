@@ -18,7 +18,7 @@ func main() {
 	fib := BuildLazyUInt64Evaluator(fibFunc, []uint64{0, 1})
 
 	for i := 0; i < 10; i++ {
-    	fmt.Printf("Fib nr %v: %v\n", i, fib())
+		fmt.Printf("Fib nr %v: %v\n", i, fib())
 	}
 }
 
@@ -45,6 +45,7 @@ func BuildLazyUInt64Evaluator(evalFunc EvalFunc, initState Any) func() uint64 {
 		return ef().(uint64)
 	}
 }
+
 /* Output:
 Fib nr 0: 0
 Fib nr 1: 1

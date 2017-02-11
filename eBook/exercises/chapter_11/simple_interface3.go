@@ -38,25 +38,25 @@ func (p *RSimple) Set(u int) {
 func fI(it Simpler) int {
 	switch it.(type) {
 	case *Simple:
-			it.Set(5)
-			return it.Get()
+		it.Set(5)
+		return it.Get()
 	case *RSimple:
-			it.Set(50)
-			return it.Get()
+		it.Set(50)
+		return it.Get()
 	default:
-			return 99
+		return 99
 	}
 	return 0
 }
-
 
 func gI(any interface{}) int {
 	// return any.(Simpler).Get()   // unsafe, runtime panic possible
 	if v, ok := any.(Simpler); ok {
 		return v.Get()
 	}
-	return 0  // default value
+	return 0 // default value
 }
+
 /* Output:
 6
 60
@@ -64,11 +64,12 @@ func gI(any interface{}) int {
 
 func main() {
 	var s Simple = Simple{6}
-	fmt.Println(gI(&s))  // &s is required because Get() is defined with a receiver type pointer
-	var r RSimple = RSimple{60,60}
-	fmt.Println(gI(&r))  
+	fmt.Println(gI(&s)) // &s is required because Get() is defined with a receiver type pointer
+	var r RSimple = RSimple{60, 60}
+	fmt.Println(gI(&r))
 }
-/* Output: 
+
+/* Output:
 6
 60
 */

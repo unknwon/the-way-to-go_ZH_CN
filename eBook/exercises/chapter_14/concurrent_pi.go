@@ -17,7 +17,7 @@ func main() {
 	fmt.Println(CalculatePi(5000))
 	end := time.Now()
 	delta := end.Sub(start)
-	fmt.Printf("longCalculation took this amount of time: %s\n", delta) 
+	fmt.Printf("longCalculation took this amount of time: %s\n", delta)
 }
 
 // CalculatePi launches n goroutines to compute an
@@ -39,6 +39,7 @@ func CalculatePi(n int) float64 {
 func term(ch chan float64, k float64) {
 	ch <- 4 * math.Pow(-1, k) / (2*k + 1)
 }
+
 /* Output:
 3.14179261359579
 The calculation took this amount of time: 0.028002

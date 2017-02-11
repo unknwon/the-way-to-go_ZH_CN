@@ -2,9 +2,9 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
 	"io"
-	"bufio"
 	"os"
 )
 
@@ -27,7 +27,7 @@ func main() {
 		//fmt.Printf("The output was: --%s--", outputString)
 		_, err := outputWriter.WriteString(outputString)
 		//fmt.Printf("Number of bytes written %d\n", n)
-		if (err != nil) {
+		if err != nil {
 			fmt.Println(err)
 			return
 		}

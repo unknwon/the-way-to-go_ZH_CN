@@ -13,7 +13,7 @@ func f() {
 		if r := recover(); r != nil {
 			fmt.Println("Recovered in f", r)
 		}
-	}() 
+	}()
 	fmt.Println("Calling g.")
 	g(0)
 	fmt.Println("Returned normally from g.")
@@ -28,6 +28,7 @@ func g(i int) {
 	fmt.Println("Printing in g", i)
 	g(i + 1)
 }
+
 /* Output:
 Calling g.
 Printing in g 0

@@ -29,6 +29,7 @@ func fI(it Simpler) int {
 
 func main() {
 	var s Simple
-	fmt.Println(fI(&s))  // &s is required because Get() is defined with a receiver type pointer
+	fmt.Println(fI(&s)) // &s is required because Get() is defined with a receiver type pointer
 }
+
 // Output: 5
