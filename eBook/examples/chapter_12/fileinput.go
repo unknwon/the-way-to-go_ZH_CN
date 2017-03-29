@@ -26,9 +26,9 @@ func main() {
 
 	for {
 		inputString, readerError := inputReader.ReadString('\n')
+		fmt.Printf("The input was: %s", inputString)
 		if readerError == io.EOF {
 			return // error or EOF
-		}
-		fmt.Printf("The input was: %s", inputString)
+		}	
 	}
 }
