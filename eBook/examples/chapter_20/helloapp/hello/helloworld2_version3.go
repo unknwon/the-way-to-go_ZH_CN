@@ -1,9 +1,9 @@
 package hello
 
 import (
-    "fmt"
-    "net/http"
-    "template"
+	"fmt"
+	"net/http"
+	"template"
 )
 
 const guestbookForm = `
@@ -24,23 +24,23 @@ const signTemplateHTML = `
   </body>
 </html>
 `
+
 var signTemplate = template.Must(template.New("sign").Parse(signTemplateHTML))
 
 func init() {
-    http.HandleFunc("/", root)
-    http.HandleFunc("/sign", sign)
+	http.HandleFunc("/", root)
+	http.HandleFunc("/sign", sign)
 }
 
 func root(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html")
-    fmt.Fprint(w, guestbookForm)
+	fmt.Fprint(w, guestbookForm)
 }
 
 func sign(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html")
-    err := signTemplate.Execute(w, r.FormValue("content"))
-    if err != nil {
-        http.Error(w, err.String(), http.StatusInternalServerError)
-    }
+	err := signTemplate.Execute(w, r.FormValue("content"))
+	if err != nil {
+		http.Error(w, err.String(), http.StatusInternalServerError)
+	}
 }
-

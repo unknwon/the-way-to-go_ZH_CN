@@ -6,7 +6,7 @@ func GoodDay(name string) string {
 	return "Good Day " + name
 }
 
-func GoodNight(name string) string{
+func GoodNight(name string) string {
 	return "Good Night " + name
 }
 
@@ -24,4 +24,3 @@ func IsEvening() bool {
 	localTime := time.Now()
 	return localTime.Hour() <= 22
 }
-

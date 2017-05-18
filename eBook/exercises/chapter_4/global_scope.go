@@ -16,4 +16,5 @@ func m() {
 	a = "O" // simple assignment: global a gets a new value
 	print(a)
 }
+
 // GOO

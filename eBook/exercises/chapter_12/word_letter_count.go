@@ -2,15 +2,16 @@
 package main
 
 import (
-	"fmt"
 	"bufio"
+	"fmt"
 	"os"
 	"strings"
 )
+
 var nrchars, nrwords, nrlines int
 
 func main() {
-	nrchars, nrwords, nrlines = 0, 0, 0 
+	nrchars, nrwords, nrlines = 0, 0, 0
 	inputReader := bufio.NewReader(os.Stdin)
 	fmt.Println("Please enter some input, type S to stop: ")
 	for {
@@ -31,7 +32,6 @@ func main() {
 
 func Counters(input string) {
 	nrchars += len(input) - 2 // -2 for \r\n
-	// count number of spaces, nr of words is +1
-	nrwords += strings.Count(input, " ") + 1
+	nrwords += len(strings.Fields(input))
 	nrlines++
 }

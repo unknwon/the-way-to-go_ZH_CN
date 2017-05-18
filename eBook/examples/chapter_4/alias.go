@@ -1,7 +1,7 @@
 package main
 
-import fm "fmt"  // alias
+import fm "fmt" // alias
 
-func main() { 
+func main() {
 	fm.Println("hello, world")
 }

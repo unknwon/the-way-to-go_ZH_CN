@@ -3,9 +3,9 @@ package main
 import "fmt"
 
 type struct1 struct {
-	i1   int
-	f1   float32
-	str  string
+	i1  int
+	f1  float32
+	str string
 }
 
 func main() {

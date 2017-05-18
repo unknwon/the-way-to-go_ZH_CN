@@ -26,4 +26,5 @@ func getData(ch chan string) {
 		fmt.Printf("%s ", input)
 	}
 }
-// Washington Tripoli London Beijing Tokio 
+
+// Washington Tripoli London Beijing Tokio

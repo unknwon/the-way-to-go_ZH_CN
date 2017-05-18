@@ -12,5 +12,5 @@ func sum(x, y int, c chan int) {
 func main() {
 	c := make(chan int)
 	go sum(12, 13, c)
-	fmt.Println(<-c)  // 25
+	fmt.Println(<-c) // 25
 }

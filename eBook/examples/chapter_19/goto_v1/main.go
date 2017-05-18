@@ -11,6 +11,7 @@ URL: <input type="text" name="url">
 <input type="submit" value="Add">
 </form>
 `
+
 var store = NewURLStore()
 
 func main() {
@@ -28,7 +29,6 @@ func Redirect(w http.ResponseWriter, r *http.Request) {
 	}
 	http.Redirect(w, r, url, http.StatusFound)
 }
-
 
 func Add(w http.ResponseWriter, r *http.Request) {
 	url := r.FormValue("url")

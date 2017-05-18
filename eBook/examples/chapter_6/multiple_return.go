@@ -23,6 +23,6 @@ func getX2AndX3(input int) (int, int) {
 func getX2AndX3_2(input int) (x2 int, x3 int) {
 	x2 = 2 * input
 	x3 = 3 * input
-	// return x2, x3 
+	// return x2, x3
 	return
 }

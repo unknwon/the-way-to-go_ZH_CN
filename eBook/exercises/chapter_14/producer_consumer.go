@@ -28,6 +28,7 @@ func main() {
 
 	<-done
 }
+
 /* Output:
 0
 10

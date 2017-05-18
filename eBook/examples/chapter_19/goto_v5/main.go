@@ -36,7 +36,7 @@ func main() {
 
 func Redirect(w http.ResponseWriter, r *http.Request) {
 	key := r.URL.Path[1:]
-	if key == ""  {
+	if key == "" {
 		http.NotFound(w, r)
 		return
 	}

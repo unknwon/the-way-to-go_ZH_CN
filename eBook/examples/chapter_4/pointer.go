@@ -8,5 +8,5 @@ func main() {
 
 	var intP *int
 	intP = &i1
-	fmt.Printf("The value at memory location %p is %d\n", intP, *intP) 
+	fmt.Printf("The value at memory location %p is %d\n", intP, *intP)
 }

@@ -2,17 +2,17 @@
 package main
 
 import (
-	"fmt"
 	"bufio"
+	"fmt"
 	"os"
 )
 
 var inputReader *bufio.Reader
-	var input string
-	var err error
+var input string
+var err error
 
 func main() {
-	inputReader = bufio.NewReader(os.Stdin)  // reader for input
+	inputReader = bufio.NewReader(os.Stdin) // reader for input
 	fmt.Println("Please enter some input: ")
 	input, err = inputReader.ReadString('\n')
 

@@ -14,6 +14,7 @@ func main() {
 		fmt.Printf("Slice at %d is: %d\n", ix, value)
 	}
 }
+
 /*
 Slice at 0 is: 1
 Slice at 1 is: 2

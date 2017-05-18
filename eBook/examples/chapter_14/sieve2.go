@@ -8,7 +8,7 @@ import (
 	"fmt"
 )
 
-// Send the sequence 2, 3, 4, ... to returned channel 
+// Send the sequence 2, 3, 4, ... to returned channel
 func generate() chan int {
 	ch := make(chan int)
 	go func() {
