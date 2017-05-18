@@ -23,7 +23,7 @@ func main() {
 		go connectionHandler(conn)
 	}
 }
-func initServer(hostAndPort string) *net.TCPListener {
+func initServer(hostAndPort string) net.Listener {
 	serverAddr, err := net.ResolveTCPAddr("tcp", hostAndPort)
 	checkError(err, "Resolving address:port failed: '"+hostAndPort+"'")
 	listener, err := net.ListenTCP("tcp", serverAddr)
@@ -42,7 +42,7 @@ func connectionHandler(conn net.Conn) {
 		switch err {
 		case nil:
 			handleMsg(length, err, ibuf)
-		case syscall.Errno(0xb): // try again
+		case syscall.EAGAIN: // try again
 			continue
 		default:
 			goto DISCONNECT
