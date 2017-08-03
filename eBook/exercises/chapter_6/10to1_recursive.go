@@ -7,7 +7,9 @@ func main() {
 }
 
 func printrec(i int) {
-	if i>10 { return }
-	printrec(i+1)
+	if i > 10 {
+		return
+	}
+	printrec(i + 1)
 	fmt.Printf("%d ", i)
 }

@@ -20,10 +20,11 @@ func (Voodoo) Magic() { fmt.Println("voodoo magic") }
 
 func main() {
 	v := new(Voodoo)
-	v.Magic()     
-	v.MoreMagic() 
+	v.Magic()
+	v.MoreMagic()
 }
+
 /* Output:
 voodoo magic
-base magic base magic 
+base magic base magic
 */

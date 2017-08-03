@@ -7,7 +7,7 @@ import (
 
 var ngoroutine = flag.Int("n", 100000, "how many goroutines")
 
-func f(left, right chan int) { left <- 1+<-right }
+func f(left, right chan int) { left <- 1 + <-right }
 
 func main() {
 	flag.Parse()

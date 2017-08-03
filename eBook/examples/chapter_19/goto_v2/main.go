@@ -23,7 +23,6 @@ func Redirect(w http.ResponseWriter, r *http.Request) {
 	http.Redirect(w, r, url, http.StatusFound)
 }
 
-
 func Add(w http.ResponseWriter, r *http.Request) {
 	url := r.FormValue("url")
 	if url == "" {

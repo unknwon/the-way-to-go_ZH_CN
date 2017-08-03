@@ -2,8 +2,8 @@
 package main
 
 import (
-	"fmt"
 	"./stack/stack"
+	"fmt"
 )
 
 func main() {
@@ -30,6 +30,7 @@ func main() {
 	fmt.Printf("Popped %d\n", p)
 	fmt.Printf("%v\n", st1)
 }
+
 /* Output:
 [0:3]
 [0:3] [1:7]

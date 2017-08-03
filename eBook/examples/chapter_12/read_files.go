@@ -21,10 +21,8 @@ func main() {
 			break
 		}
 		r := bufio.NewReader(fin)
-		for line, _, err := r.ReadLine(); 
-		    err != io.EOF; 
-			line, _, err =	r.ReadLine() {
-				fmt.Printf("Lines: %v (error %v)\n", string(line), err)
+		for line, _, err := r.ReadLine(); err != io.EOF; line, _, err = r.ReadLine() {
+			fmt.Printf("Lines: %v (error %v)\n", string(line), err)
 		}
 	}
 }

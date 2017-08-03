@@ -6,10 +6,10 @@ import (
 )
 
 type number struct {
-	f	float32
+	f float32
 }
 
-type nr number   // alias type
+type nr number // alias type
 
 func main() {
 	a := number{5.0}
@@ -21,4 +21,5 @@ func main() {
 	var c = number(b)
 	fmt.Println(a, b, c)
 }
+
 // output: {5} {5} {5}

@@ -3,8 +3,8 @@ package main
 import "sync"
 
 type URLStore struct {
-	urls  map[string]string
-	mu    sync.RWMutex
+	urls map[string]string
+	mu   sync.RWMutex
 }
 
 func NewURLStore() *URLStore {

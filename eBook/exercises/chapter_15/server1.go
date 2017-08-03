@@ -2,19 +2,19 @@ package main
 
 import (
 	"fmt"
-	"os"
 	"net"
+	"os"
 	"strings"
 )
 
 // Map of the clients: contains: clientname - 1 (active) / 0 - (inactive)
-var mapUsers map[string]int 
+var mapUsers map[string]int
 
 func main() {
 	var listener net.Listener
 	var error error
 	var conn net.Conn
-	mapUsers = make(map[string]int) 
+	mapUsers = make(map[string]int)
 
 	fmt.Println("Starting the server ...")
 
@@ -46,9 +46,9 @@ func doServerStuff(conn net.Conn) {
 		if strings.Contains(input, ": WHO") {
 			DisplayList()
 		}
-		// extract clientname: 
+		// extract clientname:
 		ix := strings.Index(input, "says")
-    	clName := input[0:ix-1]
+		clName := input[0 : ix-1]
 		//fmt.Printf("The clientname  is ---%s---\n", string(clName))
 		// set clientname active in mapUsers:
 		mapUsers[string(clName)] = 1
@@ -56,12 +56,12 @@ func doServerStuff(conn net.Conn) {
 	}
 }
 
-// advantage: code is cleaner, 
+// advantage: code is cleaner,
 // disadvantage:  the server process has to stop at any error:
 //                a simple return continues in the function where we came from!
 func checkError(error error) {
 	if error != nil {
-		panic("Error: " + error.Error())  // terminate program
+		panic("Error: " + error.Error()) // terminate program
 	}
 }
 

@@ -13,4 +13,3 @@ func pump(ch chan int) {
 		ch <- i
 	}
 }
-

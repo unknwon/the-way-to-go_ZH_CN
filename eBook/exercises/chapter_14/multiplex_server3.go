@@ -26,7 +26,7 @@ func server(op binOp, service chan *Request, quit chan bool) {
 		case req := <-service:
 			go run(op, req)
 		case <-quit:
-			return  // stop infinite loop
+			return // stop infinite loop
 		}
 	}
 }
@@ -52,7 +52,8 @@ func main() {
 	quit <- true
 	fmt.Print("done")
 }
+
 /* output:
-3+4=7 150+250=400 
+3+4=7 150+250=400
 done
 */

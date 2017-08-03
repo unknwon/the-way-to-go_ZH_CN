@@ -9,9 +9,9 @@ import (
 )
 
 type URLStore struct {
-	urls     map[string]string
-	mu       sync.RWMutex
-	file     *os.File
+	urls map[string]string
+	mu   sync.RWMutex
+	file *os.File
 }
 
 type record struct {
@@ -70,7 +70,7 @@ func (s *URLStore) load() error {
 	if _, err := s.file.Seek(0, 0); err != nil {
 		return err
 	}
-	d := gob.NewDecoder(s.file) 
+	d := gob.NewDecoder(s.file)
 	var err error
 	for err == nil {
 		var r record

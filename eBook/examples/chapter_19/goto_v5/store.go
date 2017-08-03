@@ -5,8 +5,8 @@ import (
 	"errors"
 	"io"
 	"log"
-	"os"
 	"net/rpc"
+	"os"
 	"sync"
 )
 
@@ -18,14 +18,14 @@ type Store interface {
 }
 
 type ProxyStore struct {
-	urls   *URLStore  // local cache
+	urls   *URLStore // local cache
 	client *rpc.Client
 }
 
 type URLStore struct {
-	urls  map[string]string
-	mu    sync.RWMutex
-	save  chan record
+	urls map[string]string
+	mu   sync.RWMutex
+	save chan record
 }
 
 type record struct {

@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 type Base struct {
-	id	string
+	id string
 }
 
 func (b *Base) Id() string {
@@ -16,14 +16,14 @@ func (b *Base) SetId(id string) {
 
 type Person struct {
 	Base
-	FirstName		string
-	LastName		string
+	FirstName string
+	LastName  string
 }
 
 type Employee struct {
 	Person
-	salary		float32
-} 
+	salary float32
+}
 
 func main() {
 	idjb := Base{"007"}
@@ -34,6 +34,7 @@ func main() {
 	e.SetId("007B")
 	fmt.Printf("The new ID of our hero: %v\n", e.Id())
 }
+
 /* Output:
 ID of our hero: 007
 The new ID of our hero: 007B

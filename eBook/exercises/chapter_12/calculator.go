@@ -1,14 +1,14 @@
 // calculator.go
-// 	example: calculate 3 + 4 = 7 as input: 3 ENTER 4 ENTER + ENTER --> result = 7, 
+// 	example: calculate 3 + 4 = 7 as input: 3 ENTER 4 ENTER + ENTER --> result = 7,
 
 package main
 
 import (
-	"fmt"
-	"strconv"
-	"bufio"
-	"os"
 	"./stack/stack"
+	"bufio"
+	"fmt"
+	"os"
+	"strconv"
 )
 
 func main() {
@@ -21,33 +21,35 @@ func main() {
 			fmt.Println("Input error !")
 			os.Exit(1)
 		}
-		token = token[0:len(token)-2]    // remove "\r\n"
+		token = token[0 : len(token)-2] // remove "\r\n"
 		// fmt.Printf("--%s--\n",token)  // debug statement
-		switch  {
-			case token == "q":  // stop als invoer = "q"
-				fmt.Println("Calculator stopped")
-				return  
-			case token >= "0" && token <= "999999": 
-				i, _ := strconv.Atoi(token)
-				calc1.Push(i)  
-			case token == "+":
-				q := calc1.Pop()
-				p := calc1.Pop()
-				fmt.Printf("The result of %d %s %d = %d\n", p, token, q, p + q)
-			case token == "-":
-				q := calc1.Pop()
-				p := calc1.Pop()
-				fmt.Printf("The result of %d %s %d = %d\n", p, token, q, p - q)
-			case token == "*":
-				q := calc1.Pop()
-				p := calc1.Pop()
-				fmt.Printf("The result of %d %s %d = %d\n", p, token, q, p * q)
-			case token == "/":
-				q := calc1.Pop()
-				p := calc1.Pop()
-				fmt.Printf("The result of %d %s %d = %d\n", p, token, q, p / q)
-			default:
-				fmt.Println("No valid input")
+		switch {
+		case token == "q": // stop als invoer = "q"
+			fmt.Println("Calculator stopped")
+			return
+		case token >= "0" && token <= "999999":
+			i, _ := strconv.Atoi(token)
+			calc1.Push(i)
+		case token == "+":
+			q, _ := calc1.Pop()
+			p, _ := calc1.Pop()
+			fmt.Printf("The result of %d %s %d = %d\n", p, token, q, p.(int)+q.(int))
+		case token == "-":
+			q, _ := calc1.Pop()
+			p, _ := calc1.Pop()
+			fmt.Printf("The result of %d %s %d = %d\n", p, token, q, p.(int)-q.(int))
+
+		case token == "*":
+			q, _ := calc1.Pop()
+			p, _ := calc1.Pop()
+			fmt.Printf("The result of %d %s %d = %d\n", p, token, q, p.(int)*q.(int))
+
+		case token == "/":
+			q, _ := calc1.Pop()
+			p, _ := calc1.Pop()
+			fmt.Printf("The result of %d %s %d = %d\n", p, token, q, p.(int)/q.(int))
+		default:
+			fmt.Println("No valid input")
 		}
 	}
 }

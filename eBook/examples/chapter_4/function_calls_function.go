@@ -1,5 +1,7 @@
 package main
+
 var a string
+
 func main() {
 	a = "G"
 	print(a)

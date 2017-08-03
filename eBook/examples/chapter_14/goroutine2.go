@@ -9,7 +9,7 @@ func main() {
 	ch := make(chan string)
 
 	go sendData(ch)
-	go getData(ch)  
+	go getData(ch)
 
 	time.Sleep(1e9)
 }
@@ -30,4 +30,5 @@ func getData(ch chan string) {
 		fmt.Printf("%s ", input)
 	}
 }
+
 // Washington Tripoli London Beijing Tokio

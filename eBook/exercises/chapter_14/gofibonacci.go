@@ -3,8 +3,8 @@ package main
 
 import (
 	"fmt"
-	"time"
 	"os"
+	"time"
 )
 
 func main() {
@@ -21,7 +21,7 @@ func main() {
 		} else {
 			end := time.Now()
 			delta := end.Sub(start)
-			fmt.Printf("longCalculation took this amount of time: %s\n", delta) 			
+			fmt.Printf("longCalculation took this amount of time: %s\n", delta)
 			os.Exit(0)
 		}
 	}

@@ -15,7 +15,7 @@ func main() {
 	// producer:
 	for {
 		select {
-		case c <- 0: 
+		case c <- 0:
 		case c <- 1:
 		}
 	}

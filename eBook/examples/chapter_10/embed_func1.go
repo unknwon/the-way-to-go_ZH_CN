@@ -9,8 +9,8 @@ type Log struct {
 }
 
 type Customer struct {
-    Name	string
-    log 	*Log
+	Name string
+	log  *Log
 }
 
 func main() {
@@ -35,8 +35,9 @@ func (l *Log) String() string {
 }
 
 func (c *Customer) Log() *Log {
-    return c.log
+	return c.log
 }
+
 /* Output:
 1 - Yes we can!
 2 - After me the world will be a better place!

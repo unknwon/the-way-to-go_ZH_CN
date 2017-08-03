@@ -1,4 +1,5 @@
 package main
+
 import "fmt"
 
 func main() {
@@ -11,5 +12,5 @@ func f() {
 		g(i)
 		fmt.Printf(" - g is of type %T and has value %v\n", g, g)
 	}
-	
+
 }

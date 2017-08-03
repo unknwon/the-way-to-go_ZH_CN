@@ -43,8 +43,8 @@ package cgl
 import (
 	"bytes"
 	"crypto/rand"
-	"fmt"
 	"encoding/hex"
+	"fmt"
 	"io"
 	"log"
 	"reflect"
@@ -120,7 +120,7 @@ func (uuid UUID) String() string {
 // MORE ID FUNCTIONS
 //--------------------
 
-// LimitedSepIdentifier builds an identifier out of multiple parts, 
+// LimitedSepIdentifier builds an identifier out of multiple parts,
 // all as lowercase strings and concatenated with the separator
 // Non letters and digits are exchanged with dashes and
 // reduced to a maximum of one each. If limit is true only
@@ -173,8 +173,8 @@ func Identifier(parts ...interface{}) string {
 	return SepIdentifier(":", parts...)
 }
 
-// TypeAsIdentifierPart transforms the name of the arguments type into 
-// a part for identifiers. It's splitted at each uppercase char, 
+// TypeAsIdentifierPart transforms the name of the arguments type into
+// a part for identifiers. It's splitted at each uppercase char,
 // concatenated with dashes and transferred to lowercase.
 func TypeAsIdentifierPart(i interface{}) string {
 	var buf bytes.Buffer
