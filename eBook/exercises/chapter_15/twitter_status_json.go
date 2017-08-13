@@ -18,7 +18,7 @@ type User struct {
 
 func main() {
 	/* perform an HTTP request for the twitter status of user: Googland */
-	res, _ := http.Get("http://twitter.com/users/Googland.json")
+	res, _ := http.Get("http://twitter.com/users/Googland.json")/*http://twitter.com/users/Googland.json页面不存在了*/
 	/* initialize the structure of the JSON response */
 	user := User{Status{""}}
 	/* unmarshal the JSON into our structures */
