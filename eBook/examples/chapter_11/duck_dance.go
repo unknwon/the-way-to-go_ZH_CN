@@ -22,7 +22,7 @@ func (b *Bird) Quack() {
 	fmt.Println("I am quacking!")
 }
 
-func (b *Bird) Walk()  {
+func (b *Bird) Walk() {
 	fmt.Println("I am walking!")
 }
 

@@ -18,6 +18,7 @@ type AreaInterface interface {
 type PeriInterface interface {
 	Perimeter() float32
 }
+
 func main() {
 	var areaIntf AreaInterface
 	var periIntf PeriInterface
@@ -47,5 +48,5 @@ func (sq *Square) Perimeter() float32 {
 }
 
 func (tr *Triangle) Area() float32 {
-	return 0.5 * tr.base*tr.height
+	return 0.5 * tr.base * tr.height
 }

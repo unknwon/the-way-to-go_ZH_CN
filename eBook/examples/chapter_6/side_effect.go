@@ -14,5 +14,5 @@ func main() {
 	reply := &n
 	Multiply(10, 5, reply)
 	fmt.Println("Multiply:", *reply) // Multiply: 50
-	fmt.Println("Multiply:", n) // Multiply: 50
+	fmt.Println("Multiply:", n)      // Multiply: 50
 }

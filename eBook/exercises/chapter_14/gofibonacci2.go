@@ -21,6 +21,7 @@ func main() {
 		fmt.Println(i)
 	}
 }
+
 /* Output:
 1
 1

@@ -7,7 +7,7 @@ import (
 
 func main() {
 	fmt.Println(" sync", testing.Benchmark(BenchmarkChannelSync).String())
-	fmt.Println("buffered",	testing.Benchmark(BenchmarkChannelBuffered).String())
+	fmt.Println("buffered", testing.Benchmark(BenchmarkChannelBuffered).String())
 }
 
 func BenchmarkChannelSync(b *testing.B) {
@@ -18,7 +18,7 @@ func BenchmarkChannelSync(b *testing.B) {
 		}
 		close(ch)
 	}()
-	for _ = range ch {
+	for range ch {
 	}
 }
 
@@ -30,6 +30,6 @@ func BenchmarkChannelBuffered(b *testing.B) {
 		}
 		close(ch)
 	}()
-	for _ = range ch {
+	for range ch {
 	}
 }

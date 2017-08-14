@@ -7,10 +7,10 @@ type ucTest struct {
 	in, out string
 }
 
-var ucTests = []ucTest {
-	ucTest{"abc", "ABC"},
-	ucTest{"cvo-az", "CVO-AZ"},
-	ucTest{"Antwerp", "ANTWERP"},
+var ucTests = []ucTest{
+	{"abc", "ABC"},
+	{"cvo-az", "CVO-AZ"},
+	{"Antwerp", "ANTWERP"},
 }
 
 func TestUC(t *testing.T) {

@@ -14,7 +14,7 @@ func main() {
 	f := fib()
 	// Function calls are evaluated left-to-right.
 	// println(f(), f(), f(), f(), f())
-	for i:=0; i<=9; i++ {
-		println(i+2, f() )
+	for i := 0; i <= 9; i++ {
+		println(i+2, f())
 	}
 }

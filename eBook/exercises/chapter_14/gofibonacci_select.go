@@ -27,6 +27,7 @@ func main() {
 	}()
 	fibonacci(c, quit)
 }
+
 /* Output:
 1
 1

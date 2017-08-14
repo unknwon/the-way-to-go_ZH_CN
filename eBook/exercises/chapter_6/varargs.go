@@ -14,9 +14,9 @@ func main() {
 }
 
 func printInts(list ...int) {
-//	for i:=0; i<len(list); i++ {
-//		fmt.Printf("%d\n", list[i])
-//	}
+	//	for i:=0; i<len(list); i++ {
+	//		fmt.Printf("%d\n", list[i])
+	//	}
 	for _, v := range list {
 		fmt.Printf("%d\n", v)
 	}

@@ -9,9 +9,10 @@ func main() {
 }
 
 func Sum(a *[3]float64) (sum float64) {
-	for _, v := range a {   // can also with dereferencing *a to get back to the array
+	for _, v := range a { // can also with dereferencing *a to get back to the array
 		sum += v
 	}
 	return
 }
+
 // Output: The sum of the array is: 24.600000

@@ -20,6 +20,7 @@ func main() {
 	fmt.Printf("Map assigned at \"two\" is: %d\n", mapLit["two"])
 	fmt.Printf("Map literal at \"ten\" is: %d\n", mapLit["ten"])
 }
+
 /* Output:
 Map literal at "one" is: 1
 Map created at "key2" is: 3.141590

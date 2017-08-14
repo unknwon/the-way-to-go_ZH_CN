@@ -28,6 +28,7 @@ const guestbookTemplateHTML = `
   </body>
 </html>
 `
+
 var guestbookTemplate = template.Must(template.New("book").Parse(guestbookTemplateHTML))
 
 type Greeting struct {

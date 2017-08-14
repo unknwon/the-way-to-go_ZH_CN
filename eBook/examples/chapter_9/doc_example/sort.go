@@ -40,11 +40,13 @@ func (p IntArray) Less(i, j int) bool { return p[i] < p[j] }
 func (p IntArray) Swap(i, j int)      { p[i], p[j] = p[j], p[i] }
 
 type Float64Array []float64
+
 func (p Float64Array) Len() int           { return len(p) }
 func (p Float64Array) Less(i, j int) bool { return p[i] < p[j] }
 func (p Float64Array) Swap(i, j int)      { p[i], p[j] = p[j], p[i] }
 
 type StringArray []string
+
 func (p StringArray) Len() int           { return len(p) }
 func (p StringArray) Less(i, j int) bool { return p[i] < p[j] }
 func (p StringArray) Swap(i, j int)      { p[i], p[j] = p[j], p[i] }

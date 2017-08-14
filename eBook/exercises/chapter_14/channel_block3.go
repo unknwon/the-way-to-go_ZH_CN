@@ -14,6 +14,7 @@ func main() {
 	c <- 10
 	fmt.Println("sent", 10)
 }
+
 /* Output:
 sending 10
 (15 s later):

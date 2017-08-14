@@ -12,6 +12,7 @@ func main() {
 	fv()
 	fmt.Printf("The type of fv is %T", fv)
 }
+
 /* Output:
 Hello World!
 The type of fv is func()

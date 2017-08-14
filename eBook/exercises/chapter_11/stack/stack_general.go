@@ -29,7 +29,7 @@ func (stack Stack) Top() (interface{}, error) {
 }
 
 func (stack *Stack) Pop() (interface{}, error) {
-	stk := *stack	// dereference to a local variable stk
+	stk := *stack // dereference to a local variable stk
 	if len(stk) == 0 {
 		return nil, errors.New("stack is empty")
 	}
