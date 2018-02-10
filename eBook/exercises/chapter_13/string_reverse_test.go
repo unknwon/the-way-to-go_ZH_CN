@@ -5,25 +5,25 @@ import "testing"
 import "./strev"
 
 type ReverseTest struct {
-	in, out 	string
+	in, out string
 }
 
-var ReverseTests = []ReverseTest {
-	ReverseTest{"ABCD", "DCBA"},
-	ReverseTest{"CVO-AZ", "ZA-OVC"},
-	ReverseTest{"Hello 世界", "界世 olleH"},
+var ReverseTests = []ReverseTest{
+	{"ABCD", "DCBA"},
+	{"CVO-AZ", "ZA-OVC"},
+	{"Hello 世界", "界世 olleH"},
 }
 
 func TestReverse(t *testing.T) {
-/*
-	in := "CVO-AZ"
-	out := Reverse(in)
-	exp := "ZA-OVC"
-	if out != exp {
-		t.Errorf("Reverse of %s expects %s, but got %s", in, exp, out)
-	}
-*/
-// testing with a battery of testdata:
+	/*
+		in := "CVO-AZ"
+		out := Reverse(in)
+		exp := "ZA-OVC"
+		if out != exp {
+			t.Errorf("Reverse of %s expects %s, but got %s", in, exp, out)
+		}
+	*/
+	// testing with a battery of testdata:
 	for _, r := range ReverseTests {
 		exp := strev.Reverse(r.in)
 		if r.out != exp {
@@ -34,7 +34,7 @@ func TestReverse(t *testing.T) {
 
 func BenchmarkReverse(b *testing.B) {
 	s := "ABCD"
-	for i:=0; i < b.N; i++ {
+	for i := 0; i < b.N; i++ {
 		strev.Reverse(s)
 	}
 }

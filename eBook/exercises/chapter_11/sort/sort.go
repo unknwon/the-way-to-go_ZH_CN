@@ -20,8 +20,8 @@ func Sort(Sorter Interface) {
 */
 
 func Sort(data Sorter) {
-	for pass:=1; pass < data.Len(); pass++ {
-		for i:=0; i < data.Len() - pass; i++ {		 
+	for pass := 1; pass < data.Len(); pass++ {
+		for i := 0; i < data.Len()-pass; i++ {
 			if data.Less(i+1, i) {
 				data.Swap(i, i+1)
 			}
@@ -53,8 +53,8 @@ func (p StringArray) Less(i, j int) bool { return p[i] < p[j] }
 func (p StringArray) Swap(i, j int)      { p[i], p[j] = p[j], p[i] }
 
 // Convenience wrappers for common cases
-func SortInts(a []int)         { Sort(IntArray(a)) }
-func SortStrings(a []string)   { Sort(StringArray(a)) }
+func SortInts(a []int)       { Sort(IntArray(a)) }
+func SortStrings(a []string) { Sort(StringArray(a)) }
 
-func IntsAreSorted(a []int) bool         { return IsSorted(IntArray(a)) }
-func StringsAreSorted(a []string) bool   { return IsSorted(StringArray(a)) }
+func IntsAreSorted(a []int) bool       { return IsSorted(IntArray(a)) }
+func StringsAreSorted(a []string) bool { return IsSorted(StringArray(a)) }

@@ -1,10 +1,10 @@
 package main
 
 import (
-	"fmt"
-	"os"
-	"net"
 	"bufio"
+	"fmt"
+	"net"
+	"os"
 	"strings"
 )
 
@@ -24,11 +24,11 @@ func main() {
 	clientName, _ = inputReader.ReadString('\n')
 	// fmt.Printf("CLIENTNAME %s",clientName)
 	trimmedClient := strings.Trim(clientName, "\r\n") // "\r\n" voor Windows, "\n" voor Linux
-		
+
 	for {
 		fmt.Println("What to send to the server? Type Q to quit. Type SH to shutdown server.")
 		input, _ = inputReader.ReadString('\n')
-		trimmedInput := strings.Trim(input, "\r\n")   
+		trimmedInput := strings.Trim(input, "\r\n")
 		// fmt.Printf("input:--%s--",input)
 		// fmt.Printf("trimmedInput:--%s--",trimmedInput)
 		if trimmedInput == "Q" {
@@ -41,6 +41,6 @@ func main() {
 
 func checkError(error error) {
 	if error != nil {
-		panic("Error: " + error.Error())  // terminate program
-	}	
+		panic("Error: " + error.Error()) // terminate program
+	}
 }

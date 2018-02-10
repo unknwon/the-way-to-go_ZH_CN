@@ -34,22 +34,22 @@ func main() {
 	}
 	// testing with switch:
 	switch t := areaIntf.(type) {
-		case *Square:
-			fmt.Printf("Type Square %T with value %v\n", t, t)
-		case *Circle:
-			fmt.Printf("Type Circle %T with value %v\n", t, t)
-		/* 
-		case bool:
-   			fmt.Printf("Type boolean %t\n", t)
-		case int:
-   			fmt.Printf("Type int %d\n", t)
-		case *bool:
-   			fmt.Printf("Type pointer to boolean %t\n", *t)
-		case *int:
-   			fmt.Printf("Type pointer to int %d\n", *t)
-		*/
-		default:
-   			fmt.Printf("Unexpected type %T", t)
+	case *Square:
+		fmt.Printf("Type Square %T with value %v\n", t, t)
+	case *Circle:
+		fmt.Printf("Type Circle %T with value %v\n", t, t)
+	/*
+				case bool:
+		   			fmt.Printf("Type boolean %t\n", t)
+				case int:
+		   			fmt.Printf("Type int %d\n", t)
+				case *bool:
+		   			fmt.Printf("Type pointer to boolean %t\n", *t)
+				case *int:
+		   			fmt.Printf("Type pointer to int %d\n", *t)
+	*/
+	default:
+		fmt.Printf("Unexpected type %T", t)
 	}
 }
 

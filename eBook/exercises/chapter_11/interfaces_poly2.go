@@ -19,11 +19,11 @@ func (sq *Square) Area() float32 {
 }
 
 type Rectangle struct {
-   length, width float32
+	length, width float32
 }
 
 func (r Rectangle) Area() float32 {
-   return r.length * r.width
+	return r.length * r.width
 }
 
 type Circle struct {
@@ -31,21 +31,22 @@ type Circle struct {
 }
 
 func (c *Circle) Area() float32 {
-   return math.Pi * c.radius * c.radius 
+	return math.Pi * c.radius * c.radius
 }
 
 func main() {
-   r := Rectangle{5, 3} // Area() of Rectangle needs a value
-   q := &Square{5}      // Area() of Square needs a pointer
-   c := &Circle{2.5}
-   fmt.Println("Looping through shapes for area ...")
-   // shapes := []Shaper{Shaper(r), Shaper(q), Shaper(c)}
-   shapes := []Shaper{r, q, c}
-   for n, _ := range shapes {
-       fmt.Println("Shape details: ", shapes[n])
-       fmt.Println("Area of this shape is: ", shapes[n].Area())
-   }
+	r := Rectangle{5, 3} // Area() of Rectangle needs a value
+	q := &Square{5}      // Area() of Square needs a pointer
+	c := &Circle{2.5}
+	fmt.Println("Looping through shapes for area ...")
+	// shapes := []Shaper{Shaper(r), Shaper(q), Shaper(c)}
+	shapes := []Shaper{r, q, c}
+	for n := range shapes {
+		fmt.Println("Shape details: ", shapes[n])
+		fmt.Println("Area of this shape is: ", shapes[n].Area())
+	}
 }
+
 /* Output:
 Looping through shapes for area ...
 Shape details:  {5 3}

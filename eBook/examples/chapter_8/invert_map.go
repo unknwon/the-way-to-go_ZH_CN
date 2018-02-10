@@ -20,10 +20,10 @@ func main() {
 		fmt.Printf("Key: %v, Value: %v / ", k, v)
 	}
 }
+
 /* Output:
 inverted:
-Key: 12, Value: foxtrot / Key: 16, Value: hotel / Key: 87, Value: delta / Key: 23, Value: charlie / 
-Key: 65, Value: juliet / Key: 43, Value: kilo / Key: 56, Value: bravo / Key: 98, Value: lima / 
+Key: 12, Value: foxtrot / Key: 16, Value: hotel / Key: 87, Value: delta / Key: 23, Value: charlie /
+Key: 65, Value: juliet / Key: 43, Value: kilo / Key: 56, Value: bravo / Key: 98, Value: lima /
 Key: 34, Value: golf /
 */
-

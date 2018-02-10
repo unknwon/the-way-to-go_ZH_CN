@@ -9,8 +9,8 @@ type Log struct {
 }
 
 type Customer struct {
-    Name	string
-    Log
+	Name string
+	Log
 }
 
 func main() {

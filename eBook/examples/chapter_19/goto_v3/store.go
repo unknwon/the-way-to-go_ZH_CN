@@ -1,7 +1,7 @@
 package main
 
 import (
-//	"bufio"
+	//	"bufio"
 	"encoding/gob"
 	"io"
 	"log"
@@ -12,9 +12,9 @@ import (
 const saveQueueLength = 1000
 
 type URLStore struct {
-	urls  map[string]string
-	mu    sync.RWMutex
-	save  chan record
+	urls map[string]string
+	mu   sync.RWMutex
+	save chan record
 }
 
 type record struct {
@@ -74,9 +74,9 @@ func (s *URLStore) load(filename string) error {
 	}
 	defer f.Close()
 	// buffered reading:
-	// b := bufio.NewReader(f)  
-	// d := gob.NewDecoder(b) 
-	d := gob.NewDecoder(f)  
+	// b := bufio.NewReader(f)
+	// d := gob.NewDecoder(b)
+	d := gob.NewDecoder(f)
 	for err == nil {
 		var r record
 		if err = d.Decode(&r); err == nil {
@@ -97,13 +97,13 @@ func (s *URLStore) saveLoop(filename string) {
 		log.Fatal("Error opening URLStore: ", err)
 	}
 	defer f.Close()
-	e := gob.NewEncoder(f) 
+	e := gob.NewEncoder(f)
 	// buffered encoding:
-	// b := bufio.NewWriter(f)   
+	// b := bufio.NewWriter(f)
 	// e := gob.NewEncoder(b)
 	// defer b.Flush()
 	for {
-		r := <-s.save  // takes a record from the channel
+		r := <-s.save // takes a record from the channel
 		if err := e.Encode(r); err != nil {
 			log.Println("Error saving to URLStore: ", err)
 		}

@@ -6,6 +6,7 @@ import (
 )
 
 const LIMIT = 4
+
 type Stack [LIMIT]int
 
 func main() {
@@ -46,8 +47,8 @@ func (st *Stack) Push(n int) {
 // take value from first position which contains !=0, starting from top
 func (st *Stack) Pop() int {
 	v := 0
-	for ix:= len(st)-1; ix>=0; ix-- {
-		if v=st[ix]; v!=0 {
+	for ix := len(st) - 1; ix >= 0; ix-- {
+		if v = st[ix]; v != 0 {
 			st[ix] = 0
 			return v
 		}

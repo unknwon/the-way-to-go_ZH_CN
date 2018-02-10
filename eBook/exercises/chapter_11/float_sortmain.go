@@ -1,12 +1,12 @@
 package main
-     	
+
 import (
-     	"fmt"
-     	"./float64"
+	"./float64"
+	"fmt"
 )
-    	
+
 func main() {
-    f1 := float64.NewFloat64Array()
+	f1 := float64.NewFloat64Array()
 	f1.Fill(10)
 	fmt.Printf("Before sorting %s\n", f1)
 	float64.Sort(f1)

@@ -3,10 +3,11 @@ package main
 import "fmt"
 
 func main() {
-	for i:=0; i <= 10; i ++ {
-			fmt.Printf("the complement of %b is: %b\n", i, ^i)
+	for i := 0; i <= 10; i++ {
+		fmt.Printf("the complement of %b is: %b\n", i, ^i)
 	}
 }
+
 /* Output:
 the complement of 0 is: -1
 the complement of 1 is: -10

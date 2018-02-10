@@ -1,8 +1,8 @@
 package main
 
 import (
-	"fmt"
 	"./struct_pack/structPack"
+	"fmt"
 )
 
 func main() {
@@ -12,5 +12,6 @@ func main() {
 	fmt.Printf("Mi1 = %d\n", struct1.Mi1)
 	fmt.Printf("Mf1 = %f\n", struct1.Mf1)
 }
+
 // Mi1 = 10
 // Mf1 = 16.000000

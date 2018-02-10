@@ -11,9 +11,9 @@ import (
 const saveQueueLength = 1000
 
 type URLStore struct {
-	urls  map[string]string
-	mu    sync.RWMutex
-	save  chan record
+	urls map[string]string
+	mu   sync.RWMutex
+	save chan record
 }
 
 type record struct {
@@ -72,7 +72,7 @@ func (s *URLStore) load(filename string) error {
 		return err
 	}
 	defer f.Close()
-	d := json.NewDecoder(f)  
+	d := json.NewDecoder(f)
 	for err == nil {
 		var r record
 		if err = d.Decode(&r); err == nil {
@@ -93,9 +93,9 @@ func (s *URLStore) saveLoop(filename string) {
 		log.Fatal("Error opening URLStore: ", err)
 	}
 	defer f.Close()
-	e := json.NewEncoder(f) 
+	e := json.NewEncoder(f)
 	for {
-		r := <-s.save  // takes a record from the channel
+		r := <-s.save // takes a record from the channel
 		if err := e.Encode(r); err != nil {
 			log.Println("Error saving to URLStore: ", err)
 		}
