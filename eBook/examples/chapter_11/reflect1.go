@@ -20,7 +20,8 @@ func main() {
 	y := v.Interface().(float64)
 	fmt.Println(y)
 }
-/* output: 
+
+/* output:
 type: float64
 value: <float64 Value>
 type: float64

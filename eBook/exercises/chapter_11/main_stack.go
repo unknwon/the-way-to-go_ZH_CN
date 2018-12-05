@@ -2,8 +2,8 @@
 package main
 
 import (
-	"fmt"
 	"./stack/stack"
+	"fmt"
 )
 
 var st1 stack.Stack
@@ -21,6 +21,7 @@ func main() {
 		fmt.Println(item)
 	}
 }
+
 /* Output:
 [Java C++ Python C# Ruby]
 100

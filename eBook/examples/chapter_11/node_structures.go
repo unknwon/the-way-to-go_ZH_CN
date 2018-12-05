@@ -4,9 +4,9 @@ package main
 import "fmt"
 
 type Node struct {
-	le    *Node
-	data  interface{}
-	ri    *Node
+	le   *Node
+	data interface{}
+	ri   *Node
 }
 
 func NewNode(left, right *Node) *Node {
@@ -18,12 +18,12 @@ func (n *Node) SetData(data interface{}) {
 }
 
 func main() {
-	root := NewNode(nil,nil)
+	root := NewNode(nil, nil)
 	root.SetData("root node")
 	// make child (leaf) nodes:
-	a := NewNode(nil,nil)
+	a := NewNode(nil, nil)
 	a.SetData("left node")
-	b := NewNode(nil,nil)
+	b := NewNode(nil, nil)
 	b.SetData("right node")
 	root.le = a
 	root.ri = b

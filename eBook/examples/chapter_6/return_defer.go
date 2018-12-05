@@ -15,4 +15,5 @@ func f() (ret int) {
 func main() {
 	fmt.Println(f())
 }
+
 // Output: 2

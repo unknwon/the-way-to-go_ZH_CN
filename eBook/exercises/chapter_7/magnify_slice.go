@@ -14,7 +14,7 @@ func main() {
 }
 
 func enlarge(s []int, factor int) []int {
-	ns := make([]int, len(s) * factor)
+	ns := make([]int, len(s)*factor)
 	// fmt.Println("The length of ns  is:", len(ns))
 	copy(ns, s)
 	//fmt.Println(ns)

@@ -19,10 +19,10 @@ func run(op binOp, req *Request) {
 func server(op binOp, service chan *Request, quit chan bool) {
 	for {
 		select {
-			case req := <-service:
-				go run(op, req) 
-			case <-quit:
-				return
+		case req := <-service:
+			go run(op, req)
+		case <-quit:
+			return
 		}
 	}
 }

@@ -12,4 +12,5 @@ func Split2(s string) string {
 	mid := len(s) / 2
 	return s[mid:] + s[:mid]
 }
+
 // Output: The string Google transformed is: gleGoo

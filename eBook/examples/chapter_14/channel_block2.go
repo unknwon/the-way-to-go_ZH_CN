@@ -8,7 +8,7 @@ import (
 func main() {
 	ch1 := make(chan int)
 	go pump(ch1)
-	go suck(ch1) // tons of numbers appear 
+	go suck(ch1) // tons of numbers appear
 	time.Sleep(1e9)
 }
 

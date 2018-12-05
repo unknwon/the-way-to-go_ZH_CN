@@ -2,9 +2,9 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
 	"io"
-	"bufio"
 	"os"
 )
 
@@ -15,6 +15,7 @@ func main() {
 	defer outputFile.Close()
 	inputReader := bufio.NewReader(inputFile)
 	outputWriter := bufio.NewWriter(outputFile)
+	var outputString string
 	for {
 		// inputString, readerError := inputReader.ReadString('\n')
 		inputString, _, readerError := inputReader.ReadLine()
@@ -23,11 +24,17 @@ func main() {
 			break
 		}
 		//fmt.Printf("The input was: --%s--", inputString)
-		outputString := string([]byte(inputString)[2:5]) + "\r\n"
+		if len(inputString) < 3 {
+			outputString = "\r\n"
+		} else if len(inputString) < 5 {
+			outputString = string([]byte(inputString)[2:len(inputString)]) + "\r\n"
+		} else {
+        		outputString = string([]byte(inputString)[2:5]) + "\r\n"
+		}
 		//fmt.Printf("The output was: --%s--", outputString)
 		_, err := outputWriter.WriteString(outputString)
 		//fmt.Printf("Number of bytes written %d\n", n)
-		if (err != nil) {
+		if err != nil {
 			fmt.Println(err)
 			return
 		}

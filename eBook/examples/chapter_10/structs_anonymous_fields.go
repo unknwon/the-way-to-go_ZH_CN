@@ -3,13 +3,13 @@ package main
 import "fmt"
 
 type innerS struct {
-	in1  int
-	in2  int
+	in1 int
+	in2 int
 }
 
 type outerS struct {
-	b   int
-	c   float32
+	b      int
+	c      float32
 	int    // anonymous field
 	innerS // anonymous field
 }

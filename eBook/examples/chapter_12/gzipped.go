@@ -2,10 +2,10 @@
 package main
 
 import (
-	"fmt"
 	"bufio"
-	"os"
 	"compress/gzip"
+	"fmt"
+	"os"
 )
 
 func main() {

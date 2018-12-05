@@ -33,6 +33,7 @@ func main() {
 	new_page.load("Page.md")
 	fmt.Println(string(new_page.Body))
 }
+
 /* Output:
  * # Page
  * ## Section1

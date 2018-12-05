@@ -9,7 +9,7 @@
 
 ## 翻译进度
 
-14.6 [协程和恢复（recover）](eBook/14.6.md)
+14.9 [实现 Futures 模式](eBook/14.9.md)
 
 ## 支持本书
 
@@ -45,6 +45,10 @@
 
 ## 开始阅读
 
-[前言](./eBook/preface.md)
+- 您可以选择以下方式阅读本书：
+  - [GitHub在线](./eBook/preface.md)
+  - [Gitbook在线](https://go.fdos.me/)
+  - 下载本书:[PDF](https://go.fdos.me/down/book.pdf)、[MOBI](https://go.fdos.me/down/book.mobi)、[EPUB](https://go.fdos.me/down/book.epub)
 
 想读书的人，不会找不到 [目录](eBook/directory.md) :)
+

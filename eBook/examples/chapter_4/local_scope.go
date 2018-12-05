@@ -1,5 +1,7 @@
 package main
+
 var a = "G"
+
 func main() {
 	n()
 	m()

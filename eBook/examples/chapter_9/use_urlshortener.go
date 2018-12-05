@@ -2,10 +2,10 @@
 package main
 
 import (
+	urlshortener "code.google.com/p/google-api-go-client/urlshortener/v1"
 	"fmt"
 	"net/http"
 	"text/template"
-	urlshortener "code.google.com/p/google-api-go-client/urlshortener/v1" 
 )
 
 func main() {
@@ -37,9 +37,9 @@ func root(w http.ResponseWriter, r *http.Request) {
 }
 
 func short(w http.ResponseWriter, r *http.Request) {
-	longUrl := r.FormValue("longUrl")                          
-	urlshortenerSvc, _ := urlshortener.New(http.DefaultClient) 
-	url, _ := urlshortenerSvc.Url.Insert(&urlshortener.Url{LongUrl: longUrl,}).Do() 
+	longUrl := r.FormValue("longUrl")
+	urlshortenerSvc, _ := urlshortener.New(http.DefaultClient)
+	url, _ := urlshortenerSvc.Url.Insert(&urlshortener.Url{LongUrl: longUrl}).Do()
 	rootHtmlTmpl.Execute(w, fmt.Sprintf("Shortened version of %s is : %s", longUrl, url.Id))
 }
 

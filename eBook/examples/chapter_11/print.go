@@ -13,7 +13,7 @@ type Stringer interface {
 type Celsius float64
 
 func (c Celsius) String() string {
-	return strconv.FormatFloat(float64(c),'f', 1, 64) + " °C"
+	return strconv.FormatFloat(float64(c), 'f', 1, 64) + " °C"
 }
 
 type Day int
@@ -26,18 +26,25 @@ func (day Day) String() string {
 
 func print(args ...interface{}) {
 	for i, arg := range args {
-		if i > 0 {os.Stdout.WriteString(" ")}
+		if i > 0 {
+			os.Stdout.WriteString(" ")
+		}
 		switch a := arg.(type) { // type switch
-			case Stringer:	os.Stdout.WriteString(a.String())
-			case int:		os.Stdout.WriteString(strconv.Itoa(a))
-			case string:	os.Stdout.WriteString(a)
-			// more types
-			default:		os.Stdout.WriteString("???")
+		case Stringer:
+			os.Stdout.WriteString(a.String())
+		case int:
+			os.Stdout.WriteString(strconv.Itoa(a))
+		case string:
+			os.Stdout.WriteString(a)
+		// more types
+		default:
+			os.Stdout.WriteString("???")
 		}
 	}
 }
 
 func main() {
-	print(Day(1), "was", Celsius(18.36))  // Tuesday was 18.4 °C
+	print(Day(1), "was", Celsius(18.36)) // Tuesday was 18.4 °C
 }
+
 // Tuesday was 18.4 °C

@@ -32,13 +32,14 @@ func main() {
 	fmt.Printf("From XML: %#v\n", tx)
 
 }
+
 /* Output with
 type thing struct {
 	Field1 int
 	Field2 string
 }:
 
-From XML: main.thing{Field1:0, Field2:""}   // All matching is case sensitive! 
+From XML: main.thing{Field1:0, Field2:""}   // All matching is case sensitive!
 From JSON: main.thing{Field1:423, Field2:"hello from json"}
 
 Output with

@@ -7,8 +7,8 @@ import (
 
 func main() {
 	var i int
-	for i=0; i<10; i++ {
+	for i = 0; i < 10; i++ {
 		fmt.Printf("%v\n", i)
 	}
-	fmt.Printf("%v\n", i)  //<-- compile error:  undefined i
+	fmt.Printf("%v\n", i) //<-- compile error:  undefined i
 }

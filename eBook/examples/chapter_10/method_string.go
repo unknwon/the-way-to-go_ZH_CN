@@ -23,5 +23,3 @@ func main() {
 func (tn *TwoInts) String() string {
 	return "(" + strconv.Itoa(tn.a) + " / " + strconv.Itoa(tn.b) + ")"
 }
-
-

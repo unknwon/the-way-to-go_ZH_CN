@@ -8,20 +8,21 @@ import (
 var resume chan int
 
 func integers() chan int {
-    yield := make (chan int)
-    count := 0
-    go func () {
-        for {
-            yield <- count
-            count++
-        }
-    } ()
-    return yield
+	yield := make(chan int)
+	count := 0
+	go func() {
+		for {
+			yield <- count
+			count++
+		}
+	}()
+	return yield
 }
 
 func generateInteger() int {
-    return <-resume
+	return <-resume
 }
+
 func main() {
 	resume = integers()
 	fmt.Println(generateInteger()) //=> 0
