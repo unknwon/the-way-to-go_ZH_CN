@@ -22,6 +22,7 @@ func integers() chan int {
 func generateInteger() int {
 	return <-resume
 }
+
 func main() {
 	resume = integers()
 	fmt.Println(generateInteger()) //=> 0
