@@ -47,8 +47,6 @@
 
 - 您可以选择以下方式阅读本书：
   - [GitHub在线](./eBook/preface.md)
-  - [Gitbook在线](https://go.fdos.me/)
-  - 下载本书:[PDF](https://go.fdos.me/down/book.pdf)、[MOBI](https://go.fdos.me/down/book.mobi)、[EPUB](https://go.fdos.me/down/book.epub)
 
 想读书的人，不会找不到 [目录](eBook/directory.md) :)
 
