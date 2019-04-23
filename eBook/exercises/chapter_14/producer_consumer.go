@@ -4,7 +4,7 @@ package main
 import "fmt"
 
 // integer producer:
-//译者注：numGen函数中第三个参数所指定的 chan<- 类型的相关知识在 “14.2.11 通道的方向”，链接如下：
+//译者注：numGen函数中第三个参数所指定的 chan<- 类型的相关知识在 “14.2.11 通道的方向”
 func numGen(start, count int, out chan<- int) { 
 	for i := 0; i < count; i++ {
 		out <- start
@@ -15,7 +15,7 @@ func numGen(start, count int, out chan<- int) {
 
 // integer consumer:
 func numEchoRange(in <-chan int, done chan<- bool) {
-	//译者注：下面的for 循环所涉及的相关知识在 “14.2.10 给通道使用 for 循环”
+	//译者注：下面的 for 循环所涉及的相关知识在 “14.2.10 给通道使用 for 循环”
 	for num := range in {
 		fmt.Printf("%d\n", num)
 	}
