@@ -1,16 +1,16 @@
 // hello_who.go
 package main
-
+ 
 import (
 	"fmt"
-	"os"
+	"os"      
 	"strings"
 )
 
-func main() {
-	who := "World"
-	if len(os.Args) > 1 { // os.Args[0] == hello_who
-		who = strings.Join(os.Args[1:], " ")
+func main(){    
+	who := ""
+	if len(os.Args) > 1 {
+		who += strings.Join(os.Args[1:], " ")
 	}
-	fmt.Println("Hello", who, "!")
+	fmt.Printf("Hello %s!\n",who)
 }
