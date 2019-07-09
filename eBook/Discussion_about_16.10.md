@@ -189,45 +189,45 @@ func moveEXE(files []os.FileInfo, aimPath, exePath string) {
 ```go
 
 type parseError struct {
-	File *os.File
-	ErrorInfo string
+    File *os.File
+    ErrorInfo string
 }
 
 
 func (e *parseError) Error() string {
-	errInfo := fmt.Sprintf(
-		"parse file: %s occur error, error info: %s",
-		e.File.Name(),
-		e.ErrorInfo)
-	return errInfo
+    errInfo := fmt.Sprintf(
+        "parse file: %s occur error, error info: %s",
+        e.File.Name(),
+        e.ErrorInfo)
+    return errInfo
 }
 
 
 func parseFile(path string) error {
-	f, err := os.Open(path)
-	if err != nil {
-		return err
-	}
-	defer f.Close()
+    f, err := os.Open(path)
+    if err != nil {
+        return err
+    }
+    defer f.Close()
 
-	var buf [512]byte
-	for {
-		switch num, err := f.Read(buf[:]); {
-		case num < 0:
-			readError := parseError{f, err.Error()}
+    var buf [512]byte
+    for {
+        switch num, err := f.Read(buf[:]); {
+        case num < 0:
+            readError := parseError{f, err.Error()}
              log.Println(readError.Error())
-			return &readError
+            return &readError
             
-		case num == 0:
-			readError := parseError{f, err.Error()}
+        case num == 0:
+            readError := parseError{f, err.Error()}
              log.Println(readError.Error())
-			return &readError
+            return &readError
 
-		case num > 0:
-			fmt.Println(string(buf[:num]))
+        case num > 0:
+            fmt.Println(string(buf[:num]))
              log.Printf("read file: %s contents normally")
-		}
-	}
+        }
+    }
 }
 
 ```
@@ -236,15 +236,15 @@ func parseFile(path string) error {
 
 ```go
 func main()  {
-	err := parseFile("/home/rabbit/go/test_use/test")
-	switch err := err.(type) {
+    err := parseFile("/home/rabbit/go/test_use/test")
+    switch err := err.(type) {
         
-	case *parseError:
+    case *parseError:
         log.Println("parse error: ", err)
         
-	case *os.PathError:
+    case *os.PathError:
         log.Println("path error: ", err)
-	}
+    }
 }
 ```
 
@@ -263,12 +263,12 @@ func handleError(logPath string, err error) {
     }
     
     logFile, _ := os.OpenFile(filepath, os.O_RDWR|os.O_APPEND|os.O_CREATE, 666)
-	defer logFile.Close()
+    defer logFile.Close()
 
-	log.SetOutput(logFile)
-	log.SetPrefix("[FileError]")
-	log.SetFlags(log.Llongfile|log.Ldate|log.Ltime)
-	log.Println(err.Error())
+    log.SetOutput(logFile)
+    log.SetPrefix("[FileError]")
+    log.SetFlags(log.Llongfile|log.Ldate|log.Ltime)
+    log.Println(err.Error())
 }
 ```
 
@@ -276,29 +276,29 @@ func handleError(logPath string, err error) {
 
 ```go
 func parseFile(path string) (err error) {
-	f, err := os.Open(path)
-	if err != nil {
-		return err
-	}
-	defer f.Close()
-	defer func() {handleError("/home/rabbit/go/test_use/log", err)}()
+    f, err := os.Open(path)
+    if err != nil {
+        return err
+    }
+    defer f.Close()
+    defer func() {handleError("/home/rabbit/go/test_use/log", err)}()
 
-	var buf [512]byte
-	for {
-		switch num, err := f.Read(buf[:]); {
+    var buf [512]byte
+    for {
+        switch num, err := f.Read(buf[:]); {
 
-		case num < 0:
-			err := &parseError{f, err.Error()}
-			return err
+        case num < 0:
+            err := &parseError{f, err.Error()}
+            return err
 
-		case num == 0:
-			err := &parseError{f, err.Error()}
-			return err
+        case num == 0:
+            err := &parseError{f, err.Error()}
+            return err
 
-		case num > 0:
-			fmt.Println(string(buf[:num]))
-		}
-	}
+        case num > 0:
+            fmt.Println(string(buf[:num]))
+        }
+    }
 }
 ```
 
