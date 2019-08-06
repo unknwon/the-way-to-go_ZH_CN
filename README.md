@@ -38,6 +38,7 @@
 	- [@dake](https://github.com/dake)
 	- [@glight2000](https://github.com/glight2000)
 	- [@songleo](https://github.com/songleo)
+	- [@marjune163](https://github.com/marjune163)
 
 ## 授权许可
 
