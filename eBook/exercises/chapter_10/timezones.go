@@ -20,12 +20,15 @@ var timeZones = map[TZ]string{UTC: "Universal Greenwich time",
 	CST: "Central Standard time"}
 
 func (tz TZ) String() string { // Method on TZ (not ptr)
-	for name, zone := range timeZones {
-		if tz == name {
-			return zone
-		}
-	}
-	return ""
+	// method 1
+	// if zone, ok := timeZones[tz]; !ok {
+	// 	return ""
+	// } else {
+	// 	return zone
+	// }
+
+	// method 2
+	return timeZones[tz]
 }
 
 func main() {
