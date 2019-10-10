@@ -13,5 +13,5 @@ func Function1() {
 }
 
 func Function2() {
-	fmt.Printf("Function2: Deferred until the end of the calling function!")
+	fmt.Printf("Function2: Deferred until the end of the calling function!\n")
 }
