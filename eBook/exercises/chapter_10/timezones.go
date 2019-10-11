@@ -15,7 +15,8 @@ const (
 	CST  TZ = -6 * HOUR
 )
 
-var timeZones = map[TZ]string{UTC: "Universal Greenwich time",
+var timeZones = map[TZ]string{
+	UTC: "Universal Greenwich time",
 	EST: "Eastern Standard time",
 	CST: "Central Standard time"}
 
