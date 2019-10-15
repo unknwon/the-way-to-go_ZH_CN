@@ -21,11 +21,10 @@ var timeZones = map[TZ]string{
 	CST: "Central Standard time"}
 
 func (tz TZ) String() string { // Method on TZ (not ptr)
-	if zone, ok := timeZones[tz]; !ok {
-		return ""
-	} else {
+	if zone, ok := timeZones[tz]; ok {
 		return zone
 	}
+	return ""
 }
 
 func main() {
