@@ -16,6 +16,7 @@ func main() {
 	r = bufio.NewReader(r)
 	r = new(bytes.Buffer)
 	f, _ := os.Open("test.txt")
+	defer f.Close()
 	r = bufio.NewReader(f)
 	var s *bytes.Buffer = new(bytes.Buffer)
 	r = s

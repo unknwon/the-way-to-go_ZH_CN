@@ -20,6 +20,7 @@ func main() {
 			fmt.Printf("The file %v does not exist!\n", flag.Arg(i))
 			break
 		}
+		defer fin.Close()
 		r := bufio.NewReader(fin)
 		for line, _, err := r.ReadLine(); err != io.EOF; line, _, err = r.ReadLine() {
 			fmt.Printf("Lines: %v (error %v)\n", string(line), err)
