@@ -31,5 +31,6 @@ func main() {
 			continue
 		}
 		cat(bufio.NewReader(f))
+		f.Close()
 	}
 }
