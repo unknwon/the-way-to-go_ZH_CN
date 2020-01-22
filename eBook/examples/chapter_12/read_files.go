@@ -24,5 +24,6 @@ func main() {
 		for line, _, err := r.ReadLine(); err != io.EOF; line, _, err = r.ReadLine() {
 			fmt.Printf("Lines: %v (error %v)\n", string(line), err)
 		}
+		fin.Close()
 	}
 }

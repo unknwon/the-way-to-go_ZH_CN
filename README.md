@@ -9,7 +9,7 @@
 
 ## 翻译进度
 
-14.9 [实现 Futures 模式](eBook/14.9.md)
+18.11 [出于性能考虑的最佳实践和建议](eBook/18.11.md)
 
 ## 支持本书
 
@@ -38,6 +38,7 @@
 	- [@dake](https://github.com/dake)
 	- [@glight2000](https://github.com/glight2000)
 	- [@songleo](https://github.com/songleo)
+	- [@marjune163](https://github.com/marjune163)
 
 ## 授权许可
 
