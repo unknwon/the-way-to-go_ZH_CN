@@ -19,6 +19,10 @@
 
 参见 [Go 语言学习资料与社区索引](https://github.com/Unknwon/go-study-index)。
 
+关注 Go 语言中文网公众号学习 Go
+
+![](studygolang-qrcode.jpg)
+
 ### 新人守则
 
 - 2012 年 3 月 28 日以前的博文中的内容基本过时，不要再看
