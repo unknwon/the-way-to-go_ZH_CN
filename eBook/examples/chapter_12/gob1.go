@@ -36,7 +36,7 @@ func main() {
 	if err != nil {
 		log.Fatal("decode error:", err)
 	}
-	fmt.Printf("%q: {%d,%d}\n", q.Name, *q.X, *q.Y)
+	fmt.Printf("%q: {%d,%d}\n", q.Name, q.X, q.Y)
 }
 
 // Output:   "Pythagoras": {3,4}
