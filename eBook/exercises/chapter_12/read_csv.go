@@ -29,9 +29,7 @@ func main() {
 	for {
 		// read one line from the file:
 		line, err := reader.ReadString('\n')
-		if err == io.EOF {
-			break
-		}
+		readErr := err
 		// remove \r and \n so 2(in Windows, in Linux only \n, so 1):
 		line = string(line[:len(line)-2])
 		//fmt.Printf("The input was: -%s-", line)
@@ -53,6 +51,9 @@ func main() {
 		} else {
 			bks = append(bks, *book)
 		}
+		if readErr == io.EOF {
+			break
+		}
 	}
 	fmt.Println("We have read the following books from the file: ")
 	for _, bk := range bks {
@@ -65,4 +66,5 @@ We have read the following books from the file:
 {"The ABC of Go" 25.5 1500}
 {"Functional Programming with Go" 56 280}
 {"Go for It" 45.900001525878906 356}
+{"The Go Way" 55 5}
 */
