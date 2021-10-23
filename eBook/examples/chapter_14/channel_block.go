@@ -12,7 +12,7 @@ func main() {
 	go pump(ch1)       // pump hangs
 	fmt.Println(<-ch1) // prints only 0
 
-	time.Sleep(1e9)
+	time.Sleep(time.Second)
 	fmt.Println(cnt) // prints 1
 
 }
