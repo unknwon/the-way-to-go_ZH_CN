@@ -17,7 +17,7 @@ func main() {
 	if inputError != nil {
 		fmt.Printf("An error occurred on opening the inputfile\n" +
 			"Does the file exist?\n" +
-			"Have you got acces to it?\n")
+			"Have you got access to it?\n")
 		return // exit the function on error
 	}
 	defer inputFile.Close()
