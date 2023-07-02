@@ -22,7 +22,7 @@ type VCard struct {
 	Remark    string
 }
 
-var content string
+// var content string  // var content is unused
 var vc VCard
 
 func main() {
