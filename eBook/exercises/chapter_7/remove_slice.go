@@ -12,8 +12,8 @@ func main() {
 }
 
 func RemoveStringSlice(slice []string, start, end int) []string {
-	result := make([]string, len(slice)-(end-start)-1)
+	result := make([]string, len(slice)-(end-start))
 	at := copy(result, slice[:start])
-	copy(result[at:], slice[end+1:])
+	copy(result[at:], slice[end:])
 	return result
 }

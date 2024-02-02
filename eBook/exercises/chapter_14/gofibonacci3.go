@@ -30,6 +30,7 @@ func fib() <-chan int {
 			x <- <-a + <-b
 		}
 	}()
+	<- out
 	return out
 }
 

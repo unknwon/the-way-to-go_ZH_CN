@@ -1,7 +1,7 @@
 package main
 
 import (
-	"./greetings/greetings"
+	"./greetings"
 	"fmt"
 )
 

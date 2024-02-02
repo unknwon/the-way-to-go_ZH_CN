@@ -15,15 +15,14 @@ const (
 	CST  TZ = -6 * HOUR
 )
 
-var timeZones = map[TZ]string{UTC: "Universal Greenwich time",
+var timeZones = map[TZ]string{
+	UTC: "Universal Greenwich time",
 	EST: "Eastern Standard time",
 	CST: "Central Standard time"}
 
 func (tz TZ) String() string { // Method on TZ (not ptr)
-	for name, zone := range timeZones {
-		if tz == name {
-			return zone
-		}
+	if zone, ok := timeZones[tz]; ok {
+		return zone
 	}
 	return ""
 }

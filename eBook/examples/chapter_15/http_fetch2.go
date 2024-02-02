@@ -15,6 +15,7 @@ func main() {
 	fmt.Println("Please enter the url...")
 	url, err := inputReader.ReadString('\n')
 	url = strings.TrimSuffix(url, "\r\n")
+	url = strings.TrimSpace(url)
 	checkError(err)
 	res, err := http.Get(url)
 	checkError(err)
